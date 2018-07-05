@@ -57,4 +57,44 @@ $p600: 'BasicSansAlt-Black',Noto Sans TC,PingFangTC-Semibold, xingothic-tc, sans
 
 $c100:cwTeXYen,PingFangTC-Semibold, xingothic-tc, sans-serif, Microsoft JhengHei;
 
+@font-face {
+  font-family: Bison-ThinOutline;
+  src: font-url(asset-path('font/Bison-ThinOutline.ttf'));
+}
 
+@font-face {
+  font-family: Bison-Light;
+  src: font-url(asset-path('font/Bison-Light.ttf'));
+}
+
+@font-face {
+  font-family: Bison-Regular;
+  src: font-url(asset-path('font/Bison-Regular.ttf'));
+}
+
+@font-face {
+  font-family: Bison-DemiBold;
+  src: font-url(asset-path('font/Bison-DemiBold.ttf'));
+}
+
+@font-face {
+  font-family: Bison-Bold;
+  src: font-url(asset-path('font/Bison-Bold.ttf'));
+}
+
+@font-face {
+  font-family: Bison-ThickOutline;
+  src: font-url(asset-path('font/Bison-ThickOutline.ttf'));
+}
+
+
+
+/// font-family
+// $p100: 'Bison-ThickOutline',Noto Sans TC,PingFangTC-Ultralight, xingothic-tc, Microsoft JhengHei;
+// $p200: 'Bison-ThinOutline',Noto Sans TC,PingFangTC-Thin, xingothic-tc, sans-serif, Microsoft JhengHei;
+// $p300: 'Bison-Light',Noto Sans TC,PingFangTC-Light, xingothic-tc, sans-serif, Microsoft JhengHei;
+// $p400: 'Bison-Regular',Noto Sans TC,PingFangTC-Regular, xingothic-tc, sans-serif, Microsoft JhengHei;
+// $p500: 'Bison-DemiBold',Noto Sans TC,PingFangTC-Medium, xingothic-tc, sans-serif, Microsoft JhengHei;
+// $p600: 'Bison-Bold',Noto Sans TC,PingFangTC-Semibold, xingothic-tc, sans-serif, Microsoft JhengHei;
+
+// $c100:cwTeXYen,PingFangTC-Semibold, xingothic-tc, sans-serif, Microsoft JhengHei;

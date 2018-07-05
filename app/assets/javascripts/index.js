@@ -1,4 +1,4 @@
-$(document).ready(function() {
+document.addEventListener('turbolinks:load', () => {
     /// 讓頁面跳轉接過場柔順一點
     $('body').removeClass('hide')
     $('#nav').on('click', 'a', function() {
@@ -31,19 +31,19 @@ $(document).ready(function() {
     });
 
     // CommunityPartner
-    var $partnerLink = $('#partner_link');
-    if ($partnerLink.length > 0) {
-        $(window).bind('scroll', function() {
-            var whereAmI = $(this).scrollTop(),
-                target = $('.main_title').offset().top;
+    // var $partnerLink = $('#partner_link');
+    // if ($partnerLink.length > 0) {
+    //     $(window).bind('scroll', function() {
+    //         var whereAmI = $(this).scrollTop(),
+    //             target = $('.main_title').offset().top;
             
-            if (whereAmI < target) {
-                $('#partner_link').removeClass('fixed')
-            } else if (whereAmI > target) {
-                $('#partner_link').addClass('fixed')
-            }
-        }).scroll();
-    }
+    //         if (whereAmI < target) {
+    //             $('#partner_link').removeClass('fixed')
+    //         } else if (whereAmI > target) {
+    //             $('#partner_link').addClass('fixed')
+    //         }
+    //     }).scroll();
+    // }
 
     //議程的tab
     $('.tabgroup > div').hide();
