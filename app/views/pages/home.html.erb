@@ -63,7 +63,18 @@
       </div>
     </div>
   </div>
-  <video id="videoBg" autoplay loop muted="muted" class="fillWidth fadeIn animated">
+  <video id="videoBg" autoplay playsinline muted="muted" class="fillWidth fadeIn animated">
     <source src="/assets/img/index/final.mp4" type="video/mp4">Your browser does not support the video tag. I suggest you upgrade your browser.
   </video>
 </div>
+<script>
+  document.addEventListener('turbolinks:load', () => {
+
+    let w = $(window).width()
+    console.log(w)
+    if ( w <= 768 ) {
+      $('#videoBg').remove()
+    }
+
+  })
+</script>

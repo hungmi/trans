@@ -1,5 +1,6 @@
 class PagesController < ApplicationController
   def home
+    @show_footer = false
   end
 
   def about
