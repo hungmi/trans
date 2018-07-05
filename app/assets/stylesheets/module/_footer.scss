@@ -1,0 +1,232 @@
+footer {
+    display: block;
+    width: 100%;
+    font-family: $p200;
+    z-index: 10;
+}
+
+footer>.black-section {
+    color: white;
+    background-color: #000000;
+    padding: 50px;
+}
+
+footer>.mobile-only {
+    font-family: $p200;
+    display: none;
+    color: black;
+    background: transparent;
+    padding: 50px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+footer>.mobile-only>.links {
+    font-family: $p200;
+    width: 100%;
+    margin: auto;
+    text-align: justify;
+    text-justify: distribute-all-lines;
+
+    a {
+        width: calc(20% - 10px);
+        max-width: 70px;
+        vertical-align: top;
+        display: inline-block;
+        zoom: 1;
+
+        img {
+            display: inline;
+        }
+    }
+
+    .stretch {
+        width: 100%;
+        display: inline-block;
+        font-size: 0;
+        line-height: 0;
+    }
+}
+
+.info {
+    text-align: right;
+    margin: 0 10px 0 0;
+    font-family: $p200;
+
+    table {
+        font-size: 12px;
+            display: inline-table;
+         font-family: $p200;
+
+        td {
+            padding: 10px;
+            padding-left: 25px;
+            padding-right: 25px;
+            text-align: left;
+        }
+
+        td:first-child {
+            padding-left: 0;
+        }
+        td:last-child {
+            padding-right: 0;
+        }
+
+        .organizer {
+            //border-right: 0.75px solid white;
+            img {
+                width: auto;
+                height: 30px;
+                vertical-align: text-top;
+                padding-left: 5px;
+            }
+        }
+
+        .powered-by {
+            //border-right: 0.75px solid white;
+            img {
+                width: auto;
+                height: 20px;
+                vertical-align: text-top;
+                padding-left: 5px;
+            }
+        }
+
+        .followUs {
+            img {
+                vertical-align: text-top;
+                width: auto;
+                height: 25px;
+                margin: 0px 5px;
+
+            }
+        }
+
+        table.inner {
+            display: inline-table;
+            vertical-align: text-top;
+            text-align: left;
+
+
+            td {
+                vertical-align: text-top;
+                padding: 10px;
+                padding-top: 0;
+            }
+
+            td:nth-child(1) {
+                padding-left: 0;
+            }
+        }
+
+        .contactUs {
+            .contactMail,
+            .contactPhone {
+                text-align: right;
+                padding-right: 0;
+            }
+
+            .contactMail img,
+            .contactPhone img {
+                display: inline;
+                width: auto;
+                height: 12px;
+            }
+
+            .contactPhone img {
+                height: 18px;
+            }
+        }
+    }
+}
+
+.copyright {
+    font-size: 12px;
+    line-height: 25px;
+
+    .mobile-only {
+        display: none;
+    }
+}
+
+.info-mobile {
+    text-align: right;
+}
+
+.info-mobile>table {
+    display: none;
+    margin-left: 10vw;
+    font-size: 10px;
+    margin: -5% 0 0 20%;
+    img {
+        width: 70%;
+    }
+    .inner {
+         margin-top: -40px;
+        tr:nth-child(1)>td {
+            padding-bottom: 10px;
+        }
+        td:nth-child(odd) {
+            padding-right: 10px;
+        }
+
+        .contactMail,
+        .contactPhone {
+            text-align: center;
+            padding-right: 0;
+        }
+
+        .contactMail img,
+        .contactPhone img {
+            display: inline;
+            width: auto;
+            height: 10px;
+        }
+
+        .contactPhone img {
+            height: 12px;
+        }
+    }
+}
+
+.info-mobile>table>tbody>tr:nth-child(even) {
+    td {
+        vertical-align: middle;
+    }
+}
+
+.info-mobile>table>tbody>tr>td {
+    padding: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: left;
+    vertical-align: top;
+    
+}
+
+.info-mobile>table>tbody>tr>td:nth-child(1) {
+    padding-left: 0;
+}
+
+.info-mobile>table>tbody>tr>td:nth-child(2) {
+    padding-right: 0;
+}
+
+@media screen and (max-width: $breakpoint-small) {
+    .info {
+        display: none;
+    }
+
+    .info-mobile>table {
+        display: inline-table;
+    }
+
+    .copyright>.mobile-only {
+        display: inline;
+        line-height: 20px;
+    }
+
+    footer>.mobile-only {
+        display: block;
+    }
+}

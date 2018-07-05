@@ -1,0 +1,56 @@
+.TRANSReview {
+	width: 100%;
+}
+
+.ReviewTitle {
+	font-family: $p200;
+	position: absolute;
+	color: #ffffff;	
+	font-size: 47px;
+	line-height: 47px;
+	margin: 100px 0 0 10vw;
+	z-index: 3;
+	letter-spacing: 0.5px;
+}
+
+.TRANS_img {
+	
+}
+
+.TRANS_img_content {
+	background-color: #000000;
+	
+	a {
+		overflow: hidden;
+		
+		img {
+			
+			transition: .8s ease;
+
+  	} 
+	}
+
+	a:hover {
+		img {
+			transform: scale3d(1.1, 1.1, 1);
+		}
+	}
+}
+
+.mouse {
+	display: block;
+	position: absolute;
+	font-size: 14px;
+	font-family: $p200;
+	color:white;
+	margin:30vh 0 10% 10%;
+	z-index: 3;
+	img{
+		width: 2%;
+		margin-right:10px;
+	}
+	@media screen and (max-width: $breakpoint-small) {
+		display: none;
+	}
+
+}

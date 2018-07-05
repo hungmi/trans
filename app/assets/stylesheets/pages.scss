@@ -1,0 +1,23 @@
+#trans.pages_ {
+	&register {
+		background-image: url('/assets/img/register/bg_2.png');
+		background-size: cover;
+		background-position: 35% 0;
+	  background-repeat: no-repeat
+	}
+	&home {
+		background-color: #f7f7f7;
+	}
+	&agenda {
+		background-image: url('/assets/img/agenda/bg_2.png');
+	  background-size: cover;
+	  background-position: 35% 0;
+	  background-repeat: no-repeat;
+	}
+	&faq {
+		background-image: url('/assets/img/faq/bg.png');
+		background-size: cover;
+		background-position: 40% 0;
+  	background-repeat: no-repeat;
+	}
+}

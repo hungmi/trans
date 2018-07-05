@@ -1,0 +1,317 @@
+.agenda-link {
+
+    .box {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #fff;
+        border-radius: 6px;
+        box-shadow: 0px 2px 3px 1px rgba(0, 0, 70, .05);
+        margin: 20px auto;
+        width: 100%;
+        max-width: 800px;
+        padding: 10px 30px;
+        font-family: $p300;
+        font-size: 21px;
+
+        &>* {
+            flex: 0 0 auto;
+        }
+        .image{
+            width: 40%;
+        }
+
+    }
+}
+
+.agenda-wrap {
+    margin-top: 15%;
+
+    .title {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        background-color: #fff;
+        margin-bottom: 50px;
+        font-family: $p300;
+        font-size: 28px;
+
+        h2 {
+            font-size: 28px;
+            @media screen and (max-width: $breakpoint-small) {
+             margin: 10% 10% 10% 10%;
+         }
+        }
+
+        img {
+            max-width: 300px;
+        }
+    }
+}
+
+.agenda-tab {
+    font-size: 0;
+    margin-bottom: 25px;
+
+    .tab-btn {
+        display: inline-block;
+        font-size: 15px;
+        font-family: $p400;
+        padding: 7px 15px;
+        box-shadow: 0 0 0 1px #000;
+    }
+
+    .tab-btn.active {
+        background-color: #000;
+        color: #FFF;
+    }
+
+    .time {
+        float: right;
+        font-family: $p400;
+
+        .daytitle {
+            font-size: 32px;
+            display: inline-block;
+            font-family: $p400;
+        }
+
+        .date {
+            display: inline-block;
+            font-size: 16px;
+            margin-left: 15px;
+            font-family: $p400;
+
+        }
+    }
+}
+
+
+.agenda-table {
+    margin-bottom: 40vh;
+
+    .agenda-tr {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        padding: 17px 0;
+        border-bottom: 0.1px solid rgba(0, 0, 0, 0.3);
+        font-family: $p200;
+        color: #4d4d4d;
+
+        &>* {
+            padding: 0 15px;
+        }
+        @media screen and (max-width: $breakpoint-small) {
+            border-bottom:1px solid rgba(0, 0, 0, .5);
+            box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0);
+        }
+    }
+
+    .th>* {
+        font-size: 16px!important;
+    }
+
+    .tr-time {
+        flex: 0 0 140px;
+        font-size: 14px;
+        font-family: $p600;
+        text-align: center;
+    }
+
+    .tr-title {
+        flex: 0 0 320px;
+        font-size: 16px;
+        font-family: $p200;
+        line-height: 19.12px;
+    }
+
+    .tr-content {
+        flex: 1 0 300px;
+        font-size: 12px;
+        font-family: $p200;
+        padding-right: 20px;
+        line-height: 15.12px;
+    }
+
+    .tr-speaker {
+        flex: 0 0 150px;
+        font-size: 12px;
+        font-family: $p200;
+        text-align: right;
+    }
+
+    .tr-toggle {
+        display: none;
+        position: absolute;
+        right: 0;
+        margin-top: -10px;
+        text-align: center;
+
+        .toggle-button {
+            font-size: 25px;
+            font-weight: lighter;
+            background: transparent;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+    }
+}
+
+@media screen and (max-width: $breakpoint-medium) {
+    .agenda-wrap {
+        .title {
+            background: transparent;
+        }
+    }
+
+    .agenda-table {
+        .tr-content {
+            flex: 1 0 0;
+            visibility: hidden;
+            height: 0;
+            opacity: 0;
+            transition: opacity 0.4s ease;
+        }
+    }
+}
+
+@media screen and (max-width: $breakpoint-small) {
+    .agenda-link {
+        .box {
+            display: flex;
+            flex-direction: column;
+            justify-content: initial;
+            padding: 23px;
+            padding-left: 50px;
+            padding-right: 50px;
+            .text {
+                order: 2;
+                display: block;
+                float: none;
+                width: 100%;
+                flex: none;
+                text-align: center;
+
+                br {
+                    display: none;
+                }
+            }
+
+            .image {
+                order: 1;
+                display: block;
+                float: none;
+                width: 100%;
+                text-align: center;
+            }
+        }
+    }
+
+    #mainStageAgenda {
+        background: transparent;
+        padding-top: 30px;
+    }
+
+    .agenda-tab {
+        .time {
+            .daytitle {
+                font-size: 26px;
+                font-weight: bold;
+            }
+
+            .date {
+                font-size: 11px;
+                font-weight: bold;
+            }
+        }
+    }
+
+    .agenda-wrap {
+        .title {
+            text-align: center;
+
+
+            * {
+                width: 100%;
+            }
+
+            img {
+                display: none;
+            }
+        }
+    }
+
+    .agenda-table {
+        margin-bottom: 25vh;
+
+        .tr-toggle {
+            display: block;
+        }
+
+        .tr-speaker {
+            flex: 0 0 0;
+            visibility: hidden;
+            height: 0;
+            opacity: 0;
+            transition: opacity 0.4s ease;
+        }
+
+        .tr-title {
+            flex-wrap: wrap;
+            flex: 0 0 calc(100% - 150px);
+            text-align: left;
+        }
+
+        .agenda-tr.toggled {
+            flex-wrap: wrap;
+            padding-bottom: 0;
+
+            .toggle-button {
+                transform: rotate(45deg);
+            }
+
+            .tr-content {
+                border-top: 1px solid rgba(0, 0, 0, 0.1);
+                margin-top: 10px;
+            }
+
+            .tr-content,
+            .tr-speaker {
+                display: flex;
+                visibility: visible;
+                height: auto;
+                opacity: 1;
+                color: black;
+                flex: 0 0 100%;
+                padding: 10px;
+                padding-left: 165px;
+                background-color: rgba(0, 0, 0, 0.05);
+            }
+
+
+            .tr-speaker {
+                padding-bottom: 17px;
+                text-align: left;
+            }
+
+            .tr-content:before,
+            .tr-speaker:before {
+                position: absolute;
+                display: inline-block;
+                font-size: 15px;
+                margin-left: -135px;
+            }
+
+            .tr-content:before {
+                content: "CONTENT";
+            }
+            .tr-speaker:before {
+                content: "SPEAKER";
+            }
+            .tr-speaker:after {
+                content: "\00a0";
+            }
+        }
+    }
+}

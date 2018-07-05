@@ -1,0 +1,597 @@
+<div class="pic1 img-bg-cover" style="background-image: url('/assets/img/agenda/bg.jpg'); background-position: center 35%;"></div>
+<div class="wrapper agenda">
+  <div class="main_title"><b>Agenda</b></div>
+  <div class="agenda-link">
+    <a class="box" href="#mainStageAgenda">
+      <div class="text">
+        Main Stage
+        <br> Agenda >>
+      </div>
+      <div class="image">
+        <img src="/assets/img/agenda/map1top.png" alt="" >
+      </div>
+    </a>
+    <a class="box" href="#sideStageAgenda">
+      <div class="text">
+        TRANS Salon
+        <br> Agenda >>
+      </div>
+      <div class="image">
+        <img src="/assets/img/agenda/map2top.png" alt="" >
+      </div>
+    </a>
+  </div>
+  <div id="mainStageAgenda" class="agenda-wrap">
+    <div class="title">
+      <h2>Main Stage Agenda</h2>
+      <img src="/assets/img/agenda/map1.png" alt="" >
+    </div>
+    <div class="agenda-tab">
+      <div @click="changeDay('mainStageDay', 1)" class="tab-btn" :class="{ active: mainStageDay === 1 }">Day 1</div>
+      <div @click="changeDay('mainStageDay', 2)" class="tab-btn" :class="{ active: mainStageDay === 2 }">Day 2</div>
+      <div class="time">
+        <div v-if="mainStageDay === 1" class="daytitle">Day 1</div>
+        <div v-if="mainStageDay === 2" class="daytitle">Day 2</div>
+        <div v-if="mainStageDay === 1" class="date">26 <font style="vertical-align: super;font-size: 9px;">th</font> August</div>
+        <div v-if="mainStageDay === 2" class="date">27 <font style="vertical-align: super;font-size: 9px;">th</font> August</div>
+        <!-- <b>27 TH August</b> -->
+      </div>
+    </div>
+    <div v-if="mainStageDay === 1" class="agenda-table">
+      <div class="agenda-tr th">
+        <div class="tr-time">TIME</div>
+        <div class="tr-title">TITLE</div>
+        <div class="tr-content">CONTENT</div>
+        <div class="tr-speaker">SPEAKER</div>
+        <div class="tr-toggle"></div>
+      </div>
+      <div class="agenda-tr">
+        <div class="tr-time">09:30-10:00</div>
+        <div class="tr-title">
+          Welcome Address
+        </div>
+        <div class="tr-content">
+        </div>
+        <div class="tr-speaker">
+        </div>
+        <div class="tr-toggle">
+        </div>
+      </div>
+      <div class="agenda-tr">
+        <div class="tr-time">10:00-11:00</div>
+        <div class="tr-title">
+          Keynote Speech<br><br>
+          Experiences from the Masters of the Sea
+        </div>
+        <div class="tr-content">
+          The Experience of a Top Tier Healthcare Venture: How GE Ventures Boosts the Global Healthcare Startup Ecosystem
+          <br>
+          <br> Healthcare Startup Ecosystem and KPCB's Investment Strategy
+        </div>
+        <div class="tr-speaker">
+          Alex de Winter
+          <br><br>
+          <br> James Huang
+        </div>
+        <div class="tr-toggle">
+          <button class="toggle-button" type="button" @click="toggle($event)">+</button>
+        </div>
+      </div>
+      <div class="agenda-tr">
+        <div class="tr-time">11:10-12:00</div>
+        <div class="tr-title">
+          Panel Talk
+          <br><br> New Worlds
+        </div>
+        <div class="tr-content">
+          Terminating Dialysis: Developing the Next Generation of Renal Replacement Therapies for ESRD Patients
+          <br>
+          <br> Match Making: A Whole New Model of Accelerating Healthcare Startups
+        </div>
+        <div class="tr-speaker">
+          Morteza Ahmadi
+          <br><br>
+          <br> Chris Edell
+        </div>
+        <div class="tr-toggle">
+          <button class="toggle-button" type="button" @click="toggle($event)">+</button>
+        </div>
+      </div>
+      <div class="agenda-tr">
+        <div class="tr-time">12:00-12:20</div>
+        <div class="tr-title">
+          Keynote Speech<br>
+          <br> Let There Be Light
+        </div>
+        <div class="tr-content">
+          The Challenges and Opportunities of the Aging Industry
+        </div>
+        <div class="tr-speaker">
+          Liang-Kung Chen
+        </div>
+        <div class="tr-toggle">
+          <button class="toggle-button" type="button" @click="toggle($event)">+</button>
+        </div>
+      </div>
+      <div class="agenda-tr">
+        <div class="tr-time">12:20-14:00</div>
+        <div class="tr-title">
+          Rest and Refuel
+        </div>
+        <div class="tr-content">
+        </div>
+        <div class="tr-speaker">
+        </div>
+        <div class="tr-toggle">
+        </div>
+      </div>
+      <div class="agenda-tr">
+        <div class="tr-time">14:00-15:10</div>
+        <div class="tr-title">
+          Panel Talk<br>
+          <br> Courage to Set Sail: Adventurous Stories Told
+        </div>
+        <div class="tr-content">
+           Deepika Bodapati: Founder of Athelas / Blogger / Researcher
+          <br>
+          <br>The Path of Greatest Resistance: From Student to Founder
+          <br>
+          <br>Transforming Healthcare with the Patient Voice
+        </div> 
+        <div class="tr-speaker">
+          Deepika Bodapati
+          <br>
+          <br> Katherine Jin
+          <br>
+          <br> Daniel Penn
+        </div>
+        <div class="tr-toggle">
+          <button class="toggle-button" type="button" @click="toggle($event)">+</button>
+        </div>
+      </div>
+      <div class="agenda-tr">
+        <div class="tr-time">15:20-15:45</div>
+        <div class="tr-title">
+          Fireside Chat
+        </div>
+        <div class="tr-content">
+          Valuable Lessons from Venturecraft Investment Group Founder
+        </div>
+        <div class="tr-speaker">
+          Isaac Ho
+        </div>
+        <div class="tr-toggle">
+          <button class="toggle-button" type="button" @click="toggle($event)">+</button>
+        </div>
+      </div>
+      <div class="agenda-tr">
+        <div class="tr-time">15:50-17:50 </div>
+        <div class="tr-title">
+          Pitch Arena
+        </div>
+        <div class="tr-content">
+        </div>
+        <div class="tr-speaker">
+        </div>
+        <div class="tr-toggle">
+        </div>
+      </div>
+      <div class="agenda-tr">
+        <div class="tr-time">18:00-18:40</div>
+        <div class="tr-title">
+          Keynote Speech<br>
+          <br> A New Course in Healthcare
+        </div>
+        <div class="tr-content">
+          The Future Trend in Healthcare: A Comprehensive Study of the Japanese Healthcare Industry
+        </div>
+        <div class="tr-speaker">
+          Keiichi Ohwari<br>
+          Yutaka Kitahara<br>
+          Taiki Ishikura
+        </div>
+        <div class="tr-toggle">
+          <button class="toggle-button" type="button" @click="toggle($event)">+</button>
+        </div>
+      </div>
+    </div>
+    <div v-if="mainStageDay === 2" class="agenda-table">
+      <div class="agenda-tr th">
+        <div class="tr-time">TIME</div>
+        <div class="tr-title">TITLE</div>
+        <div class="tr-content">CONTENT</div>
+        <div class="tr-speaker">SPEAKER</div>
+        <div class="tr-toggle"></div>
+      </div>
+      <div class="agenda-tr">
+        <div class="tr-time">09:00-10:00</div>
+        <div class="tr-title">
+          Keynote Speech<br>
+          <br> What's On the Horizon
+        </div>
+        <div class="tr-content">
+          Revolutionize Healthcare Through the Power of Data
+          <br>
+          <br>Singapore: Riding the VC Ｗave to Benefit Biomedical Startups
+        </div>
+        <div class="tr-speaker">
+          Yang Yang
+          <br>
+          <br> Sidney Yee
+        </div>
+        <div class="tr-toggle">
+          <button class="toggle-button" type="button" @click="toggle($event)">+</button>
+        </div>
+      </div>
+      <div class="agenda-tr">
+        <div class="tr-time">10:10-11:00</div>
+        <div class="tr-title">
+          Panel Talk
+          <br><br> Bio-innovation Island Chain Hopping: Healthcare x Digital Health
+        </div>
+        <div class="tr-content">
+          Integrating Digital Health and Wearable Technology: How Khushi Baby Bridges the Health Gap Between Mother and Child at the Last Mile
+          <br>
+          <br>The Advantages of Going Digital: Applications of Digital Health
+        </div>
+        <div class="tr-speaker">
+          Ruchit Nagar
+          <br><br><br><br>
+          Ching-Tse Tseng
+        </div>
+        <div class="tr-toggle">
+          <button class="toggle-button" type="button" @click="toggle($event)">+</button>
+        </div>
+      </div>
+      <div class="agenda-tr">
+        <div class="tr-time">11:10-12:00</div>
+        <div class="tr-title">
+           Panel Talk<br>
+          <br>Bio-innovation Island Chain Hopping: Healthcare x Precision Medicine
+        </div>
+        <div class="tr-content">
+          Ever-refining Paradigms : Evolution and Outlook of Precision Medicine
+          <br>
+          <br>When Cancer Screening and Precision Medicine Intertwine: Why miRNA is the Answer
+        </div>
+        <div class="tr-speaker">
+          Jane SC Tsai<br><br>
+          <br> Lihan Zhou
+        </div>
+        <div class="tr-toggle">
+          <button class="toggle-button" type="button" @click="toggle($event)">+</button>
+        </div>
+      </div>
+      <div class="agenda-tr">
+        <div class="tr-time">12:00- 12:20</div>
+        <div class="tr-title">
+           Keynote Speech<br>
+           <br>Bio-innovation Island Chain Hopping: Healthcare x Cloud Computing
+        </div>
+        <div class="tr-content">
+          How Cloud Computing is Transforming Healthcare
+        </div>
+        <div class="tr-speaker">
+          Zane Moi
+        </div>
+        <div class="tr-toggle">
+          <button class="toggle-button" type="button" @click="toggle($event)">+</button>
+        </div>
+      </div>
+      <div class="agenda-tr">
+        <div class="tr-time">12:20-14:00</div>
+        <div class="tr-title">
+          Rest and Refuel
+        </div>
+        <div class="tr-content">
+        </div>
+        <div class="tr-speaker">
+        </div>
+        <div class="tr-toggle"></div>
+      </div>
+      <div class="agenda-tr">
+        <div class="tr-time">14:00-15:10</div>
+        <div class="tr-title">
+          Keynote Speech<br>
+          <br> Bio-innovation Island Chain Hopping: Healthcare x AI
+        </div>
+        <div class="tr-content">
+          How The World’s Largest Healthcare IT Company Revolutionizes the U.S. and Global Healthcare Markets
+          <br>
+          <br>When AI and Biotech Intertwine: A New Solution for Blood Testing
+        </div>
+        <div class="tr-speaker">
+          Dr. Steven Mo, PhD
+          <br> <br>
+          <br>Tanay Tandon
+        </div>
+        <div class="tr-toggle">
+          <button class="toggle-button" type="button" @click="toggle($event)">+</button>
+        </div>
+      </div>
+      <div class="agenda-tr">
+        <div class="tr-time">14:50-16:00</div>
+        <div class="tr-title">
+          Panel Talk<br>
+          <br>Scouting for the Next Columbus: VC and Accelerator Talks
+        </div>
+        <div class="tr-content">
+          From the Viewpoint of a VC Based in Korea: Investment Strategy of KTB Network
+          <br>
+          <br>From the Viewpoint of a VC Based in Singapore: Investment Strategy of Venturecraft
+          <br>
+          <br>The StartX Model for Entrepreneurship: Shared Learnings from Stanford University and Hospital's Startup Accelerator
+        </div>
+        <div class="tr-speaker">
+          Chun Ji Woong
+          <br><br>
+          <br> Ong Jeong Shing
+          <br><br>
+          <br> Andrew Lee
+        </div>
+        <div class="tr-toggle">
+          <button class="toggle-button" type="button" @click="toggle($event)">+</button>
+        </div>
+      </div>
+      <div class="agenda-tr">
+        <div class="tr-time">16:10-17:00</div>
+        <div class="tr-title">
+          Panel Talk<br>
+          <br>Building Your Compass: Advice From Predecessors
+        </div>
+        <div class="tr-content">
+          <br>
+          <br>Top Reasons to Build a Global Startup: A Discussion of the Challenges and Opportunities of Changing the World at Scale
+        </div>
+        <div class="tr-speaker">
+          Dr. Steven Mo, PhD
+          <br> <br>
+          <br>Allison Baum
+        </div>
+        <div class="tr-toggle">
+          <button class="toggle-button" type="button" @click="toggle($event)">+</button>
+        </div>
+      </div>
+      <div class="agenda-tr">
+        <div class="tr-time">17:10-18:10</div>
+        <div class="tr-title">
+          Keynote Speech<br>
+          <br> One Last Thing
+        </div>
+        <div class="tr-content">
+          Scouting for the Next Unicorn:  A Comprehensive View of Healthcare Investment from IDG Capital
+          <br>
+          <br> Sutter Health: Pioneers in Healthcare Delivery and Patient Experience
+        </div>
+        <div class="tr-speaker">
+          Oscar Dong
+          <br><br>
+          <br> Albert Chan
+        </div>
+        <div class="tr-toggle">
+          <button class="toggle-button" type="button" @click="toggle($event)">+</button>
+        </div>
+      </div>
+      <div class="agenda-tr">
+        <div class="tr-time">18:10-18:25</div>
+        <div class="tr-title">
+          Ending Remarks
+        </div>
+        <div class="tr-content">
+        </div>
+        <div class="tr-speaker">
+        </div>
+        <div class="tr-toggle">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="sideStageAgenda" class="agenda-wrap">
+    <div class="title">
+      <h2>TRANS Salon Agenda</h2>
+      <img src="/assets/img/agenda/map2.png" alt="">
+    </div>
+    <div class="agenda-tab">
+      <div @click="changeDay('sideStageDay', 1)" class="tab-btn" :class="{ active: sideStageDay === 1 }">Day 1</div>
+      <div @click="changeDay('sideStageDay', 2)" class="tab-btn" :class="{ active: sideStageDay === 2 }">Day 2</div>
+      <div class="time">
+        <div v-if="sideStageDay === 1" class="daytitle">Day 1</div>
+        <div v-if="sideStageDay === 2" class="daytitle">Day 2</div>
+        <div v-if="sideStageDay === 1" class="date">26 <font style="vertical-align: super;font-size: 9px;">th</font> August</div>
+        <div v-if="sideStageDay === 2" class="date">27 <font style="vertical-align: super;font-size: 9px;">th</font> August</div>
+      </div>
+    </div>
+    <div v-if="sideStageDay === 1" class="agenda-table">
+      <div class="agenda-tr th">
+        <div class="tr-time">TIME</div>
+        <div class="tr-title">TITLE</div>
+        <div class="tr-content">CONTENT</div>
+        <div class="tr-speaker">SPEAKER</div>
+        <div class="tr-toggle"></div>
+      </div>
+      <div class="agenda-tr">
+        <div class="tr-time">10:15-10:30</div>
+        <div class="tr-title">
+          Welcome Address
+        </div>
+        <div class="tr-content">
+        </div>
+        <div class="tr-speaker">
+        </div>
+        <div class="tr-toggle">
+        </div>
+      </div>
+      <div class="agenda-tr">
+        <div class="tr-time">10:30-12:30</div>
+        <div class="tr-title">
+          Pitch Arena<br><br>
+          Bugle Call for the Next Generation
+        </div>
+        <div class="tr-content">
+        50+ Worldwide Startup Pitch Decks
+        </div>
+        <div class="tr-speaker">
+         
+        </div>
+        <div class="tr-toggle">
+          <button class="toggle-button" type="button" @click="toggle($event)">+</button>
+        </div>
+      </div>
+      <div class="agenda-tr">
+        <div class="tr-time">12:30-14:00</div>
+        <div class="tr-title">
+          Rest and Refuel
+        </div>
+        <div class="tr-content">
+        </div>
+        <div class="tr-speaker">
+        </div>
+        <div class="tr-toggle">
+        </div>
+      </div>
+      <div class="agenda-tr">
+        <div class="tr-time">14:00-15:00</div>
+        <div class="tr-title">
+          Pitch Arena<br>
+          <br>The Call from New Stars
+        </div>
+        <div class="tr-content">
+       Startup Team Competition
+        </div>
+        <div class="tr-speaker">
+          Startup Teams:<br>
+          iShoo<br>
+          Body Farm Lab<br>
+          Hopen<br>
+        </div>
+        <div class="tr-toggle">
+          <button class="toggle-button" type="button" @click="toggle($event)">+</button>
+        </div>
+      </div>
+      <div class="agenda-tr">
+        <div class="tr-time">15:10-15:40</div>
+        <div class="tr-title">
+          Battle Time<br><br>
+          The Battle Bay: Survival of the Fittest
+        </div>
+        <div class="tr-content">
+          Healthcare Startup Lightning Round
+        </div>
+        <div class="tr-speaker">
+        </div>
+        <div class="tr-toggle">
+          <button class="toggle-button" type="button" @click="toggle($event)">+</button>
+        </div>
+      </div>
+      <div class="agenda-tr">
+        <div class="tr-time">16:00 - 17:00</div>
+        <div class="tr-title">
+          Fireside Chat<br><br>
+          The Guidance from Wise Men 
+        </div>
+        <div class="tr-content">
+          Advice from Main Stage Speakers
+        </div>
+        <div class="tr-speaker">
+        </div>
+        <div class="tr-toggle">
+          <button class="toggle-button" type="button" @click="toggle($event)">+</button>
+        </div>
+      </div>
+    </div>
+    <div v-if="sideStageDay === 2" class="agenda-table">
+      <div class="agenda-tr th">
+        <div class="tr-time">TIME</div>
+        <div class="tr-title">TITLE</div>
+        <div class="tr-content">CONTENT</div>
+        <div class="tr-speaker">SPEAKER</div>
+        <div class="tr-toggle"></div>
+      </div>
+      <div class="agenda-tr">
+        <div class="tr-time">09:15-09:30</div>
+        <div class="tr-title">
+          Welcome Address
+        </div>
+        <div class="tr-content">
+        </div>
+        <div class="tr-speaker">
+        </div>
+        <div class="tr-toggle"></div>
+      </div>
+      <div class="agenda-tr">
+        <div class="tr-time">09:30-12:30</div>
+        <div class="tr-title">
+          Pitch Arena<br><br>
+          Bugle Call for the Next Generation
+        </div>
+        <div class="tr-content">
+        50+ Worldwide Startup Pitch Decks
+        </div>
+        <div class="tr-speaker">
+          
+        </div>
+        <div class="tr-toggle">
+          <button class="toggle-button" type="button" @click="toggle($event)">+</button>
+        </div>
+      </div>
+      <div class="agenda-tr">
+        <div class="tr-time">12:30-14:00</div>
+        <div class="tr-title">
+          Rest and Refuel
+        </div>
+        <div class="tr-content">
+        </div>
+        <div class="tr-speaker">
+        </div>
+        <div class="tr-toggle">
+        </div>
+      </div>
+      <div class="agenda-tr">
+        <div class="tr-time">14:00-15:40</div>
+        <div class="tr-title">
+          Keynote Speech<br>
+          <br>A Different Lane: The Different Possibilities in Healthcare Field
+        </div>
+        <div class="tr-content">
+          1.From Taiwan to The World - What I Saw in WHA
+          <br>
+          <br> 2.From Medicine to Curation - The Beauty of Pathology
+          <br>
+          <br> 3.From Student to Startup - The Story of Warmie Health
+          <br>
+          <br> 4.From Design To Medicine - The Innovative Way of Medical Education for Children
+          <br>
+          <br>
+        </div>
+        <div class="tr-speaker">
+          Gem Wu
+          <br>
+          <br>Yen-Lin Huang
+          <br>
+          <br>Frances Huang
+          <br>
+          <br>Esther Wang
+        </div>
+        <div class="tr-toggle">
+          <button class="toggle-button" type="button" @click="toggle($event)">+</button>
+        </div>
+      </div>
+      <div class="agenda-tr">
+        <div class="tr-time">16:00-17:00</div>
+        <div class="tr-title">
+          Fireside Chat<br><br>
+          The Guidance from Wise Men
+        </div>
+        <div class="tr-content">
+          Advice from Main Stage Speakers
+        </div>
+        <div class="tr-speaker">
+          
+        </div>
+        <div class="tr-toggle">
+          <button class="toggle-button" type="button" @click="toggle($event)">+</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

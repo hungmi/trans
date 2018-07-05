@@ -13,4 +13,7 @@
 //= require rails-ujs
 //= require activestorage
 //= require turbolinks
-//= require_tree .
+//= require jquery-2.1.4.min
+//= require vue.min
+//= require index
+//= require agenda
