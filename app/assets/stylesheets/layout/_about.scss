@@ -11,7 +11,7 @@
     padding: 10% 15%;
     line-height: 21.21px;
     border-radius: 0px;
-    box-shadow: 0px 2px 3px 1px $block-border-color;
+    box-shadow: 0px 2px 3px $block-border-color;
     text-align: justify;
     @media screen and (max-width: $breakpoint-small) {
         padding: 10% 10%;
@@ -42,7 +42,7 @@
     line-height: 16px;
     border-radius: 0px;
     
-    box-shadow: 0px 2px 3px 1px $block-border-color;
+    box-shadow: 0px 2px 3px $block-border-color;
 }
 
 .content_title_2 {
@@ -85,7 +85,13 @@
     height: 300px;
     padding-top: 217px;
     padding-bottom: 70px;
-    padding-right: 130px;
+    &.small_padding_bottom {
+        padding-bottom: 35px;
+    }
+    &.small_padding_top {
+        padding-top: 20px;   
+    }
+    // padding-right: 130px;
     font-weight: bolder;
 
     .about_subtitle_wrapper {
@@ -148,7 +154,7 @@
 
     .card-text {
         background-color: rgba(255, 255, 255, 0.6);
-        box-shadow: 0px 2px 3px 1px $block-border-color; //0px 2px 3px 1px rgba(0, 0, 70, .05);
+        box-shadow: 0px 2px 3px $block-border-color; //0px 2px 3px 1px rgba(0, 0, 70, .05);
     }
 
     .about_contnet3_L {
@@ -211,6 +217,9 @@
 
 .video-container {
     margin-bottom: 40% ;
+    &.small_margin_bottom {
+        margin-bottom: 30px;
+    }
     position: relative;
     padding-bottom: 56.25%;
     padding-top: 30px;
