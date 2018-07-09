@@ -10,8 +10,8 @@
     margin: 10vh 0 20vh 2.5%;
     padding: 10% 15%;
     line-height: 21.21px;
-    border-radius: 20px;
-    box-shadow: 0px 2px 3px 1px rgba(0, 0, 70, .05);
+    border-radius: 0px;
+    box-shadow: 0px 2px 3px 1px $block-border-color;
     text-align: justify;
     @media screen and (max-width: $breakpoint-small) {
         padding: 10% 10%;
@@ -40,9 +40,9 @@
     margin: 10vh 0 0 2.5%;
     color: #666666;;
     line-height: 16px;
-    border-radius: 20px;
+    border-radius: 0px;
     
-    box-shadow: 0px 2px 3px 1px rgba(0, 0, 70, .05);
+    box-shadow: 0px 2px 3px 1px $block-border-color;
 }
 
 .content_title_2 {
@@ -79,9 +79,9 @@
 .about_subtitle {
     display: inline-table;
     margin: 0;
-    font-family: $p600;
+    font-family: $bi600;
     width: 100%;
-    font-size: 45px;
+    font-size: 65px;
     height: 300px;
     padding-top: 217px;
     padding-bottom: 70px;
@@ -93,9 +93,9 @@
         width: 100%;
         vertical-align: bottom;
 
-        b.pull-right {
-            float: right;
-        }
+        // b.pull-right {
+        //     float: right;
+        // }
     }
     @media screen and (max-width: $breakpoint-small) {
         margin-left: 3% ;
@@ -121,8 +121,8 @@
                 width: 25%;
             }
             .about_data_number {
-                font-family: $p600;
-                font-size: 36px;
+                font-family: $bi600;
+                font-size: 42px;
                 color: white;
             }
             .about_data_text {
@@ -148,7 +148,7 @@
 
     .card-text {
         background-color: rgba(255, 255, 255, 0.6);
-        box-shadow: 0px 2px 3px 1px rgba(0, 0, 70, .05);
+        box-shadow: 0px 2px 3px 1px $block-border-color; //0px 2px 3px 1px rgba(0, 0, 70, .05);
     }
 
     .about_contnet3_L {
@@ -168,13 +168,13 @@
     }
 
     .about_contnet3_L.card-text {
-        border-top-left-radius: 20px;
-        border-bottom-left-radius: 20px;
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;
     }
 
     .about_contnet3_R.card-text {
-        border-top-right-radius: 20px;
-        border-bottom-right-radius: 20px;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
     }
 
     .about_contnet3_text {
@@ -196,8 +196,8 @@
             }
 
             .about_contnet3_title {
-                font-family: $p400;
-                font-size: 24px;
+                font-family: $bi600;
+                font-size: 34px;
                 font-weight: bold;
             }
 

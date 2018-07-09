@@ -1,7 +1,7 @@
 document.addEventListener('turbolinks:load', () => {
     // 首頁影片
     videoContent = document.getElementById('videoBg');
-    checkAutoplaySupport();
+    if (videoContent !== null) checkAutoplaySupport();
 
     /// 讓頁面跳轉接過場柔順一點
     $('body').removeClass('hide')
