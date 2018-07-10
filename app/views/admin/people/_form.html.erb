@@ -1,0 +1,103 @@
+<%= form_with model: [:admin, person], local: true, class: "mb-5" do |f| %>
+  <div class="row">    
+    <% if person.cover.attached? %>
+      <div class="col-md-6">
+        <div class="row">
+          <%= render "admin/people/person_img_card", cover: person.cover %>
+        </div>
+      </div>
+    <% end %>
+
+    <div class="col-md-6 <%= 'offset-md-6' unless person.cover.attached? %>">
+    <!-- <div class="offset-lg-3 col-lg-6"> -->
+      <div class="form-group <%= person.errors[:cover].present? ? 'has-danger' : '' %>">
+        <%= f.label :cover %>
+        <%= f.file_field :cover, class: "form-control previewable #{person.errors[:cover].present? ? 'is-invalid' : ''}" %>
+        <% if person.errors[:cover].present? %>
+          <div class="invalid-feedback">
+            <%= person.errors[:cover].join(", ") %>
+          </div>
+        <% end %>
+      </div>
+
+      <div id="newImagePreview" class="mb-4" data-previewerClass="col-4 pr-0"></div>
+
+      <% unless params[:partner].present? %>
+        <div class="form-group <%= person.errors[:en_name].present? ? 'has-danger' : '' %>">
+          <%= f.label :en_name %>
+          <%= f.text_field :en_name, class: "form-control #{person.errors[:en_name].present? ? 'is-invalid' : ''}", autocomplete: "off" %>
+          <% if person.errors[:en_name].present? %>
+      	    <div class="invalid-feedback">
+      	      <%= person.errors[:en_name].join(", ") %>
+      	    </div>
+          <% end %>
+        </div>
+
+        <div class="form-group <%= person.errors[:zh_name].present? ? 'has-danger' : '' %>">
+          <%= f.label :zh_name %>
+          <%= f.text_field :zh_name, class: "form-control #{person.errors[:zh_name].present? ? 'is-invalid' : ''}", autocomplete: "off" %>
+          <% if person.errors[:zh_name].present? %>
+            <div class="invalid-feedback">
+              <%= person.errors[:zh_name].join(", ") %>
+            </div>
+          <% end %>
+        </div>
+
+        <div class="form-group <%= person.errors[:en_title].present? ? 'has-danger' : '' %>">
+          <%= f.label :en_title %>
+          <%= f.text_field :en_title, class: "form-control #{person.errors[:en_title].present? ? 'is-invalid' : ''}", autocomplete: "off" %>
+          <% if person.errors[:en_title].present? %>
+            <div class="invalid-feedback">
+              <%= person.errors[:en_title].join(", ") %>
+            </div>
+          <% end %>
+        </div>
+
+        <div class="form-group <%= person.errors[:zh_title].present? ? 'has-danger' : '' %>">
+          <%= f.label :zh_title %>
+          <%= f.text_field :zh_title, class: "form-control #{person.errors[:zh_title].present? ? 'is-invalid' : ''}", autocomplete: "off" %>
+          <% if person.errors[:zh_title].present? %>
+            <div class="invalid-feedback">
+              <%= person.errors[:zh_title].join(", ") %>
+            </div>
+          <% end %>
+        </div>
+      
+        <div class="form-group <%= person.errors[:en_description].present? ? 'has-danger' : '' %>">
+          <%= f.label :en_description %>
+          <%= f.text_area :en_description, class: "form-control #{person.errors[:en_description].present? ? 'is-invalid' : ''}", rows: 10 %>
+          <% if person.errors[:en_description].present? %>
+      	    <div class="invalid-feedback">
+      	      <%= person.errors[:en_description].join(", ") %>
+      	    </div>
+          <% end %>
+        </div>
+
+        <div class="form-group <%= person.errors[:zh_description].present? ? 'has-danger' : '' %>">
+          <%= f.label :zh_description %>
+          <%= f.text_area :zh_description, class: "form-control #{person.errors[:zh_description].present? ? 'is-invalid' : ''}", rows: 10 %>
+          <% if person.errors[:zh_description].present? %>
+            <div class="invalid-feedback">
+              <%= person.errors[:zh_description].join(", ") %>
+            </div>
+          <% end %>
+        </div>
+      <% end %>
+
+      <% if params[:partner] == "true" %>
+        <div class="form-group <%= person.errors[:link].present? ? 'has-danger' : '' %>">
+          <%= f.label :link %>
+          <%= f.text_field :link, class: "form-control #{person.errors[:link].present? ? 'is-invalid' : ''}" %>
+          <% if person.errors[:link].present? %>
+            <div class="invalid-feedback">
+              <%= person.errors[:link].join(", ") %>
+            </div>
+          <% end %>
+        </div>
+      <% end %>
+    
+      <%= link_to I18n.t('text.cancel'), admin_people_path, class: "btn btn-link text-danger" %>
+      <%= f.submit class: "btn btn-primary float-right" %>
+    </div>
+  </div>
+<% end %>

@@ -1,4 +1,6 @@
 class PagesController < ApplicationController
+  before_action :skip_pundit
+
   def home
     @show_footer = false
   end
@@ -23,5 +25,11 @@ class PagesController < ApplicationController
 
   def register
     @show_footer = false
+  end
+
+  private
+
+  def skip_pundit
+    skip_authorization
   end
 end

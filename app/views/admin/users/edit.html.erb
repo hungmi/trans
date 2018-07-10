@@ -1,0 +1,5 @@
+<%= link_to admin_users_path(anchor: "user-#{@user.id}"), class: "btn btn-link" do %>
+  &#8592; <%= I18n.t('text.back') %>
+<% end %>
+<h1 class="h2"><%= I18n.t('text.edit') %><%= User.model_name.human %></h1>
+<%= render "admin/users/form", user: @user %>
