@@ -13,6 +13,7 @@
       <div class="form-group <%= person.errors[:cover].present? ? 'has-danger' : '' %>">
         <%= f.label :cover %>
         <%= f.file_field :cover, class: "form-control previewable #{person.errors[:cover].present? ? 'is-invalid' : ''}" %>
+        <small id="coverHelp" class="form-text text-muted">建議解析度：寬度540 x 長度540</small>
         <% if person.errors[:cover].present? %>
           <div class="invalid-feedback">
             <%= person.errors[:cover].join(", ") %>
