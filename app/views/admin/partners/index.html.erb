@@ -1,14 +1,14 @@
 <h1 class="h2">
-  <%= Person.model_name.human %> <%= I18n.t("text.index") %>
+  <%= Partner.model_name.human %> <%= I18n.t("text.index") %>
   <% unless not_desktop? %>
-	  <%= link_to "#personAdvanceSearch", class: "d-print-none btn btn-link float-right d-none d-lg-inline-block", data: { toggle: "collapse" } do %>
+	  <%= link_to "#partnerAdvanceSearch", class: "d-print-none btn btn-link float-right d-none d-lg-inline-block", data: { toggle: "collapse" } do %>
 	  	<i class="material-icons">&#xE152;</i>
 	  <% end %>
 	<% end %>
 </h1>
 
 <% unless not_desktop? %>
-	<div class="d-print-none mb-4 collapse <%= 'show' if params[:q].present? %>" id="personAdvanceSearch">
+	<div class="d-print-none mb-4 collapse <%= 'show' if params[:q].present? %>" id="partnerAdvanceSearch">
 		<div class="card">
 			<div class="card-body">
 				<%= render "filter" %>
@@ -16,20 +16,20 @@
 		</div>
 	</div>
 	<div class="mt-2 mb-4 text-right <%= 'd-none' unless params[:q].present? %>">
-		<%= I18n.t("text.search_result") %>：<%= @people.size %>
+		<%= I18n.t("text.search_result") %>：<%= @partners.size %>
 	</div>
 <% end %>
 
 <% if @partners.present? %>
 	<div class="row">
-		<%= render @people %>
+		<%= render @partners %>
 	</div>
 <% else %>
 	<%= I18n.t("text.no_record") %>
 <% end %>
 
 <div class="btn-abs-wrapper">
-	<%= link_to new_admin_person_path, class: "btn btn-success" do %>
+	<%= link_to new_admin_partner_path, class: "btn btn-success" do %>
 		<i class="material-icons">&#xE145;</i>
 	<% end %>
 	<% if not_desktop? %>

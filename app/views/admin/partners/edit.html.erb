@@ -1,0 +1,5 @@
+<%= link_to admin_partners_path(anchor: "partner-#{@partner.id}"), class: "btn btn-link" do %>
+  &#8592; <%= I18n.t('text.back') %>
+<% end %>
+<h1 class="h2"><%= I18n.t('text.edit') %><%= Partner.model_name.human %></h1>
+<%= render "admin/partners/form", partner: @partner %>

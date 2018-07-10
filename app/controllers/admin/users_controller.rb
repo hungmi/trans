@@ -47,7 +47,7 @@ class Admin::UsersController < AdminController
 
   # DELETE /users/1
   def destroy
-    unless User.admin.size > 1
+    if User.admin.size > 1
       @user.destroy
       flash[:success] = I18n.t('flash.destroy_success')
     end

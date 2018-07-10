@@ -1,0 +1,39 @@
+<%= form_with model: [:admin, partner], local: true, class: "mb-5" do |f| %>
+  <div class="row">
+    <% if partner.cover.attached? %>
+      <div class="col-md-6">
+        <div class="row">
+          <%= render "admin/partners/partner_img_card", cover: partner.cover %>
+        </div>
+      </div>
+    <% end %>
+
+    <div class="col-md-6 <%= 'offset-md-6' unless partner.cover.attached? %>">
+    <!-- <div class="offset-lg-3 col-lg-6"> -->
+      <div class="form-group <%= partner.errors[:cover].present? ? 'has-danger' : '' %>">
+        <%= f.label :cover %>
+        <%= f.file_field :cover, class: "form-control previewable #{partner.errors[:cover].present? ? 'is-invalid' : ''}" %>
+        <% if partner.errors[:cover].present? %>
+          <div class="invalid-feedback">
+            <%= partner.errors[:cover].join(", ") %>
+          </div>
+        <% end %>
+      </div>
+
+      <div id="newImagePreview" class="mb-4" data-previewerClass="col-4 pr-0"></div>
+
+      <div class="form-group <%= partner.errors[:link].present? ? 'has-danger' : '' %>">
+        <%= f.label :link %>
+        <%= f.text_field :link, class: "form-control #{partner.errors[:link].present? ? 'is-invalid' : ''}" %>
+        <% if partner.errors[:link].present? %>
+    	    <div class="invalid-feedback">
+    	      <%= partner.errors[:link].join(", ") %>
+    	    </div>
+        <% end %>
+      </div>
+    
+      <%= link_to I18n.t('text.cancel'), admin_partners_path, class: "btn btn-link text-danger" %>
+      <%= f.submit class: "btn btn-primary float-right" %>
+    </div>
+  </div>
+<% end %>

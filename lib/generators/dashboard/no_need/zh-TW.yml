@@ -1,6 +1,6 @@
 zh-TW:
   text:
-    index: List
+    index: 列表
     cancel: 取消
     show: 檢視
     edit: 編輯
@@ -10,40 +10,20 @@ zh-TW:
     destroy: 刪除
     back: 返回
     hint: 提示
-    attr_no_value: 尚無資料
-    no_record: 尚無資料，請按右下角新增
+    attr_no_value: 尚未填寫
     confirm_destroy: 確認刪除？
     search_result: 搜尋結果
     filter: 篩選器
     apply: 應用
     clear: 清除
-    filter:
-      en_name_or_zh_name_or_en_title_or_zh_title_or_en_description_or_zh_description_cont: 搜尋姓名、職稱或介紹
-      name_cont: 名稱關鍵字
-      link_cont: 連結網址關鍵字
-      id_eq: ID 等於
   flash:
     create_success: 建立成功。
     update_success: 更新成功。
     destroy_success: 刪除成功。
   activerecord:
     models:
-      person: Speaker
-      user: Admin User
-      partner: Partner
+      user: 使用者
     attributes:
-      partner:
-        cover: 圖片
-        link: 連結網址
-      person:
-        en_name: 英文姓名
-        zh_name: 中文姓名
-        en_title: 英文職稱
-        zh_title: 中文職稱
-        en_description: 英文介紹
-        zh_description: 中文介紹
-        cover: 圖片
-        link: 連結網址
       user:
         id: 使用者編號
         role: 系統角色
@@ -55,6 +35,7 @@ zh-TW:
         new_password_confirmation: 確認新密碼
     user_role:
       admin: 管理員
+      supplier: 供應商
     errors:
       messages:
         record_invalid: "校驗失敗: %{errors}"

@@ -1,0 +1,12 @@
+<div class="card">
+  <img class="card-img-top" src="<%= url_for(cover) %>" alt="Card image cap">
+  <div class="card-body py-2 text-center">
+    <div class="form-check">
+      <label class="form-check-label">
+        <%= check_box_tag "partner[remove_cover][#{cover.id}]", "true", false, { class: "form-check-input mr-0" } %>
+        <!-- <input class="form-check-input" type="checkbox" value="" checked=""> -->
+        <%= I18n.t('text.destroy') %>
+      </label>
+    </div>
+  </div>
+</div>

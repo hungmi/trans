@@ -23,7 +23,7 @@
     
       <div class="form-group <%= user.errors[:password].present? ? 'has-danger' : '' %>">
         <%= f.label :password %>
-        <%= f.text_field :password, class: "form-control #{user.errors[:password].present? ? 'is-invalid' : ''}" %>
+        <%= f.password_field :password, class: "form-control #{user.errors[:password].present? ? 'is-invalid' : ''}" %>
         <% if user.errors[:password].present? %>
     	    <div class="invalid-feedback">
     	      <%= user.errors[:password].join(", ") %>
@@ -33,7 +33,7 @@
     
       <div class="form-group <%= user.errors[:password_confirmation].present? ? 'has-danger' : '' %>">
         <%= f.label :password_confirmation %>
-        <%= f.text_field :password_confirmation, class: "form-control #{user.errors[:password_confirmation].present? ? 'is-invalid' : ''}" %>
+        <%= f.password_field :password_confirmation, class: "form-control #{user.errors[:password_confirmation].present? ? 'is-invalid' : ''}" %>
         <% if user.errors[:password_confirmation].present? %>
     	    <div class="invalid-feedback">
     	      <%= user.errors[:password_confirmation].join(", ") %>

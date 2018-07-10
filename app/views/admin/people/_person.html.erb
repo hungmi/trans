@@ -13,98 +13,80 @@
 	        <% end %>
 	      </p>
 		  </li>
-		  <% unless request.path[/partner/].present? %>
-			  <li class="list-group-item flex-column align-items-start">
-			    <div class="d-flex w-100 justify-content-between">
-			      <h5 class="mb-1"><%= Person.human_attribute_name("en_name") %></h5>
-			    </div>
-			    <p class="mb-1">
-			    	<% if person.en_name.present? %>
-		          <%= person.en_name %>
-		        <% else %>
-		          <span class="text-muted"><%= I18n.t("text.attr_no_value") %></span>
-		        <% end %>
-		      </p>
-			  </li>
-			  <li class="list-group-item flex-column align-items-start">
-			    <div class="d-flex w-100 justify-content-between">
-			      <h5 class="mb-1"><%= Person.human_attribute_name("zh_name") %></h5>
-			    </div>
-			    <p class="mb-1">
-			    	<% if person.zh_name.present? %>
-		          <%= person.zh_name %>
-		        <% else %>
-		          <span class="text-muted"><%= I18n.t("text.attr_no_value") %></span>
-		        <% end %>
-		      </p>
-			  </li>
-			  <li class="list-group-item flex-column align-items-start">
-			    <div class="d-flex w-100 justify-content-between">
-			      <h5 class="mb-1"><%= Person.human_attribute_name("en_title") %></h5>
-			    </div>
-			    <p class="mb-1">
-			    	<% if person.en_title.present? %>
-		          <%= person.en_title %>
-		        <% else %>
-		          <span class="text-muted"><%= I18n.t("text.attr_no_value") %></span>
-		        <% end %>
-		      </p>
-			  </li>
-			  <li class="list-group-item flex-column align-items-start">
-			    <div class="d-flex w-100 justify-content-between">
-			      <h5 class="mb-1"><%= Person.human_attribute_name("zh_title") %></h5>
-			    </div>
-			    <p class="mb-1">
-			    	<% if person.zh_title.present? %>
-		          <%= person.zh_title %>
-		        <% else %>
-		          <span class="text-muted"><%= I18n.t("text.attr_no_value") %></span>
-		        <% end %>
-		      </p>
-			  </li>
-			  <li class="list-group-item flex-column align-items-start">
-			    <div class="d-flex w-100 justify-content-between">
-			      <h5 class="mb-1"><%= Person.human_attribute_name("en_description") %></h5>
-			    </div>
-		    	<% if person.en_description.present? %>
-	          <%= simple_format person.en_description, class: "mb-1" %>
+		  <li class="list-group-item flex-column align-items-start">
+		    <div class="d-flex w-100 justify-content-between">
+		      <h5 class="mb-1"><%= Person.human_attribute_name("en_name") %></h5>
+		    </div>
+		    <p class="mb-1">
+		    	<% if person.en_name.present? %>
+	          <%= person.en_name %>
 	        <% else %>
-				    <p class="mb-1">
-	  	        <span class="text-muted"><%= I18n.t("text.attr_no_value") %></span>
-	  	      </p>
+	          <span class="text-muted"><%= I18n.t("text.attr_no_value") %></span>
 	        <% end %>
-		      </p>
-			  </li>
-			  <li class="list-group-item flex-column align-items-start">
-			    <div class="d-flex w-100 justify-content-between">
-			      <h5 class="mb-1"><%= Person.human_attribute_name("zh_description") %></h5>
-			    </div>
-		    	<% if person.zh_description.present? %>
-	          <%= simple_format person.zh_description, class: "mb-1" %>
+	      </p>
+		  </li>
+		  <li class="list-group-item flex-column align-items-start">
+		    <div class="d-flex w-100 justify-content-between">
+		      <h5 class="mb-1"><%= Person.human_attribute_name("zh_name") %></h5>
+		    </div>
+		    <p class="mb-1">
+		    	<% if person.zh_name.present? %>
+	          <%= person.zh_name %>
 	        <% else %>
-				    <p class="mb-1">
-	  	        <span class="text-muted"><%= I18n.t("text.attr_no_value") %></span>
-	  	      </p>
+	          <span class="text-muted"><%= I18n.t("text.attr_no_value") %></span>
 	        <% end %>
-		      </p>
-			  </li>
-			<% end %>
-
-			<% if request.path[/partner/].present? %>
-			  <li class="list-group-item flex-column align-items-start">
-			    <div class="d-flex w-100 justify-content-between">
-			      <h5 class="mb-1"><%= Person.human_attribute_name("link") %></h5>
-			    </div>
-		    	<% if person.link.present? %>
-	          <%= simple_format person.link, class: "mb-1" %>
+	      </p>
+		  </li>
+		  <li class="list-group-item flex-column align-items-start">
+		    <div class="d-flex w-100 justify-content-between">
+		      <h5 class="mb-1"><%= Person.human_attribute_name("en_title") %></h5>
+		    </div>
+		    <p class="mb-1">
+		    	<% if person.en_title.present? %>
+	          <%= person.en_title %>
 	        <% else %>
-				    <p class="mb-1">
-	  	        <span class="text-muted"><%= I18n.t("text.attr_no_value") %></span>
-	  	      </p>
+	          <span class="text-muted"><%= I18n.t("text.attr_no_value") %></span>
 	        <% end %>
-		      </p>
-			  </li>
-			<% end %>
+	      </p>
+		  </li>
+		  <li class="list-group-item flex-column align-items-start">
+		    <div class="d-flex w-100 justify-content-between">
+		      <h5 class="mb-1"><%= Person.human_attribute_name("zh_title") %></h5>
+		    </div>
+		    <p class="mb-1">
+		    	<% if person.zh_title.present? %>
+	          <%= person.zh_title %>
+	        <% else %>
+	          <span class="text-muted"><%= I18n.t("text.attr_no_value") %></span>
+	        <% end %>
+	      </p>
+		  </li>
+		  <li class="list-group-item flex-column align-items-start">
+		    <div class="d-flex w-100 justify-content-between">
+		      <h5 class="mb-1"><%= Person.human_attribute_name("en_description") %></h5>
+		    </div>
+	    	<% if person.en_description.present? %>
+          <%= simple_format person.en_description, class: "mb-1" %>
+        <% else %>
+			    <p class="mb-1">
+  	        <span class="text-muted"><%= I18n.t("text.attr_no_value") %></span>
+  	      </p>
+        <% end %>
+	      </p>
+		  </li>
+		  <li class="list-group-item flex-column align-items-start">
+		    <div class="d-flex w-100 justify-content-between">
+		      <h5 class="mb-1"><%= Person.human_attribute_name("zh_description") %></h5>
+		    </div>
+	    	<% if person.zh_description.present? %>
+          <%= simple_format person.zh_description, class: "mb-1" %>
+        <% else %>
+			    <p class="mb-1">
+  	        <span class="text-muted"><%= I18n.t("text.attr_no_value") %></span>
+  	      </p>
+        <% end %>
+	      </p>
+		  </li>
 
 		  <li class="list-group-item flex-column align-items-start">
 	      <%= link_to I18n.t('text.edit'), edit_admin_person_path(person), class: "btn btn-primary" %>

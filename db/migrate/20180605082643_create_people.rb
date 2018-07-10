@@ -7,7 +7,6 @@ class CreatePeople < ActiveRecord::Migration[5.2]
       t.string :zh_title
       t.text :en_description
       t.text :zh_description
-      t.string :link
 
       t.timestamps
     end

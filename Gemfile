@@ -51,7 +51,7 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'bullet', group: [:development]
-gem 'bootstrap', '~> 4.0.0'
+gem 'bootstrap', '~> 4.1.1'
 gem 'awesome_rails_console'
 gem 'pundit'
 gem 'sidekiq'

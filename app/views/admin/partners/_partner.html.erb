@@ -1,0 +1,35 @@
+<div class="col-sm-6 col-md-4 mb-4" id="partner-<%= partner.id %>">
+	<div class="card p-3">
+		<div class="list-group list-group-flush">
+			<li class="list-group-item flex-column align-items-start">
+		    <div class="d-flex w-100 justify-content-between">
+		      <h5 class="mb-2"><%= Partner.human_attribute_name("cover") %></h5>
+		    </div>
+		    <p class="mb-1">
+		    	<% if partner.cover.attached? %>
+	          <%= image_tag partner.cover, class: "img-fluid-width" %>
+	        <% else %>
+	          <span class="text-muted"><%= I18n.t("text.attr_no_value") %></span>
+	        <% end %>
+	      </p>
+		  </li>
+		  <li class="list-group-item flex-column align-items-start">
+		    <div class="d-flex w-100 justify-content-between">
+		      <h5 class="mb-1"><%= Partner.human_attribute_name("link") %></h5>
+		    </div>
+		    <p class="mb-1">
+		    	<% if partner.link.present? %>
+	          <%= partner.link %>
+	        <% else %>
+	          <span class="text-muted"><%= I18n.t("text.attr_no_value") %></span>
+	          <span class="badge badge-pill badge-warning"><%= I18n.t("text.hint") %></span>
+	        <% end %>
+	      </p>
+		  </li>
+		  <li class="list-group-item flex-column align-items-start">
+	      <%= link_to I18n.t('text.edit'), edit_admin_partner_path(partner), class: "btn btn-primary" %>
+	      <%= link_to I18n.t('text.destroy'), [:admin, partner], method: :delete, data: { confirm: I18n.t("text.confirm_destroy") }, class: "btn btn-danger btn-sm float-right" %>
+	    </li>
+		</div>
+	</div>
+</div>

@@ -16,6 +16,7 @@ Rails.application.routes.draw do
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   get 'admin', to: redirect('/admin/people')
   namespace :admin do
+		resources :partners
 		resources :people
 		resources :partners, controller: :people
 		resources :users
