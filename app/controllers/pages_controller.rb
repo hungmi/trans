@@ -12,6 +12,7 @@ class PagesController < ApplicationController
   end
 
   def speaker
+    @speakers = Person.all.order(en_name: :asc, zh_name: :asc)
   end
 
   def partner

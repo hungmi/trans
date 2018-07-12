@@ -79,9 +79,9 @@
 .about_subtitle {
     display: inline-table;
     margin: 0;
-    font-family: $bi600;
+    font-family: $p600;
     width: 100%;
-    font-size: 65px;
+    font-size: 45px;
     height: 300px;
     padding-top: 217px;
     padding-bottom: 70px;
@@ -202,8 +202,8 @@
             }
 
             .about_contnet3_title {
-                font-family: $bi600;
-                font-size: 34px;
+                font-family: $p400;
+                font-size: 24px;
                 font-weight: bold;
             }
 
@@ -217,9 +217,6 @@
 
 .video-container {
     margin-bottom: 40% ;
-    &.small_margin_bottom {
-        margin-bottom: 30px;
-    }
     position: relative;
     padding-bottom: 56.25%;
     padding-top: 30px;

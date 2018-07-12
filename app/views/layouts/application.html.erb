@@ -20,7 +20,7 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body id="trans" class="<%= controller_name + '_' + action_name %>">
+  <body id="trans" class="<%= controller_name + '_' + action_name %> <%= I18n.locale %>">
     <%= render "common/header" %>
     <%= yield %>
     <% if @show_footer != false %>

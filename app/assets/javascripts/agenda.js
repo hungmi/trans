@@ -4,7 +4,8 @@ document.addEventListener('turbolinks:load', () => {
 
         data: {
             mainStageDay: 1,
-            sideStageDay: 1,
+            creativeStageDay: 1,
+            pitchStageDay: 1,
         },
 
         methods: {

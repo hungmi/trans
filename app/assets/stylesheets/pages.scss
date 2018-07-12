@@ -1,3 +1,227 @@
+body.en {
+	.about_content_3 .about_contnet3_text .about_contnet3_text_wrapper .about_contnet3_title {
+		font-family: $bi600;
+    font-size: 34px;
+	}
+	.agenda-table .th {
+		.tr-time, .tr-title, .tr-content, .tr-speaker {
+			font-family: $bi600;
+			font-size: 24px !important;
+			line-height: 24px;
+		}
+	}
+	.partner_title {
+		font-family: $bi600;
+		font-size: 60px;
+	}
+}
+body.en, body.zh-TW {
+	.main_title {
+  	font-family: $bi600;
+  	font-size: 42px;
+	}
+	.about_subtitle {
+		font-family: $bi600;
+    font-size: 65px;
+	}
+	.about_data .about_data_info .about_data_content .about_data_number {
+		font-family: $bi600;
+    font-size: 42px;
+	}
+	.video-container {
+		margin-bottom: 30%;
+		&.small_margin_bottom {
+			margin-bottom: 30px; // 這沒寫錯，94這麼小
+		}
+	}
+	.flex-ac-jfs- {
+		font-family: $bi300;
+		font-size: 24px;
+	}
+	.speakers-container .box .text h3 {
+    font-family: $bi600;
+    font-size: 21px;
+		&.chinese {
+			font-family: $p600;
+      font-size: 16px;
+		}
+	}
+	#pop-up .pop-content .text h2 {
+		font-family: $bi600;
+		font-size: 35px;
+		&.chinese {
+			font-family: $p200;
+			font-size: 30px;
+		}
+	}
+	.agenda-link .box {
+		font-family: $bi600;
+		font-size: 42px;
+		align-items: flex-start;
+		padding: 10px 50px 10px 20px;
+		height: 125px;
+		color: #fff;
+		background-color: #000;
+		border-radius: 0px;
+		margin: 0px auto;
+		.text {
+			width: 80%;
+			display: flex;
+		}
+		.arrow {
+			width: 20%;
+			height: 100%;
+			display: flex;
+			flex-direction: row-reverse;
+			& > div {
+				margin-top: auto;
+				margin-bottom: auto;
+			}
+		}
+	}
+	.agenda-tab {
+		.tab-btn {
+			font-family: $bi600;
+			font-size: 26px;
+		}
+		.agenda-tab-circles {
+			display: flex;
+			justify-content: space-around;
+			.tab-btn-circle {
+				margin-bottom: 10px;
+				visibility: hidden;
+				&.active {
+					visibility: visible;
+				}
+			}
+		}
+		display: flex;
+		.agenda-tab-circles-dates {
+			margin-right: auto;
+		}
+		.time {
+			align-self: flex-end;
+		}
+	}
+	.agenda-table .th {
+		.tr-time, .tr-title, .tr-content, .tr-speaker {
+			line-height: 20px;
+		}
+	}
+	.agenda-table .agenda-tr {
+		border-bottom: 1px solid #aaa;
+		&:last-child {
+			border-bottom: none;
+		}
+	}
+	.agenda-tab .time .daytitle {
+		font-family: $bi600;
+		font-size: 26px;	
+	}
+	.agenda-table .tr-time {
+		font-family: $bi600;
+		font-size: 20px;
+	}
+	.agenda-wrap .title h2 {
+		font-family: $bi600;
+		font-size: 42px;
+	}
+	.partner_line .partner_name {
+		box-shadow: 0px 2px 3px 0px $block-border-color;
+		border-radius: 0px;
+		margin-right: 30px;
+		margin-bottom: 30px;
+	}
+	.top {
+		margin-bottom: 5%;
+		padding-bottom: 0px;
+	}
+	.top_title {
+		margin-bottom: 0px;
+	}
+	.register-table .tr-pirce {
+		font-family: $bi600;
+		font-size: 24px;
+		& .currency {
+			font-family: $bi300;
+			font-size: 24px;
+		}
+	}
+	.register2_btn {
+		font-family: $bi600;
+		font-size: 28px;
+		opacity: 1;
+	}
+	#register_link {
+		font-family: $bi600;
+		font-size: 28px;
+		border-radius: 0px;
+		padding: 10px 0px;
+		height: initial;
+	}
+	.ReviewTitle {
+		margin-left: 38px;
+		margin-top: 38px;
+		.mainText {
+			font-family: $bi600;
+			font-size: 54px;
+		}
+		.subText:not(.chinese) {
+			font-family: $bi200;
+			font-size: 54px;
+		}
+	}
+	.TRANSReview {
+		position: relative;
+		.ReviewVideo {
+			position: absolute;
+			right: calc(16.667% - 75px);
+			bottom: calc(50% - 75px);	
+		}
+		&.review2016 {
+			padding-top: 62px;
+			.ReviewVideo {
+				bottom: calc((100% - 62px) / 2 - 75px);	
+			}
+		}
+	}
+	@media screen and (max-width: 992px) {
+	  .flex-l3-m2- .TRANS_img_content {
+	    width: 100%;
+	    flex-basis: 100%;
+	  }
+	  .ReviewTitle {
+			margin-left: 20px;
+			margin-top: 20px;
+		}
+		.TRANSReview {
+			.ReviewVideo {
+				right: calc(50% - 75px);
+				bottom: calc(100% / 6 * 1 - 75px);	
+			}
+			&.review2016 {
+				.ReviewVideo {
+					bottom: calc((100% - 62px) / 6 * 1 - 75px);	
+				}
+			}
+		}
+	}
+	footer#footer .black-section {
+		table td	{
+			font-family: $bi300;
+    	font-size: 22px;
+    	&.contactPhoneInfo, &.contactMailInfo {
+    		font-family: $p200;
+    		font-size: 12px;
+    	}
+    }
+		.copyright {
+			font-family: $bi300;
+    	font-size: 22px;
+    }
+	}
+}
+
 @keyframes fade-out {
 	25%{
 		opacity: 1
@@ -9,10 +233,10 @@
 
 #trans.pages_ {
 	&register {
-		background-image: url('/assets/img/register/bg_2.png');
-		background-size: cover;
-		background-position: 35% 0;
-		background-repeat: no-repeat
+		// background-image: url('/assets/img/register/bg_2.png');
+		// background-size: cover;
+		// background-position: 35% 0;
+		// background-repeat: no-repeat
 	}
 	&home {
 		background-color: #f7f7f7;
@@ -64,10 +288,10 @@
 		}
 	}
 	&agenda {
-		background-image: url('/assets/img/agenda/bg_2.png');
-		background-size: cover;
-		background-position: 35% 0;
-		background-repeat: no-repeat;
+		// background-image: url('/assets/img/agenda/bg_2.png');
+		// background-size: cover;
+		// background-position: 35% 0;
+		// background-repeat: no-repeat;
 	}
 	&faq {
 		background-image: url('/assets/img/FAQ/bg.png');
@@ -97,4 +321,19 @@
 
 .text-center {
 	text-align: center;
+}
+
+#triangle-down {
+	width: 0;
+	height: 0;
+	border-left: 14px solid transparent;
+	border-right: 14px solid transparent;
+	border-top: 14px solid white;
+}
+
+#circle {
+	width: 7px;
+	height: 7px;
+	background: black;
+	border-radius: 50%;
 }

@@ -1,37 +1,50 @@
-<div class="pic1 img-bg-cover" style="background-image: url('/assets/img/agenda/bg.jpg'); background-position: center 35%;"></div>
+<div class="pic1 img-bg-cover" style="background-image: url('/assets/img/agenda/活動議程頁-02.png'); background-position: center 71%;"></div>
 <div class="wrapper agenda">
-  <div class="main_title"><b>活動議程</b></div>
+  <div class="main_title"><b>Agenda</b></div>
   <div class="agenda-link">
-    <a class="box" href="#mainStageAgenda">
+    <a class="box" href="#mainStageAgenda" style="margin-top: 20px;">
       <div class="text">
-         主舞台議程  >>
+         Main Stage Agenda
       </div>
-      <div class="image">
-        <img src="/assets/img/agenda/map1top.png" alt="" >
+      <div class="arrow">
+        <div id="triangle-down"></div>
       </div>
     </a>
-    <a class="box" href="#sideStageAgenda">
+    <a class="box" href="#creativeStageAgenda" style="margin: 7px auto;">
       <div class="text">
-       創舞台議程  >>
+       Creative Stage Agenda
       </div>
-      <div class="image">
-        <img src="/assets/img/agenda/map2top.png" alt="" >
+      <div class="arrow">
+        <div id="triangle-down"></div>
+      </div>
+    </a>
+    <a class="box" href="#pitchStageAgenda" style="margin-bottom: 20px;">
+      <div class="text">
+       Pitch Stage Agenda
+      </div>
+      <div class="arrow">
+        <div id="triangle-down"></div>
       </div>
     </a>
   </div>
   <div id="mainStageAgenda" class="agenda-wrap">
     <div class="title">
-      <h2>主舞台議程</h2>
-      <img src="/assets/img/agenda/map1.png" alt="" >
+      <h2>Main Stage Agenda</h2>
     </div>
     <div class="agenda-tab">
-      <div @click="changeDay('mainStageDay', 1)" class="tab-btn" :class="{ active: mainStageDay === 1 }">Day 1</div>
-      <div @click="changeDay('mainStageDay', 2)" class="tab-btn" :class="{ active: mainStageDay === 2 }">Day 2</div>
+      <div class="agenda-tab-circles-dates">
+        <div class="agenda-tab-circles">
+          <div id="circle" @click="changeDay('mainStageDay', 1)" class="tab-btn-circle" :class="{ active: mainStageDay === 1 }"></div>
+          <div id="circle" @click="changeDay('mainStageDay', 2)" class="tab-btn-circle" :class="{ active: mainStageDay === 2 }"></div>
+        </div>
+        <div class="agenda-tab-dates">
+          <div @click="changeDay('mainStageDay', 1)" class="tab-btn" :class="{ active: mainStageDay === 1 }">Day 1</div>
+          <div @click="changeDay('mainStageDay', 2)" class="tab-btn" :class="{ active: mainStageDay === 2 }">Day 2</div>
+        </div>
+      </div>
       <div class="time">
         <div v-if="mainStageDay === 1" class="daytitle">Day 1</div>
         <div v-if="mainStageDay === 2" class="daytitle">Day 2</div>
-        <div v-if="mainStageDay === 1" class="date">26 <font style="vertical-align: super;font-size: 9px;">th</font> August</div>
-        <div v-if="mainStageDay === 2" class="date">27 <font style="vertical-align: super;font-size: 9px;">th</font> August</div>
         <!-- <b>27 TH August</b> -->
       </div>
     </div>
@@ -82,8 +95,7 @@
           <br><br> 看見生醫新大陸
         </div>
         <div class="tr-content">
-          腎臟衰竭新解方：Qidni Labs Inc.
-基因檢測如何開創生醫新事業
+          腎臟衰竭新解方：Qidni Labs Inc. 基因檢測如何開創生醫新事業
           <br>
           <br> 創業實驗室：全新生醫新創加速模式
         </div>
@@ -387,22 +399,27 @@
       </div>
     </div>
   </div>
-  <div id="sideStageAgenda" class="agenda-wrap">
+  <div id="creativeStageAgenda" class="agenda-wrap">
     <div class="title">
-      <h2>TRANS Salon Agenda</h2>
-      <img src="/assets/img/agenda/map2.png" alt="">
+      <h2>Creative Stage Agenda</h2>
     </div>
     <div class="agenda-tab">
-      <div @click="changeDay('sideStageDay', 1)" class="tab-btn" :class="{ active: sideStageDay === 1 }">Day 1</div>
-      <div @click="changeDay('sideStageDay', 2)" class="tab-btn" :class="{ active: sideStageDay === 2 }">Day 2</div>
+      <div class="agenda-tab-circles-dates">
+        <div class="agenda-tab-circles">
+          <div id="circle" @click="changeDay('creativeStageDay', 1)" class="tab-btn-circle" :class="{ active: creativeStageDay === 1 }"></div>
+          <div id="circle" @click="changeDay('creativeStageDay', 2)" class="tab-btn-circle" :class="{ active: creativeStageDay === 2 }"></div>
+        </div>
+        <div class="agenda-tab-dates">
+          <div @click="changeDay('creativeStageDay', 1)" class="tab-btn" :class="{ active: creativeStageDay === 1 }">Day 1</div>
+          <div @click="changeDay('creativeStageDay', 2)" class="tab-btn" :class="{ active: creativeStageDay === 2 }">Day 2</div>
+        </div>
+      </div>
       <div class="time">
-        <div v-if="sideStageDay === 1" class="daytitle">Day 1</div>
-        <div v-if="sideStageDay === 2" class="daytitle">Day 2</div>
-        <div v-if="sideStageDay === 1" class="date">26 <font style="vertical-align: super;font-size: 9px;">th</font> August</div>
-        <div v-if="sideStageDay === 2" class="date">27 <font style="vertical-align: super;font-size: 9px;">th</font> August</div>
+        <div v-if="creativeStageDay === 1" class="daytitle">Day 1</div>
+        <div v-if="creativeStageDay === 2" class="daytitle">Day 2</div>
       </div>
     </div>
-    <div v-if="sideStageDay === 1" class="agenda-table">
+    <div v-if="creativeStageDay === 1" class="agenda-table">
       <div class="agenda-tr th">
         <div class="tr-time">時間</div>
         <div class="tr-title">主題</div>
@@ -498,7 +515,217 @@
         </div>
       </div>
     </div>
-    <div v-if="sideStageDay === 2" class="agenda-table">
+    <div v-if="creativeStageDay === 2" class="agenda-table">
+      <div class="agenda-tr th">
+        <div class="tr-time">時間</div>
+        <div class="tr-title">主題</div>
+        <div class="tr-content">內容</div>
+        <div class="tr-speaker">講者</div>
+        <div class="tr-toggle"></div>
+      </div>
+      <div class="agenda-tr">
+        <div class="tr-time">09:15-09:30</div>
+        <div class="tr-title">
+          開幕
+        </div>
+        <div class="tr-content">
+        </div>
+        <div class="tr-speaker">
+        </div>
+        <div class="tr-toggle"></div>
+      </div>
+      <div class="agenda-tr">
+        <div class="tr-time">09:30-12:30</div>
+        <div class="tr-title">
+          Pitch Arena<br><br>
+          新時代的號角響起
+        </div>
+        <div class="tr-content">
+        參展團隊Pitch
+        </div>
+        <div class="tr-speaker">
+          
+        </div>
+        <div class="tr-toggle">
+          <button class="toggle-button" type="button" @click="toggle($event)">+</button>
+        </div>
+      </div>
+      <div class="agenda-tr">
+        <div class="tr-time">12:30-14:00</div>
+        <div class="tr-title">
+          休息時間
+        </div>
+        <div class="tr-content">
+        </div>
+        <div class="tr-speaker">
+        </div>
+        <div class="tr-toggle">
+        </div>
+      </div>
+      <div class="agenda-tr">
+        <div class="tr-time">14:00-15:40</div>
+        <div class="tr-title">
+          專題演講<br>
+          <br> 不一樣的航道： 生醫領域的可能性
+        </div>
+        <div class="tr-content">
+          從台灣走入世界：我在WHA的所見所感 
+          <br>
+          <br> 從醫學走入策展：切片中的病態美學 
+          <br>
+          <br> 從學生走入創業：小暖健康的創辦故事 
+          <br>
+          <br> 從設計走入醫學：專屬孩童的創新醫學設計 
+          <br>
+          <br>
+        </div>
+        <div class="tr-speaker">
+          吳懷玨
+          <br>
+          <br> 黃豆泥
+          <br>
+          <br> 黃欣宜
+          <br>
+          <br> Esther Wang
+        </div>
+        <div class="tr-toggle">
+          <button class="toggle-button" type="button" @click="toggle($event)">+</button>
+        </div>
+      </div>
+      <div class="agenda-tr">
+        <div class="tr-time">16:00-17:00</div>
+        <div class="tr-title">
+          爐邊閒談<br><br>智者的領航
+        </div>
+        <div class="tr-content">
+          主舞台講者為您解惑
+        </div>
+        <div class="tr-speaker">
+          
+        </div>
+        <div class="tr-toggle">
+          <button class="toggle-button" type="button" @click="toggle($event)">+</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="pitchStageAgenda" class="agenda-wrap">
+    <div class="title">
+      <h2>Pitch Stage Agenda</h2>
+    </div>
+    <div class="agenda-tab">
+      <div class="agenda-tab-circles-dates">
+        <div class="agenda-tab-circles">
+          <div id="circle" @click="changeDay('pitchStageDay', 1)" class="tab-btn-circle" :class="{ active: pitchStageDay === 1 }"></div>
+          <div id="circle" @click="changeDay('pitchStageDay', 2)" class="tab-btn-circle" :class="{ active: pitchStageDay === 2 }"></div>
+        </div>
+        <div class="agenda-tab-dates">
+          <div @click="changeDay('pitchStageDay', 1)" class="tab-btn" :class="{ active: pitchStageDay === 1 }">Day 1</div>
+          <div @click="changeDay('pitchStageDay', 2)" class="tab-btn" :class="{ active: pitchStageDay === 2 }">Day 2</div>
+        </div>
+      </div>
+      <div class="time">
+        <div v-if="pitchStageDay === 1" class="daytitle">Day 1</div>
+        <div v-if="pitchStageDay === 2" class="daytitle">Day 2</div>
+      </div>
+    </div>
+    <div v-if="pitchStageDay === 1" class="agenda-table">
+      <div class="agenda-tr th">
+        <div class="tr-time">時間</div>
+        <div class="tr-title">主題</div>
+        <div class="tr-content">內容</div>
+        <div class="tr-speaker">講者</div>
+        <div class="tr-toggle"></div>
+      </div>
+      <div class="agenda-tr">
+        <div class="tr-time">10:15-10:30</div>
+        <div class="tr-title">
+          開幕
+        </div>
+        <div class="tr-content">
+        </div>
+        <div class="tr-speaker">
+        </div>
+        <div class="tr-toggle">
+        </div>
+      </div>
+      <div class="agenda-tr">
+        <div class="tr-time">10:30-12:30</div>
+        <div class="tr-title">
+          Pitch Arena<br><br>
+          新時代的號角響起
+        </div>
+        <div class="tr-content">
+        
+        </div>
+        <div class="tr-speaker">
+         參展團隊Pitch
+        </div>
+        <div class="tr-toggle">
+          <button class="toggle-button" type="button" @click="toggle($event)">+</button>
+        </div>
+      </div>
+      <div class="agenda-tr">
+        <div class="tr-time">12:30-14:00</div>
+        <div class="tr-title">
+          休息時間
+        </div>
+        <div class="tr-content">
+        </div>
+        <div class="tr-speaker">
+        </div>
+        <div class="tr-toggle">
+        </div>
+      </div>
+      <div class="agenda-tr">
+        <div class="tr-time">14:00-15:00</div>
+        <div class="tr-title">
+          Pitch Arena<br>
+          <br> The Call from New Stars
+        </div>
+        <div class="tr-content">
+        超新星的呼喚：當創業家遇上學生
+        </div>
+        <div class="tr-speaker">
+          iShoo<br>
+          Body Farm Lab<br>
+          Hopen好幫<br>
+        </div>
+        <div class="tr-toggle">
+          <button class="toggle-button" type="button" @click="toggle($event)">+</button>
+        </div>
+      </div>
+      <div class="agenda-tr">
+        <div class="tr-time">15:10-15:40</div>
+        <div class="tr-title">
+          Battle Time<br><br>
+          殘酷舞台海上爭霸戰
+        </div>
+        <div class="tr-content">
+          超瞎生醫新創快問快答
+        </div>
+        <div class="tr-speaker">
+        </div>
+        <div class="tr-toggle">
+          <button class="toggle-button" type="button" @click="toggle($event)">+</button>
+        </div>
+      </div>
+      <div class="agenda-tr">
+        <div class="tr-time">16:00 - 17:00</div>
+        <div class="tr-title">
+          爐邊閒談<br>智者的領航
+        </div>
+        <div class="tr-content">
+          主舞台講者為您解惑
+        </div>
+        <div class="tr-speaker">
+        </div>
+        <div class="tr-toggle">
+          <button class="toggle-button" type="button" @click="toggle($event)">+</button>
+        </div>
+      </div>
+    </div>
+    <div v-if="pitchStageDay === 2" class="agenda-table">
       <div class="agenda-tr th">
         <div class="tr-time">時間</div>
         <div class="tr-title">主題</div>
