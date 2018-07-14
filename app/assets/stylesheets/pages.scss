@@ -24,6 +24,15 @@ body.en, body.zh-TW {
 		font-family: $bi600;
     font-size: 65px;
 	}
+	.about_content_3 {
+		box-shadow: 0px 3px 3px 1px rgba(79, 79, 79, 0.1);
+		.card-text {
+			box-shadow: none;	
+		}
+		.about_contnet3_text_wrapper.two_line {
+			padding: 38px 50px;
+		}
+	}
 	.about_data .about_data_info .about_data_content .about_data_number {
 		font-family: $bi600;
     font-size: 42px;
@@ -101,6 +110,11 @@ body.en, body.zh-TW {
 		}
 		.time {
 			align-self: flex-end;
+			.daytitle {
+				font-family: $bi600;
+				font-size: 26px;
+				padding-right: 15px; // 對齊 Speaker
+			}
 		}
 	}
 	.agenda-table .th {
@@ -110,14 +124,12 @@ body.en, body.zh-TW {
 	}
 	.agenda-table .agenda-tr {
 		border-bottom: 1px solid #aaa;
+		color: #000;
 		&:last-child {
 			border-bottom: none;
 		}
 	}
-	.agenda-tab .time .daytitle {
-		font-family: $bi600;
-		font-size: 26px;	
-	}
+	.agenda-tab .time 
 	.agenda-table .tr-time {
 		font-family: $bi600;
 		font-size: 20px;
@@ -204,6 +216,11 @@ body.en, body.zh-TW {
 					bottom: calc((100% - 62px) / 6 * 1 - 75px);	
 				}
 			}
+		}
+	}
+	footer#footer {
+		.info table .powered-by img, .info table .organizer img {
+			vertical-align: middle;
 		}
 	}
 	footer#footer .black-section {
