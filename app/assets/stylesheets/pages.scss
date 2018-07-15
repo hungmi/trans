@@ -318,18 +318,11 @@ body.en, body.zh-TW {
 			}
 		}
 	}
-	&.pages_faq {
-		.pic1.img-bg-cover {
-			background: rgba(0,0,0,0.9);
-			width: 100%;
-			z-index: -3;
-			position: absolute;
-			top: 300px;
-			height: 100vh;
-		}
+	#for_wrapper_bg {
+		background: rgba(0,0,0,0.9);
+    padding-bottom: 1px;
 	}
 	.wrapper.faq {
-		padding-top: 300px;
 		.main_title {
 			background-color: #f2f2f2;
 			color: black;
@@ -403,7 +396,7 @@ body.en, body.zh-TW {
 					background-image: url(/assets/img/index/index_bg1.png);
 				}
 				li.index-bg2 {
-					background-image: url(/assets/img/index/index_bg2.jpg);
+					background-image: url(/assets/img/index/index_bg2.png);
 					/*-- Animation delay: 3s --*/ 
   				animation-delay: 3s;
 				}
@@ -431,7 +424,8 @@ body.en, body.zh-TW {
 		// background-repeat: no-repeat;
 	}
 	&faq {
-		background-image: url('/assets/img/FAQ/FAQ_banner.png'); background-position: center 5%;
+		background-image: url('/assets/img/FAQ/FAQ_banner.png');
+		background-size: cover;
 	}
 }
 
