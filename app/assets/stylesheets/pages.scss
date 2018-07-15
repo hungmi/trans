@@ -14,6 +14,11 @@ body.en {
 		font-family: $bi600;
 		font-size: 60px;
 	}
+	.FAQTitle {
+		font-family: $bi600;
+		font-size: 36px;
+		color: #f2f2f2;
+	}
 }
 body.en, body.zh-TW {
 	.nav {
@@ -313,6 +318,26 @@ body.en, body.zh-TW {
 			}
 		}
 	}
+	&.pages_faq {
+		.pic1.img-bg-cover {
+			background: rgba(0,0,0,0.9);
+			width: 100%;
+			z-index: -3;
+			position: absolute;
+			top: 300px;
+			height: 100vh;
+		}
+	}
+	.wrapper.faq {
+		padding-top: 300px;
+		.main_title {
+			background-color: #f2f2f2;
+			color: black;
+		}
+	}
+	.FAQTitle {
+		color: #f2f2f2;
+	}
 	footer#footer {
 		.info table .powered-by img, .info table .organizer img {
 			vertical-align: middle;
@@ -406,10 +431,7 @@ body.en, body.zh-TW {
 		// background-repeat: no-repeat;
 	}
 	&faq {
-		background-image: url('/assets/img/FAQ/bg.png');
-		background-size: cover;
-		background-position: 40% 0;
-		background-repeat: no-repeat;
+		background-image: url('/assets/img/FAQ/FAQ_banner.png'); background-position: center 5%;
 	}
 }
 
