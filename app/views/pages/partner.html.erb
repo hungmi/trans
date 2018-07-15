@@ -22,22 +22,20 @@
 			主辦單位
 		</div>
 		<div class="partner_line flex-l6-m2-jfs-">
-			<div class="partner_name">
-				<a href="http://www.ylhealth.org/"  target=_blank>
-				<br>
-				<img src="/assets/img/partner/永齡健康基金會@2x.png" alt="">
-				<br>
-				<img src="/assets/img/partner/資產 14.svg" alt="" style="width: 10%;margin: 0 0 0 80%" >
-				</a>
-			</div>
-			<div class="partner_name">
-				<a href="http://www.ylhspectrum.com/"  target=_blank>
+			<% @partners.each do |partner| %>
+				<div class="partner_name">
+					<a href="<%= partner.link %>" target="_blank">
 					<br>
-					<img src="/assets/img/partner/H-Spectrum@2x.png" alt="" >
+					<% if partner.cover.attached? %>
+						<%= image_tag partner.cover %>
+					<% else %>
+						<p class="text-center">尚未上傳圖片</p>
+					<% end %>
 					<br>
 					<img src="/assets/img/partner/資產 14.svg" alt="" style="width: 10%;margin: 0 0 0 90%" >
-				</a>
-			</div>
+					</a>
+				</div>
+			<% end %>
 		</div>
 	</section>
 	<section class="wrapper_big">

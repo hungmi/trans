@@ -16,6 +16,7 @@ class PagesController < ApplicationController
   end
 
   def partner
+    @partners = Partner.all.order(id: :desc)
   end
 
   def faq
