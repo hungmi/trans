@@ -2,407 +2,63 @@
 		 style="background-image: url('/assets/img/partner/合作夥伴-02.jpg'); background-position: center 90%;"></div>
 
 <div class="partner_wrap">
-		<div class="main_title" style="margin-left:10vw;"><b>Community Partner</b></div>
-	<!-- <div id="partner_link" class="partner_btn">
-		<div class="partner_btn_content">
-			<a href="">Organizer</a>
-		</div>
-		<div class="partner_btn_content">
-			<a href="">Co-organizer</a>
-		</div>
-		<div class="partner_btn_content">
-			<a href="">Community Partners</a>
-		</div>
-		<div class="partner_btn_content">
-			<a href="">Media</a>
-		</div>
-	</div> -->
-	<section class="wrapper_big" style="margin-top: 6%;">
-		<div class="partner_title">
-			主辦單位
-		</div>
-		<div class="partner_line flex-l6-m2-jfs-">
-			<% @partners.each do |partner| %>
-				<div class="partner_name">
-					<a href="<%= partner.link %>" target="_blank">
-					<br>
-					<% if partner.cover.attached? %>
-						<%= image_tag partner.cover %>
-					<% else %>
-						<p class="text-center">尚未上傳圖片</p>
-					<% end %>
-					<br>
-					<img src="/assets/img/partner/資產 14.svg" alt="" style="width: 10%;margin: 0 0 0 90%" >
-					</a>
-				</div>
-			<% end %>
-		</div>
-	</section>
-	<section class="wrapper_big">
-		<div class="partner_title">
-			協辦單位
-		</div>
-		<div class="partner_line flex-l6-m2-jfs-">
-			<div class="partner_name">
-				<a href="http://www.starrocket.io/"  target=_blank>
-					<br>
-					<img src="/assets/img/partner/Star Rocket@2x.png" alt="" >
-					<br>
-					<img src="/assets/img/partner/資產 14.svg" alt="" style="width: 10%;margin: 0 0 0 90%" >
-				</a>
-			</div>
-			<div class="partner_name">
-				<a href="http://www.ibmi.org.tw/index.php"  target=_blank>
-					<br>
-					<img src="/assets/img/partner/co-organizer/國家生技醫療產業策進會@2x.png" alt="" >
-					<br>
-					<img src="/assets/img/partner/資產 14.svg" alt="" style="width: 10%;margin: 0 0 0 90%" >
-				</a>
-			</div>
-			<div class="partner_name">
-				<a href="http://www.mmh.org.tw/taitam/mmhicc/p1.asp"  target=_blank>
-				<br>
-				<img src="/assets/img/partner/馬偕紀念醫院@2x.png" alt="" >
-				<br>
-				<img src="/assets/img/partner/資產 14.svg" alt="" style="width: 10%;margin: 0 0 0 90%" >
-				</a>
-			</div>
-			<div class="partner_name">
-				<a href="http://www.ktbnetwork.com/en/"  target=_blank>
-					<br>
-					<img src="/assets/img/partner/KTB.png" alt="" >
-					<br>
-					<img src="/assets/img/partner/資產 14.svg" alt="" style="width: 10%;margin: 0 0 0 90%" >
-				</a>
-			</div>
-			<div class="partner_name">
-				<a href="https://www.facebook.com/howbb/"  target=_blank>
-					<br>
-					<img src="/assets/img/partner/好棒棒@2x.png" alt="" >
-					<br>
-					<img src="/assets/img/partner/資產 14.svg" alt="" style="width: 10%;margin: 0 0 0 90%" >
-				</a>
-			</div>
-			<div class="partner_name">
-				<a href="http://www.venturecraft.vc/"  target=_blank>
-				<br>
-				<img src="/assets/img/partner/VentureCraft@2x.png" alt="" >
-				<br>
-				<img src="/assets/img/partner/資產 14.svg" alt="" style="width: 10%;margin: 0 0 0 90%" >
-				</a>
-			</div>
-			<div class="partner_name">
-				<a href="http://www.tmu.edu.tw/main.php"  target=_blank>
-				<br>
-				<img src="/assets/img/partner/co-organizer/臺北醫學大學@2x.png" alt="" >
-				<br>
-				<img src="/assets/img/partner/資產 14.svg" alt="" style="width: 10%;margin: 0 0 0 90%" >
-				</a>
-			</div>
-			<div class="partner_name">
-				<a href="http://dschool.ntu.edu.tw/"  target=_blank>
-				<br>
-				<img src="/assets/img/partner/co-organizer/D School@2x.png" alt="" >
-				<br>
-				<img src="/assets/img/partner/資產 14.svg" alt="" style="width: 10%;margin: 0 0 0 90%" >
-				</a>
-			</div>
-			<div class="partner_name">
-				<a href="https://www.hkstp.org/zh-hk/"  target=_blank>
-				<br>
-				<img src="/assets/img/partner/co-organizer/HKSTP@2x.png" alt="" >
-				<br>
-				<img src="/assets/img/partner/資產 14.svg" alt="" style="width: 10%;margin: 0 0 0 90%" >
-				</a>
-			</div>
-			<div class="partner_name">
-				<a href="https://home.kpmg.com/tw/en/home.html"  target=_blank>
-				<br>
-				<img src="/assets/img/partner/co-organizer/KPMG安侯建業@2x.png" alt="" >
-				<br>
-				<img src="/assets/img/partner/資產 14.svg" alt="" style="width: 10%;margin: 0 0 0 90%" >
-				</a>
-			</div>
-			<div class="partner_name">
-				<a href="http://www.ozzie-art.com/"  target=_blank>
-				<br>
-				<img src="/assets/img/partner/co-organizer/OZZIE@2x.png" alt="" >
-				<br>
-				<img src="/assets/img/partner/資產 14.svg" alt="" style="width: 10%;margin: 0 0 0 90%" >
-				</a>
-			</div>
-		</div>
-	</section>
-	<section>
-		<div class="wrapper_big">
-			<div class="partner_title">
-				參展團隊 
-			</div>
-			<div class="partner_content">
-				65 HOMESEEN, AcesoBee limited, Amazon Web Services, ApeXense, Aero-remote, Bell Medical Device, Belun Technology, BIOTEGY, a Biomedical Strategist, Body Farm Lab, Bosomeer Biotech, Bowella (uMeal), BrainX Corporation, Cognuse Inc., Dys, eNano Health Limited, EXOVITE, eXo Support, GemVCare, Golden Dream Project, goonyCare, Green Fingers, Groken Bioscience Limited, H2U Life, Hazalyst Medical R&D Co. Ltd, Healthconn, Hong Kong Science and Technology Parks Corporation, Instant NanoBiosensors Co. Ltd, i-Navi Biomedical Inc., iWeecare, Joytingle, KUNO INTERNATIONAL, Key Kitchen, Ladies that UX, MEDIOT, MedxUp, METOLOGY, Neo-solution, OBELAB, Inc., O! I See, Qidni Labs, Inc., QT Medical, Inc., RapidSure, RedFalcon Computing Incorporation, Retain Biotech Corp., Shenghuo Technology.Lth. (DIABNEXT®), ShineIN Biotechnology Co., Ltd., Silicon Based Molecular Sensoring Technology CO. LTD., Silver Linings Global, Skybird, Smart 3 Care, SWTeam, TaiHao Medical Inc., The Glimmer of Tribe, THLight Co., Ltd., TOUCH, TransFormula, Ultron Data Driven Co., Ltd., U-GYM Technology Corp., VascularExpert, Vida BioTechnology Co.,Ltd., WARMTHINGS CO., Ltd, WeCoach Health, Wolf Dataware, Y DOUBLE U, Zunosaki Limited
+	<div class="main_title" style="margin-left:10vw;"><b>Community Partner</b></div>
 
+	<% if @partners.organizer.size > 0 %>
+		<section class="wrapper_big" style="margin-top: 6%;">
+			<div class="partner_title">
+				主辦單位
 			</div>
-		</div>
-	</section>
-	<section class="wrapper_big">
-		<div class="partner_title">
-			社群夥伴
+			<div class="partner_line flex-l6-m2-jfs-">
+				<%= render partial: "partner_line", collection: @partners.organizer, as: :partner %>
 			</div>
-		<div class="partner_line flex-l6-m2-jfs-" style="margin-left: 0%;">
-			<div class="partner_name">
-				<a href="http://singapore.slush.org/"  target=_blank>
-					<br>
-					<img src="/assets/img/partner/community_partner/slush singapore@2x.png" alt="" >
-					<br>
-					<img src="/assets/img/partner/資產 14.svg" alt="" style="width: 10%;margin: 0 0 0 90%" >
-				</a>
+		</section>
+	<% end %>
+
+	<% if @partners.co_organizer.size > 0 %>
+		<section class="wrapper_big">
+			<div class="partner_title">
+				協辦單位
 			</div>
-			<div class="partner_name">
-				<a href="http://5percent-design-action.com/"  target=_blank>
-					<br>
-					<img src="/assets/img/partner/5_design action@2x.png" alt="" >
-					<br>
-					<img src="/assets/img/partner/資產 14.svg" alt="" style="width: 10%;margin: 0 0 0 90%" >
-				</a>
+			<div class="partner_line flex-l6-m2-jfs-">
+				<%= render partial: "partner_line", collection: @partners.co_organizer, as: :partner %>
 			</div>
-			<div class="partner_name">
-				<a href="http://web.bme.ncku.edu.tw/bin/home.php"  target=_blank>
-				<br>
-				<img src="/assets/img/partner/成大 biodesign@2x.png" alt="" >
-				<br>
-				<img src="/assets/img/partner/資產 14.svg" alt="" style="width: 10%;margin: 0 0 0 90%" >
-				</a>
+		</section>
+	<% end %>
+
+	<% if @partners.exhibitor.size > 0 %>
+		<section>
+			<div class="wrapper_big">
+				<div class="partner_title">
+					參展團隊
+				</div>
+				<div class="partner_line flex-l6-m2-jfs-">
+					<%= render partial: "partner_line", collection: @partners.exhibitor, as: :partner %>
+				</div>
 			</div>
-			<div class="partner_name">
-				<a href="http://www.mabow.com.tw/"  target=_blank>
-					<br>
-					<img src="/assets/img/partner/瑪帛科技@2x.png" alt="" >
-					<br>
-					<img src="/assets/img/partner/資產 14.svg" alt="" style="width: 10%;margin: 0 0 0 90%" >
-				</a>
+		</section>
+	<% end %>
+
+	<% if @partners.community_partner.size > 0 %>
+		<section class="wrapper_big">
+			<div class="partner_title">
+				社群夥伴
 			</div>
-			<div class="partner_name">
-				<a href="http://ir.intai.com.tw/"  target=_blank>
-				<br>
-				<img src="/assets/img/partner/鐿鈦科技@2x.png" alt="" >
-				<br>
-				<img src="/assets/img/partner/資產 14.svg" alt="" style="width: 10%;margin: 0 0 0 90%" >
-				</a>
+			<div class="partner_line flex-l6-m2-jfs-" style="margin-left: 0%;">
+				<%= render partial: "partner_line", collection: @partners.community_partner, as: :partner %>
 			</div>
-			<div class="partner_name">
-				<a href="https://www.facebook.com/hit4asiancku/"  target=_blank>
-				<br>
-				<img src="/assets/img/partner/HITXNCKU@2x.png" alt="" >
-				<br>
-				<img src="/assets/img/partner/資產 14.svg" alt="" style="width: 10%;margin: 0 0 0 90%" >
-				</a>
+		</section>
+	<% end %>
+
+	<% if @partners.media.size > 0 %>
+		<section class="wrapper_big" style="margin-bottom:200px;">
+			<div class="partner_title">
+				媒體夥伴
 			</div>
-			<div class="partner_name">
-				<a href="http://iaps.nctu.edu.tw/"  target=_blank>
-					<br>
-					<img src="/assets/img/partner/IAPS@2x.png" alt="" >
-					<br>
-					<img src="/assets/img/partner/資產 14.svg" alt="" style="width: 10%;margin: 0 0 0 90%" >
-				</a>
+			<div class="partner_line flex-l6-m2-jfs-" style="margin-left: 0%;">
+				<%= render partial: "partner_line", collection: @partners.media, as: :partner %>
 			</div>
-			<div class="partner_name">
-				<a href="http://bme.ntu.edu.tw/"  target=_blank>
-				<br>
-				<img src="/assets/img/partner/media/台大醫工所@2x.png" alt="" >
-				 <br>
-				<img src="/assets/img/partner/資產 14.svg" alt="" style="width: 10%;margin: 0 0 0 90%" >
-				</a>
-			</div>
-			<div class="partner_name">
-				<a href="http://www.silverliningsglobal.com/tw/index.html"  target=_blank>
-				<br>
-				<img src="/assets/img/partner/media/銀享全球@2x.png" alt="" >
-				<br>
-				<img src="/assets/img/partner/資產 14.svg" alt="" style="width: 10%;margin: 0 0 0 90%" >
-				</a>
-			</div>
-			<div class="partner_name">
-				<a href="https://www.facebook.com/biomednchu/?fref=ts"  target=_blank>
-				<br>
-				<img src="/assets/img/partner/media/興大醫創@2x.png.png" alt="" >
-				<br>
-				<img src="/assets/img/partner/資產 14.svg" alt="" style="width: 10%;margin: 0 0 0 90%" >
-				</a>
-			</div>
-			<div class="partner_name">
-				<a href="http://www.garageplus.asia/"  target=_blank>
-				<br>
-				<img src="/assets/img/partner/media/Garage+@2x.png.png" alt="" >
-				<br>
-				<img src="/assets/img/partner/資產 14.svg" alt="" style="width: 10%;margin: 0 0 0 90%" >
-				</a>
-			</div>
-			<div class="partner_name">
-				<a href="https://www.facebook.com/medinnocatalyst/"  target=_blank>
-					<br>
-					<img src="/assets/img/partner/media/Medinno Catalyst 醫療器材催化器@2x.png.png" alt="" >
-					<br>
-					<img src="/assets/img/partner/資產 14.svg" alt="" style="width: 10%;margin: 0 0 0 90%" >
-				</a>
-			</div>
-			<div class="partner_name">
-				<a href="http://www.taiwantechmakers.com/"  target=_blank>
-				<br>
-				<img src="/assets/img/partner/community_partner/台灣紫牛創業協會@2x.png" alt="" >
-				<br>
-				<img src="/assets/img/partner/資產 14.svg" alt="" style="width: 10%;margin: 0 0 0 90%" >
-				</a>
-			</div>
-			<div class="partner_name">
-				<a href="http://web.bme.ncku.edu.tw/bin/home.php"  target=_blank>
-				<br>
-				<img src="/assets/img/partner/community_partner/國際醫療器材創新碩士班@2x.png" alt="" >
-				<br>
-				<img src="/assets/img/partner/資產 14.svg" alt="" style="width: 10%;margin: 0 0 0 90%" >
-				</a>
-			</div>
-			<div class="partner_name">
-				<a href="http://h2uclub.com/"  target=_blank>
-				<br>
-				<img src="/assets/img/partner/community_partner/H2U Club@2x.png" alt="" >
-				<br>
-				<img src="/assets/img/partner/資產 14.svg" alt="" style="width: 10%;margin: 0 0 0 90%" >
-				</a>
-			</div>
-			<div class="partner_name">
-				<a href="https://taipei.impacthub.net/i"  target=_blank>
-				<br>
-				<img src="/assets/img/partner/community_partner/Impact Hub Taipei@2x.png" alt="" >
-				<br>
-				<img src="/assets/img/partner/資產 14.svg" alt="" style="width: 10%;margin: 0 0 0 90%" >
-				</a>
-			</div>
-			<div class="partner_name">
-				<a href="https://www.facebook.com/groups/1491872097770483/"  target=_blank>
-				<br>
-				<img src="/assets/img/partner/community_partner/medx@2x.png" alt="" >
-				<br>
-				<img src="/assets/img/partner/資產 14.svg" alt="" style="width: 10%;margin: 0 0 0 90%" >
-				</a>
-			</div>
-			<div class="partner_name">
-				<a href="http://www.pac8.com/"  target=_blank>
-				<br>
-				<img src="/assets/img/partner/community_partner/Pacific8@2x.png" alt="" >
-				<br>
-				<img src="/assets/img/partner/資產 14.svg" alt="" style="width: 10%;margin: 0 0 0 90%" >
-				</a>
-			</div>
-			<div class="partner_name">
-				<a href="https://apply.stb.org.tw/stb/index"  target=_blank>
-				<br>
-				<img src="/assets/img/partner/community_partner/STB mark@2x.png" alt="" >
-				<br>
-				<img src="/assets/img/partner/資產 14.svg" alt="" style="width: 10%;margin: 0 0 0 90%" >
-				</a>
-			</div>
-			<div class="partner_name">
-				<a href="https://www.microsoft.com/zh-tw"  target=_blank>
-				<br>
-				<img src="/assets/img/partner/community_partner/Microsoft® 台灣 logo_c-gray.png" alt="" >
-				<br>
-				<img src="/assets/img/partner/資產 14.svg" alt="" style="width: 10%;margin: 0 0 0 90%" >
-				</a>
-			</div>
-			<div class="partner_name">
-				<a href="http://www.thetinynotes.com/"  target=_blank>
-				<br>
-				<img src="/assets/img/partner/community_partner/TINY Notes.png" alt="" >
-				<br>
-				<img src="/assets/img/partner/資產 14.svg" alt="" style="width: 10%;margin: 0 0 0 90%" >
-				</a>
-			</div>
-			<div class="partner_name">
-				<a href="http://seinsights.asia"  target=_blank>
-				<br>
-				<img src="/assets/img/partner/community_partner/社企流@2x.png" alt="" >
-				<br>
-				<img src="/assets/img/partner/資產 14.svg" alt="" style="width: 10%;margin: 0 0 0 90%" >
-				</a>
-			</div>
-			<div class="partner_name">
-				<a href="https://meet.bnext.com.tw/"  target=_blank>
-				<br>
-				<img src="/assets/img/partner/community_partner/Meet 創業小聚-01.png" alt="" >
-				<br>
-				<img src="/assets/img/partner/資產 14.svg" alt="" style="width: 10%;margin: 0 0 0 90%" >
-				</a>
-			</div>
-			<div class="partner_name">
-				<a href="http://ladiesthatux.com/"  target=_blank>
-				<br>
-				<img src="/assets/img/partner/community_partner/Ladies that UX@2x.png" alt="" >
-				<br>
-				<img src="/assets/img/partner/資產 14.svg" alt="" style="width: 10%;margin: 0 0 0 90%" >
-				</a>
-			</div>
-		</div>
-	</section>
-	<section>
-		<div class="wrapper_big">
-			<div class="partner_content">
-				臺灣大學跨領域生技產業菁英培訓推動中心、公醫時代
-			</div>
-		</div>
-	<section class="wrapper_big" style="margin-bottom:200px;">
-		<div class="partner_title">
-			媒體夥伴
-		</div>
-		<div class="partner_line flex-l6-m2-jfs-" style="margin-left: 0%;">
-			<div class="partner_name">
-				<a href="https://geneonline.news/"  target=_blank>
-				<br>
-				<img src="/assets/img/partner/geneonline.png" alt="" >
-				<br>
-				<img src="/assets/img/partner/資產 14.svg" alt="" style="width: 10%;margin: 0 0 0 90%" >
-				</a>
-			</div>
-			<div class="partner_name">
-				<a href="https://www.everydayhealth.com.tw/category/3/index/1"  target=_blank>
-				<br>
-				<img src="/assets/img/partner/早安健康@2x.png" alt="" >
-				<br>
-				<img src="/assets/img/partner/資產 14.svg" alt="" style="width: 10%;margin: 0 0 0 90%" >
-				</a>
-			</div>
-			<div class="partner_name">
-				<a href="http://www.gbimonthly.com/"  target=_blank>
-				<br>
-				<img src="/assets/img/partner/環球生技月刊@2x.png" alt="" >
-				<br>
-				<img src="/assets/img/partner/資產 14.svg" alt="" style="width: 10%;margin: 0 0 0 90%" >
-				</a>
-			</div>
-			<div class="partner_name">
-				<a href="https://www.bnext.com.tw/"  target=_blank>
-				<br>
-				<img src="/assets/img/partner/數位時代@2x.png" alt="" >
-				<br>
-				<img src="/assets/img/partner/資產 14.svg" alt="" style="width: 10%;margin: 0 0 0 90%" >
-				</a>
-			</div>
-			<div class="partner_name">
-				<a href="https://panx.asia/"  target=_blank>
-				<br>
-				<img src="/assets/img/partner/Panx泛科技@2x.png" alt="" >
-				<br>
-				<img src="/assets/img/partner/資產 14.svg" alt="" style="width: 10%;margin: 0 0 0 90%" >
-				</a>
-			</div>
-			<div class="partner_name">
-				<a href="https://biomeder.com/"  target=_blank>
-				<br>
-				<img src="/assets/img/partner/BioMedwer@2x.png" alt="" >
-				<br>
-				<img src="/assets/img/partner/資產 14.svg" alt="" style="width: 10%;margin: 0 0 0 90%" >
-				</a>
-			</div>
-		</div>
-	</section>
+		</section>
+	<% end %>
 
 </div>

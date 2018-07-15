@@ -27,6 +27,19 @@
 	      </p>
 		  </li>
 		  <li class="list-group-item flex-column align-items-start">
+		    <div class="d-flex w-100 justify-content-between">
+		      <h5 class="mb-1"><%= Partner.human_attribute_name("category") %></h5>
+		    </div>
+		    <p class="mb-1">
+		    	<% if partner.category.present? %>
+	          <%= I18n.t("activerecord.partner_category.#{partner.category}") %>
+	        <% else %>
+	          <span class="text-muted"><%= I18n.t("text.attr_no_value") %></span>
+	          <span class="badge badge-pill badge-warning"><%= I18n.t("text.hint") %></span>
+	        <% end %>
+	      </p>
+		  </li>
+		  <li class="list-group-item flex-column align-items-start">
 	      <%= link_to I18n.t('text.edit'), edit_admin_partner_path(partner), class: "btn btn-primary" %>
 	      <%= link_to I18n.t('text.destroy'), [:admin, partner], method: :delete, data: { confirm: I18n.t("text.confirm_destroy") }, class: "btn btn-danger btn-sm float-right" %>
 	    </li>

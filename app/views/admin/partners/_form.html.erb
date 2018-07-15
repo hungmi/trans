@@ -23,9 +23,19 @@
 
       <div id="newImagePreview" class="mb-4" data-previewerClass="col-4 pr-0"></div>
 
+      <div class="form-group <%= partner.errors[:category].present? ? 'has-danger' : '' %>">
+        <%= f.label :category %>
+        <%= f.collection_select :category, I18n.t("activerecord.partner_category"), :first, :last, {}, class: "form-control #{partner.errors[:category].present? ? 'is-invalid' : ''}" %>
+        <% if partner.errors[:category].present? %>
+          <div class="invalid-feedback">
+            <%= partner.errors[:category].join(", ") %>
+          </div>
+        <% end %>
+      </div>
+
       <div class="form-group <%= partner.errors[:link].present? ? 'has-danger' : '' %>">
         <%= f.label :link %>
-        <%= f.text_field :link, class: "form-control #{partner.errors[:link].present? ? 'is-invalid' : ''}" %>
+        <%= f.text_field :link, class: "form-control #{partner.errors[:link].present? ? 'is-invalid' : ''}", required: true %>
         <% if partner.errors[:link].present? %>
     	    <div class="invalid-feedback">
     	      <%= partner.errors[:link].join(", ") %>

@@ -35,6 +35,7 @@ zh-TW:
       partner:
         cover: 圖片
         link: 連結網址
+        category: 分類
       person:
         en_name: 英文姓名
         zh_name: 中文姓名
@@ -55,6 +56,12 @@ zh-TW:
         new_password_confirmation: 確認新密碼
     user_role:
       admin: 管理員
+    partner_category:
+      organizer: 主辦單位 (Organizer)
+      co_organizer: 協辦單位 (Co-Organizer)
+      exhibitor: 參展團隊 (Exhibitor)
+      community_partner: 社群夥伴 (Community Partner)
+      media: 媒體夥伴 (Media)
     errors:
       messages:
         record_invalid: "校驗失敗: %{errors}"
