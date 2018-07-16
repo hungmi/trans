@@ -285,15 +285,22 @@ body.en, body.zh-TW {
 	}
 	.TRANSReview {
 		position: relative;
-		.ReviewVideo {
+		.TRANS_img_content .ReviewVideo {
 			position: absolute;
 			right: calc(16.667% - 75px);
 			bottom: calc(50% - 75px);	
+			z-index: 3;
 		}
 		&.review2016 {
 			padding-top: 62px;
 			.ReviewVideo {
 				bottom: calc((100% - 62px) / 2 - 75px);	
+			}
+		}
+		.TRANS_img_content > a:hover {
+			.ReviewVideo img {
+				-webkit-transform: scale3d(1.1, 1.1, 1);
+    		transform: scale3d(1.1, 1.1, 1);
 			}
 		}
 	}
@@ -330,6 +337,17 @@ body.en, body.zh-TW {
 	}
 	.FAQTitle {
 		color: #f2f2f2;
+		position: relative;
+		& > svg {
+			fill: white;
+			position: absolute;
+			margin: 0px 20px;
+			top: 10px;
+			width: 24px;
+		}
+		&.ticket > svg {
+			top: 13px;
+		}
 	}
 	footer#footer {
 		.info table .powered-by img, .info table .organizer img {
