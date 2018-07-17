@@ -69,6 +69,6 @@ class Admin::PeopleController < AdminController
 
     # Only allow a trusted parameter "white list" through.
     def person_params
-      params.require(:person).permit(:en_name, :zh_name, :en_title, :zh_title, :en_description, :zh_description, :cover)
+      params.require(:person).permit(:en_name, :zh_name, :en_title, :zh_title, :en_description, :zh_description, :cover, :order)
     end
 end

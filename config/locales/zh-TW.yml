@@ -36,6 +36,7 @@ zh-TW:
         cover: 圖片
         link: 連結網址
         category: 分類
+        order: 先後順序
       person:
         en_name: 英文姓名
         zh_name: 中文姓名
@@ -45,6 +46,7 @@ zh-TW:
         zh_description: 中文介紹
         cover: 圖片
         link: 連結網址
+        order: 先後順序
       user:
         id: 使用者編號
         role: 系統角色

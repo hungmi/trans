@@ -89,6 +89,20 @@
 		  </li>
 
 		  <li class="list-group-item flex-column align-items-start">
+		    <div class="d-flex w-100 justify-content-between">
+		      <h5 class="mb-1"><%= Person.human_attribute_name("order") %></h5>
+		    </div>
+	    	<% if person.order.present? %>
+          <%= person.order %>
+        <% else %>
+			    <p class="mb-1">
+  	        <span class="text-muted"><%= I18n.t("text.attr_no_value") %></span>
+  	      </p>
+        <% end %>
+	      </p>
+		  </li>
+
+		  <li class="list-group-item flex-column align-items-start">
 	      <%= link_to I18n.t('text.edit'), edit_admin_person_path(person), class: "btn btn-primary" %>
 	      <%= link_to I18n.t('text.destroy'), [:admin, person], method: :delete, data: { confirm: I18n.t("text.confirm_destroy") }, class: "btn btn-danger btn-sm float-right" %>
 	    </li>

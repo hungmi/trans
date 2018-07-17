@@ -42,6 +42,20 @@
     	    </div>
         <% end %>
       </div>
+
+      <div class="form-group <%= partner.errors[:order].present? ? 'has-danger' : '' %>">
+        <%= f.label :order %>
+        <%= f.number_field :order, class: "form-control #{partner.errors[:order].present? ? 'is-invalid' : ''}", value: (f.object.persisted? ? f.object.order : nil), min: 1 %>
+        <small class="text-warning"><b>數字越大越早出現</b>，例如設定 100 會排在 90 之前。若不設定，則按其初次上架順序排。</small><br>
+        <% if Partner.where.not(order: nil).size > 0 %>
+          <small>目前所有已經設定排序的單位中，排序最大值為 <%= Partner.where.not(order: nil).pluck(:order).max %></small>
+        <% end %>
+        <% if partner.errors[:order].present? %>
+          <div class="invalid-feedback">
+            <%= partner.errors[:order].join(", ") %>
+          </div>
+        <% end %>
+      </div>
     
       <%= link_to I18n.t('text.cancel'), admin_partners_path, class: "btn btn-link text-danger" %>
       <%= f.submit class: "btn btn-primary float-right" %>

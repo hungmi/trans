@@ -12,11 +12,11 @@ class PagesController < ApplicationController
   end
 
   def speaker
-    @speakers = Person.all.order(en_name: :asc, zh_name: :asc)
+    @speakers = Person.all.order("people.order DESC NULLS LAST, people.id DESC, people.en_name ASC, people.zh_name ASC")
   end
 
   def partner
-    @partners = Partner.all.order(id: :desc)
+    @partners = Partner.all.order("partners.order DESC NULLS LAST, partners.id DESC")
   end
 
   def faq

@@ -23,7 +23,9 @@
     </div> -->
     <% @speakers.each_with_index do |speaker, index| %>
       <div class="box" data-pop="<%= 33 + index %>">
-        <%= image_tag speaker.cover, alt: speaker.i18n_title %>
+        <% if speaker.cover.attached? %>
+          <%= image_tag speaker.cover, alt: speaker.i18n_title %>
+        <% end %>
         <div class="text">
           <h3 class="<%= render_chinese_class(speaker.i18n_name) %>"><%= speaker.i18n_name %></h3>
           <p><%= speaker.i18n_title %></p>
@@ -72,7 +74,9 @@
       <% end %>
       <div class="text">
         <div class="text-header">
-          <div class="text-img img-bg-cover" style="background-image: url(<%= url_for speaker.cover %>);"></div>
+          <% if speaker.cover.attached? %>
+            <div class="text-img img-bg-cover" style="background-image: url(<%= url_for speaker.cover %>);"></div>
+          <% end %>
           <div class="text-title">
             <h2 class="<%= render_chinese_class(speaker.i18n_name) %>"><%= speaker.i18n_name %></h2>
             <h3><%= speaker.i18n_title %></h3>

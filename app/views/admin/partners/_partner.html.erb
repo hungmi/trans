@@ -22,7 +22,6 @@
 	          <%= partner.link %>
 	        <% else %>
 	          <span class="text-muted"><%= I18n.t("text.attr_no_value") %></span>
-	          <span class="badge badge-pill badge-warning"><%= I18n.t("text.hint") %></span>
 	        <% end %>
 	      </p>
 		  </li>
@@ -35,7 +34,18 @@
 	          <%= I18n.t("activerecord.partner_category.#{partner.category}") %>
 	        <% else %>
 	          <span class="text-muted"><%= I18n.t("text.attr_no_value") %></span>
-	          <span class="badge badge-pill badge-warning"><%= I18n.t("text.hint") %></span>
+	        <% end %>
+	      </p>
+		  </li>
+		  <li class="list-group-item flex-column align-items-start">
+		    <div class="d-flex w-100 justify-content-between">
+		      <h5 class="mb-1"><%= Partner.human_attribute_name("order") %></h5>
+		    </div>
+		    <p class="mb-1">
+		    	<% if partner.order.present? %>
+	          <%= partner.order %>
+	        <% else %>
+	          <span class="text-muted"><%= I18n.t("text.attr_no_value") %></span>
 	        <% end %>
 	      </p>
 		  </li>

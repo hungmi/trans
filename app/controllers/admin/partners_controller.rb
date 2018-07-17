@@ -68,6 +68,6 @@ class Admin::PartnersController < AdminController
 
     # Only allow a trusted parameter "white list" through.
     def partner_params
-      params.require(:partner).permit(:link, :cover, :category)
+      params.require(:partner).permit(:link, :cover, :category, :order)
     end
 end

@@ -1,5 +1,6 @@
 class Person < ApplicationRecord
 	has_one_attached :cover
+	validates :order, numericality: { only_integer: true, greater_than: 0 }, allow_nil: true
 
 	def i18n_name
 		if en_name.present? && zh_name.present?
