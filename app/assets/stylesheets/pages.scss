@@ -225,12 +225,14 @@ body.en, body.zh-TW {
 	.top_title {
 		margin-bottom: 0px;
 	}
-	.register-table .tr-pirce {
-		font-family: $bi600;
-		font-size: 24px;
-		& .currency {
-			font-family: $bi300;
+	.register-table .tr:not(.th) {
+		.tr-pirce, .tr-origin {
+			font-family: $bi600;
 			font-size: 24px;
+			& .currency {
+				font-family: $bi300;
+				font-size: 24px;
+			}
 		}
 	}
 	.register2_btn {
@@ -469,7 +471,7 @@ body.en, body.zh-TW {
 	text-align: center;
 }
 
-#triangle-down {
+.triangle-down {
 	width: 0;
 	height: 0;
 	border-left: 14px solid transparent;

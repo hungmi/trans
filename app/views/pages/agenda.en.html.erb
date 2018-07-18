@@ -7,7 +7,7 @@
          Main Stage Agenda
       </div>
       <div class="arrow">
-        <div id="triangle-down"></div>
+        <div class="triangle-down"></div>
       </div>
     </a>
     <a class="box" href="#creativeStageAgenda" style="margin: 7px auto;">
@@ -15,7 +15,7 @@
        Creative Stage Agenda
       </div>
       <div class="arrow">
-        <div id="triangle-down"></div>
+        <div class="triangle-down"></div>
       </div>
     </a>
     <a class="box" href="#pitchStageAgenda" style="margin-bottom: 20px;">
@@ -23,7 +23,7 @@
        Pitch Stage Agenda
       </div>
       <div class="arrow">
-        <div id="triangle-down"></div>
+        <div class="triangle-down"></div>
       </div>
     </a>
   </div>
@@ -53,7 +53,6 @@
         <div class="tr-time">TIME</div>
         <div class="tr-title">TITLE</div>
         <div class="tr-content">CONTENT</div>
-        <div class="tr-speaker">SPEAKER</div>
         <div class="tr-toggle"></div>
       </div>
       <div class="agenda-tr">
@@ -62,8 +61,6 @@
           Welcome Address<br><br>The Big Bang
         </div>
         <div class="tr-content">To Infinity and Beyond
-        </div>
-        <div class="tr-speaker">
         </div>
         <div class="tr-toggle">
         </div>
@@ -75,8 +72,6 @@
         </div>
         <div class="tr-content">
           Next Generation of Healthcare
-        </div>
-        <div class="tr-speaker">
         </div>
         <div class="tr-toggle">
           <button class="toggle-button" type="button" @click="toggle($event)">+</button>
@@ -90,8 +85,6 @@
         <div class="tr-content">
           The Surprising Stories of Forbes 30 under 30
         </div>
-        <div class="tr-speaker">
-        </div>
         <div class="tr-toggle">
           <button class="toggle-button" type="button" @click="toggle($event)">+</button>
         </div>
@@ -104,8 +97,6 @@
         <div class="tr-content">
           Reaching for the Stars: Healthcare Startups in Asia
         </div>
-        <div class="tr-speaker">
-        </div>
         <div class="tr-toggle">
           <button class="toggle-button" type="button" @click="toggle($event)">+</button>
         </div>
@@ -116,8 +107,6 @@
           Refuel and Rest
         </div>
         <div class="tr-content">
-        </div>
-        <div class="tr-speaker">
         </div>
         <div class="tr-toggle">
         </div>
@@ -130,8 +119,6 @@
         <div class="tr-content">
           The Blue Moons in the Investment Universe
         </div> 
-        <div class="tr-speaker">
-        </div>
         <div class="tr-toggle">
           <button class="toggle-button" type="button" @click="toggle($event)">+</button>
         </div>
@@ -144,8 +131,6 @@
         <div class="tr-content">
           A Black Hole or A Young Star: Blockchain
         </div>
-        <div class="tr-speaker">
-        </div>
         <div class="tr-toggle">
           <button class="toggle-button" type="button" @click="toggle($event)">+</button>
         </div>
@@ -156,7 +141,6 @@
         <div class="tr-time">TIME</div>
         <div class="tr-title">TITLE</div>
         <div class="tr-content">CONTENT</div>
-        <div class="tr-speaker">SPEAKER</div>
         <div class="tr-toggle"></div>
       </div>
       <div class="agenda-tr">
@@ -165,8 +149,6 @@
           Keynote Speech<br><br>Ground Control to Major Tom
         </div>
         <div class="tr-content">
-        </div>
-        <div class="tr-speaker">
         </div>
         <div class="tr-toggle">
           <button class="toggle-button" type="button" @click="toggle($event)">+</button>
@@ -180,8 +162,6 @@
         <div class="tr-content">
           How to Build A Startup as A Global Entrepreneur
         </div>
-        <div class="tr-speaker">
-        </div>
         <div class="tr-toggle">
           <button class="toggle-button" type="button" @click="toggle($event)">+</button>
         </div>
@@ -193,8 +173,6 @@
         </div>
         <div class="tr-content">
           Not Just About Aging and Elderly
-        </div>
-        <div class="tr-speaker">
         </div>
         <div class="tr-toggle">
           <button class="toggle-button" type="button" @click="toggle($event)">+</button>
@@ -208,8 +186,6 @@
         <div class="tr-content">
           Shine Like the Whole Universe Is Yours
         </div>
-        <div class="tr-speaker">
-        </div>
         <div class="tr-toggle">
           <button class="toggle-button" type="button" @click="toggle($event)">+</button>
         </div>
@@ -221,8 +197,6 @@
         </div>
         <div class="tr-content">
         </div>
-        <div class="tr-speaker">
-        </div>
         <div class="tr-toggle"></div>
       </div>
       <div class="agenda-tr">
@@ -232,8 +206,6 @@
         </div>
         <div class="tr-content">
           How to Get On Track with Interoperability
-        </div>
-        <div class="tr-speaker">
         </div>
         <div class="tr-toggle">
           <button class="toggle-button" type="button" @click="toggle($event)">+</button>
@@ -247,8 +219,6 @@
         <div class="tr-content">
           Decoding the Mysteries of the Genome
         </div>
-        <div class="tr-speaker">
-        </div>
         <div class="tr-toggle">
           <button class="toggle-button" type="button" @click="toggle($event)">+</button>
         </div>
@@ -260,8 +230,6 @@
         </div>
         <div class="tr-content">
           Achieving Better Healthcare with Artificial Intelligence
-        </div>
-        <div class="tr-speaker">
         </div>
         <div class="tr-toggle">
           <button class="toggle-button" type="button" @click="toggle($event)">+</button>
@@ -275,8 +243,6 @@
         <div class="tr-content">
           Digital therapeutics: Ready to Takeoff
         </div>
-        <div class="tr-speaker">
-        </div>
         <div class="tr-toggle">
           <button class="toggle-button" type="button" @click="toggle($event)">+</button>
         </div>
@@ -288,8 +254,6 @@
         </div>
         <div class="tr-content">
           The Evolution of Healthcare as An Investment Area
-        </div>
-        <div class="tr-speaker">
         </div>
         <div class="tr-toggle">
         </div>
@@ -320,8 +284,7 @@
       <div class="agenda-tr th">
         <div class="tr-time">TIME</div>
         <div class="tr-title">TITLE</div>
-        <div class="tr-content">CONTENT</div>
-        <div class="tr-speaker">SPEAKER</div>
+        <div class="tr-content"></div>
         <div class="tr-toggle"></div>
       </div>
       <div class="agenda-tr">
@@ -329,10 +292,7 @@
         <div class="tr-title">
           Welcome Address
         </div>
-        <div class="tr-content">
-        </div>
-        <div class="tr-speaker">
-        </div>
+        <div class="tr-content"></div>
         <div class="tr-toggle">
         </div>
       </div>
@@ -341,12 +301,7 @@
         <div class="tr-title">
           Asia’s next top startups
         </div>
-        <div class="tr-content">
-          Pitch Arena
-        </div>
-        <div class="tr-speaker">
-         
-        </div>
+        <div class="tr-content"></div>
         <div class="tr-toggle">
           <button class="toggle-button" type="button" @click="toggle($event)">+</button>
         </div>
@@ -356,10 +311,7 @@
         <div class="tr-title">
           Refuel and Rest
         </div>
-        <div class="tr-content">
-        </div>
-        <div class="tr-speaker">
-        </div>
+        <div class="tr-content"></div>
         <div class="tr-toggle">
         </div>
       </div>
@@ -368,10 +320,7 @@
         <div class="tr-title">
           Let's Debate
         </div>
-        <div class="tr-content">
-        </div>
-        <div class="tr-speaker">
-        </div>
+        <div class="tr-content"></div>
         <div class="tr-toggle">
           <button class="toggle-button" type="button" @click="toggle($event)">+</button>
         </div>
@@ -382,10 +331,7 @@
           Keynote speech<br><br>
           Different Lane of Orbital: The Different Possibilities in Healthcare Area
         </div>
-        <div class="tr-content">
-        </div>
-        <div class="tr-speaker">
-        </div>
+        <div class="tr-content"></div>
         <div class="tr-toggle">
           <button class="toggle-button" type="button" @click="toggle($event)">+</button>
         </div>
@@ -395,10 +341,7 @@
         <div class="tr-title">
           Let's Debate
         </div>
-        <div class="tr-content">
-        </div>
-        <div class="tr-speaker">
-        </div>
+        <div class="tr-content"></div>
         <div class="tr-toggle">
           <button class="toggle-button" type="button" @click="toggle($event)">+</button>
         </div>
@@ -408,10 +351,7 @@
         <div class="tr-title">
           Star Wars
         </div>
-        <div class="tr-content">
-        </div>
-        <div class="tr-speaker">
-        </div>
+        <div class="tr-content"></div>
         <div class="tr-toggle">
           <button class="toggle-button" type="button" @click="toggle($event)">+</button>
         </div>
@@ -421,8 +361,7 @@
       <div class="agenda-tr th">
         <div class="tr-time">TIME</div>
         <div class="tr-title">TITLE</div>
-        <div class="tr-content">CONTENT</div>
-        <div class="tr-speaker">SPEAKER</div>
+        <div class="tr-content"></div>
         <div class="tr-toggle"></div>
       </div>
       <div class="agenda-tr">
@@ -430,10 +369,7 @@
         <div class="tr-title">
           Welcome Address
         </div>
-        <div class="tr-content">
-        </div>
-        <div class="tr-speaker">
-        </div>
+        <div class="tr-content"></div>
         <div class="tr-toggle"></div>
       </div>
       <div class="agenda-tr">
@@ -441,10 +377,7 @@
         <div class="tr-title">
           Workshop: Call from Outer Space
         </div>
-        <div class="tr-content">
-        </div>
-        <div class="tr-speaker">
-        </div>
+        <div class="tr-content"></div>
         <div class="tr-toggle"></div>
       </div>
       <div class="agenda-tr">
@@ -452,10 +385,7 @@
         <div class="tr-title">
           Refuel and Rest
         </div>
-        <div class="tr-content">
-        </div>
-        <div class="tr-speaker">
-        </div>
+        <div class="tr-content"></div>
         <div class="tr-toggle">
         </div>
       </div>
@@ -464,10 +394,7 @@
         <div class="tr-title">
           Let's Debate
         </div>
-        <div class="tr-content">
-        </div>
-        <div class="tr-speaker">
-        </div>
+        <div class="tr-content"></div>
         <div class="tr-toggle">
           <button class="toggle-button" type="button" @click="toggle($event)">+</button>
         </div>
@@ -477,10 +404,7 @@
         <div class="tr-title">
           Let's Debate
         </div>
-        <div class="tr-content">
-        </div>
-        <div class="tr-speaker">
-        </div>
+        <div class="tr-content"></div>
         <div class="tr-toggle">
           <button class="toggle-button" type="button" @click="toggle($event)">+</button>
         </div>
@@ -490,10 +414,7 @@
         <div class="tr-title">
           Keynote Speech: A Dialogue of Medicine Between Present and Past Medication Knowledge of the interstellar
         </div>
-        <div class="tr-content">
-        </div>
-        <div class="tr-speaker">
-        </div>
+        <div class="tr-content"></div>
         <div class="tr-toggle">
           <button class="toggle-button" type="button" @click="toggle($event)">+</button>
         </div>
@@ -503,10 +424,7 @@
         <div class="tr-title">
           Panel Talk: The Patients Get Something to Say
         </div>
-        <div class="tr-content">
-        </div>
-        <div class="tr-speaker">
-        </div>
+        <div class="tr-content"></div>
         <div class="tr-toggle">
           <button class="toggle-button" type="button" @click="toggle($event)">+</button>
         </div>
@@ -538,7 +456,6 @@
         <div class="tr-time">TIME</div>
         <div class="tr-title">TITLE</div>
         <div class="tr-content">CONTENT</div>
-        <div class="tr-speaker">SPEAKER</div>
         <div class="tr-toggle"></div>
       </div>
       <div class="agenda-tr">
@@ -549,8 +466,6 @@
         <div class="tr-content">
           Pitch Arena
         </div>
-        <div class="tr-speaker">
-        </div>
         <div class="tr-toggle">
         </div>
       </div>
@@ -560,8 +475,6 @@
           Refuel and Rest
         </div>
         <div class="tr-content">
-        </div>
-        <div class="tr-speaker">
         </div>
         <div class="tr-toggle">
         </div>
@@ -574,8 +487,6 @@
         <div class="tr-content">
           Pitch Arena
         </div>
-        <div class="tr-speaker">
-        </div>
         <div class="tr-toggle">
           <button class="toggle-button" type="button" @click="toggle($event)">+</button>
         </div>
@@ -586,7 +497,6 @@
         <div class="tr-time">TIME</div>
         <div class="tr-title">TITLE</div>
         <div class="tr-content">CONTENT</div>
-        <div class="tr-speaker">SPEAKER</div>
         <div class="tr-toggle"></div>
       </div>
       <div class="agenda-tr">
@@ -595,8 +505,6 @@
           Welcome Address
         </div>
         <div class="tr-content">
-        </div>
-        <div class="tr-speaker">
         </div>
         <div class="tr-toggle"></div>
       </div>
@@ -609,8 +517,6 @@
         <div class="tr-content">
         50+ Worldwide Startup Pitch Decks
         </div>
-        <div class="tr-speaker">
-          
         </div>
         <div class="tr-toggle">
           <button class="toggle-button" type="button" @click="toggle($event)">+</button>
@@ -622,8 +528,6 @@
           Rest and Refuel
         </div>
         <div class="tr-content">
-        </div>
-        <div class="tr-speaker">
         </div>
         <div class="tr-toggle">
         </div>
@@ -645,8 +549,6 @@
           <br>
           <br>
         </div>
-        <div class="tr-speaker">
-          Gem Wu
           <br>
           <br>Yen-Lin Huang
           <br>
@@ -667,8 +569,6 @@
         <div class="tr-content">
           Advice from Main Stage Speakers
         </div>
-        <div class="tr-speaker">
-          
         </div>
         <div class="tr-toggle">
           <button class="toggle-button" type="button" @click="toggle($event)">+</button>
