@@ -20,6 +20,11 @@ body.en {
 		color: #f2f2f2;
 	}
 }
+body.zh-TW {
+	.en-bold {
+		font-family: $bi600;
+	}
+}
 body.en, body.zh-TW {
 	.nav {
     font-family: $bi600;
@@ -52,6 +57,11 @@ body.en, body.zh-TW {
 		}
 		.about_contnet3_text_wrapper.two_line {
 			padding: 38px 50px;
+		}
+		.about_contnet3_L.card-image, .about_contnet3_R.card-image {
+			background-size: cover;
+			background-position: center;
+			height: 170px;
 		}
 	}
 	.about_data .about_data_info .about_data_content .about_data_number {
@@ -239,13 +249,20 @@ body.en, body.zh-TW {
 		font-family: $bi600;
 		font-size: 28px;
 		opacity: 1;
+		a {
+			width: 100%;
+		}
 	}
 	#register_link {
 		font-family: $bi600;
 		font-size: 28px;
 		border-radius: 0px;
-		padding: 10px 0px;
+		padding: 0px;
 		height: unset;
+		a {
+			padding: 10px 0px;
+			width: 100%;
+		}
 	}
 	// register on mobile
 	.bodycell.mobile-price {
@@ -270,7 +287,8 @@ body.en, body.zh-TW {
 			color: #fff;
 		}
 		& > a {
-			padding: 10px;
+			padding: 10px 0px;
+			width: 100%;
 		}
 	}
 	.ReviewTitle {
