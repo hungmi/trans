@@ -44,6 +44,7 @@ group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
+	gem 'awesome_rails_console'
 end
 
 
@@ -52,7 +53,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'bullet', group: [:development]
 gem 'bootstrap', '~> 4.1.1'
-gem 'awesome_rails_console'
 gem 'pundit'
 gem 'sidekiq'
 gem 'browser'
@@ -61,3 +61,4 @@ gem 'mini_magick', '~> 4.8'
 gem 'aws-sdk-s3', require: false
 gem 'bcrypt', '~> 3.1.7'
 gem 'redis', '~> 4.0'
+gem 'derailed_benchmarks', group: :development
