@@ -378,14 +378,30 @@ body.en, body.zh-TW {
 		table td	{
 			font-family: $bi300;
     	font-size: 22px;
-    	&.contactPhoneInfo, &.contactMailInfo {
+    	.contactPhoneInfo, .contactMailInfo {
     		font-family: $p200;
     		font-size: 12px;
+    	}
+    	.contactPhone {
+    		text-align: center;
     	}
     }
 		.copyright {
 			font-family: $bi300;
     	font-size: 22px;
+    }
+    .info-mobile {
+    	tbody > tr > td {
+    		&:first-child {
+    			min-width: 93px;
+    		}
+    		padding: 10px;
+    	}
+    	.contactMail, .contactPhone {
+    		& > * {
+    			vertical-align: middle;
+    		}
+    	}
     }
 	}
 }
