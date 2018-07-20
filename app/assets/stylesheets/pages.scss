@@ -334,12 +334,12 @@ body.en, body.zh-TW {
 			margin-top: 20px;
 		}
 		.TRANSReview {
-			.ReviewVideo {
+			.TRANS_img_content .ReviewVideo {
 				right: calc(50% - 75px);
 				bottom: calc(100% / 6 * 1 - 75px);	
 			}
 			&.review2016 {
-				.ReviewVideo {
+				.TRANS_img_content .ReviewVideo {
 					bottom: calc((100% - 62px) / 6 * 1 - 75px);	
 				}
 			}
