@@ -34,10 +34,10 @@
         @media screen and (max-width: 992px) {
             flex: 0 0 calc( 100% / 2 - 20px);
         }
-        @media screen and (max-width: 768px) {
-            flex: 0 0 calc( 100% - 150px);
-            margin: 5% 10% 5% 15%;
-        }
+        // @media screen and (max-width: 768px) {
+        //     flex: 0 0 calc( 100% - 150px);
+        //     margin: 5% 10% 5% 15%;
+        // }
 
         img {
             width: 270px;

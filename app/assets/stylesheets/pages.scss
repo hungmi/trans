@@ -101,7 +101,7 @@ body.en, body.zh-TW {
 	@media screen and (max-width: 768px) {
 		.speakers-container .box {
 		    flex: 0 0 calc( 100% - 150px);
-		    margin: 5% 10% 5% 10%;
+		    margin: 5% auto;
 		}
 	}
 	#pop-up .pop-content .text h2 {
