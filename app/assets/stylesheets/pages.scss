@@ -98,10 +98,14 @@ body.en, body.zh-TW {
       font-size: 16px;
 		}
 	}
-	@media screen and (max-width: 768px) {
-		.speakers-container .box {
+	@media screen and (max-width: 414px) {
+		.speakers-container {
+			justify-content: center;
+			.box {
 		    flex: 0 0 calc( 100% - 150px);
-		    margin: 5% auto;
+		    margin-top: 5%;
+		    margin-bottom: 5%;
+		  }
 		}
 	}
 	#pop-up .pop-content .text h2 {
