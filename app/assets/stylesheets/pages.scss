@@ -100,9 +100,13 @@ body.en, body.zh-TW {
 	}
 	@media screen and (max-width: 414px) {
 		.speakers-container {
-			justify-content: center;
+			-webkit-box-pack: center;
+			    -ms-flex-pack: center;
+			        justify-content: center;
 			.box {
-		    flex: 0 0 calc( 100% - 150px);
+		    -webkit-box-flex: 0;
+		        -ms-flex: 0 0 calc( 100% - 150px);
+		            flex: 0 0 calc( 100% - 150px);
 		    margin-top: 5%;
 		    margin-bottom: 5%;
 		  }
