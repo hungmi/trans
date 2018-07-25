@@ -81,5 +81,5 @@ test:
 production:
   <<: *default
   database: trans_production
-  username: trans
+  username: deploy
   password: <%= ENV['TRANS_DATABASE_PASSWORD'] %>
