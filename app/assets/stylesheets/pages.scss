@@ -425,7 +425,7 @@ body.en, body.zh-TW {
 
 #trans.pages_ {
 	&register {
-		// background-image: url('/assets/img/register/bg_2.png');
+		// background-image: url('/img/register/bg_2.png');
 		// background-size: cover;
 		// background-position: 35% 0;
 		// background-repeat: no-repeat
@@ -455,20 +455,20 @@ body.en, body.zh-TW {
   				animation: fade-out 12s infinite both;
 				}
 				li.index-bg1 {
-					background-image: url(/assets/img/index/index_bg1.png);
+					background-image: url(/img/index/index_bg1.png);
 				}
 				li.index-bg2 {
-					background-image: url(/assets/img/index/index_bg2.png);
+					background-image: url(/img/index/index_bg2.png);
 					/*-- Animation delay: 3s --*/ 
   				animation-delay: 3s;
 				}
 				li.index-bg3 {
-					background-image: url(/assets/img/index/index_bg3.png);
+					background-image: url(/img/index/index_bg3.png);
 					/*-- Animation delay: 3s --*/ 
   				animation-delay: 6s;
 				}
 				li.index-bg4 {
-					background-image: url(/assets/img/index/index_bg4.png);
+					background-image: url(/img/index/index_bg4.png);
 					/*-- Animation delay: 3s --*/ 
   				animation-delay: 9s;
 				}
@@ -480,13 +480,13 @@ body.en, body.zh-TW {
 		}
 	}
 	&agenda {
-		// background-image: url('/assets/img/agenda/bg_2.png');
+		// background-image: url('/img/agenda/bg_2.png');
 		// background-size: cover;
 		// background-position: 35% 0;
 		// background-repeat: no-repeat;
 	}
 	&faq {
-		background-image: url('/assets/img/FAQ/FAQ_banner.png');
+		background-image: url('/img/FAQ/FAQ_banner.png');
 		background-size: cover;
 	}
 }
