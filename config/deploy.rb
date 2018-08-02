@@ -16,7 +16,7 @@ set :deploy_to, '/home/deploy/railsapp/trans'
 # Default value for :pty is false
 set :pty, true
 set :linked_files, %w{config/database.yml config/master.key}
-set :linked_dirs, %w{log tmp/pids tmp/cache tmp/sockets vendor/bundle public/system public/uploads}
+set :linked_dirs, %w{log tmp/pids tmp/cache tmp/sockets vendor/bundle public/system public/uploads storage}
 set :bundle_binstubs, nil
 set :rvm_type, :user
 set :rvm_ruby_version, 'ruby-2.5.1' # Edit this if you are using MRI Ruby
