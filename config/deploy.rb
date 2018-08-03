@@ -18,8 +18,13 @@ set :pty, true
 set :linked_files, %w{config/database.yml config/master.key}
 set :linked_dirs, %w{log tmp/pids tmp/cache tmp/sockets vendor/bundle public/system public/uploads storage}
 set :bundle_binstubs, nil
-set :rvm_type, :user
-set :rvm_ruby_version, 'ruby-2.5.1' # Edit this if you are using MRI Ruby
+# set :rvm_type, :user
+# set :rvm_ruby_version, 'ruby-2.5.1' # Edit this if you are using MRI Ruby
+set :rbenv_type, :user # or :system, depends on your rbenv setup
+# set :rbenv_ruby, '2.5.1'
+
+# in case you want to set ruby version from the file:
+set :rbenv_ruby, File.read('.ruby-version').strip
 # Default value for :linked_files is []
 # append :linked_files, "config/database.yml"
 
