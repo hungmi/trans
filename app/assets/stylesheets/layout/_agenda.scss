@@ -127,7 +127,7 @@
     }
 
     .tr-content {
-        flex: 1 0 300px;
+        flex: 1 0 150px;
         font-size: 12px;
         font-family: $p200;
         padding-right: 20px;
@@ -135,10 +135,10 @@
     }
 
     .tr-speaker {
-        flex: 0 0 150px;
+        flex: 0 0 350px;
         font-size: 12px;
         font-family: $p200;
-        text-align: right;
+        text-align: left;
     }
 
     .tr-toggle {
@@ -304,13 +304,17 @@
             }
 
             .tr-content:before {
-                content: "CONTENT";
+                content: "SUBTITLE";
             }
             .tr-speaker:before {
-                content: "SPEAKER";
+                content: "CONTENT";
             }
             .tr-speaker:after {
                 content: "\00a0";
+            }
+            
+            .d-sm-none {
+                display: none;
             }
         }
     }
