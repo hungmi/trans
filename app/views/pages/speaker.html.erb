@@ -70,12 +70,12 @@
   <% @speakers.each_with_index do |speaker, index| %>
     <div class="pop-content" data-pop-show="<%= 33 + index %>">
       <% if speaker.cover.attached? %>
-        <div class="img img-bg-cover" style="background-image: url(<%= url_for speaker.cover %>);"></div>
+        <div class="img img-bg-cover" style="background-image: url('<%= url_for speaker.cover %>');"></div>
       <% end %>
       <div class="text">
         <div class="text-header">
           <% if speaker.cover.attached? %>
-            <div class="text-img img-bg-cover" style="background-image: url(<%= url_for speaker.cover %>);"></div>
+            <div class="text-img img-bg-cover" style="background-image: url('<%= url_for speaker.cover %>');"></div>
           <% end %>
           <div class="text-title">
             <h2 class="<%= render_chinese_class(speaker.i18n_name) %>"><%= speaker.i18n_name %></h2>
