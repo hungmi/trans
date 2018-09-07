@@ -42,7 +42,22 @@ body.en, body.zh-TW {
 		font-family: $bi600;
     font-size: 65px;
 	}
+	#videoBg {
+	  width: auto;
+	  height: auto;
+	 	min-width: auto;
+	  min-height: auto;
+		position: absolute;
+	  top: 50%;
+	  left: 50%;
+	  right: auto;
+	  margin: auto;
+	  transform: translateX(-50%) translateY(-50%);
+	}
 	@media screen and (max-width: 768px) {
+		#videoBg {
+			display: none;
+		}
 		.about_subtitle {
 		   margin: 20% auto 0 auto;
 			.about_subtitle_wrapper b {
@@ -433,6 +448,9 @@ body.en, body.zh-TW {
 	&home {
 		background-color: #f7f7f7;
 		#index-bg {
+			@media only screen and (min-width: 769px) {
+				display: none;
+			}
 			// position: absolute;
 			// left: 0px;
 			// bottom: 0px;

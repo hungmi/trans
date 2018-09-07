@@ -1,7 +1,12 @@
+window.addEventListener('resize', () => { scaleVideoBg() })
+
 document.addEventListener('turbolinks:load', () => {
     // 首頁影片
     videoContent = document.getElementById('videoBg');
-    if (videoContent !== null) checkAutoplaySupport();
+    if (videoContent !== null) {
+      checkAutoplaySupport();
+      scaleVideoBg()
+    }
 
     /// 讓頁面跳轉接過場柔順一點
     $('body').removeClass('hide')
@@ -49,6 +54,23 @@ $(document).on('click', '.tabs a', function(e) {
     $(target).show();
 
 });
+
+function scaleVideoBg() {
+  var browserHeight = window.innerHeight
+  var browserWidth = window.innerWidth
+  var ratio = browserWidth / browserHeight
+  var video = document.getElementById("videoBg")
+  var videoRatio = 16 / 9
+  if (ratio < videoRatio) { // 瀏覽器窄於 16:9
+    console.log("narrower")
+    video.style.width = null
+    video.style.height = browserHeight + "px"
+  } else { // 瀏覽器寬於 16:9
+    console.log("wider")
+    video.style.height = null
+    video.style.width = browserWidth + "px"
+  }
+}
 
 function checkAutoplaySupport() {
   var playPromise = videoContent.play();
