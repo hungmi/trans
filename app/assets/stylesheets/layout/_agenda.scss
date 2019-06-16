@@ -139,6 +139,19 @@
         font-size: 12px;
         font-family: $p200;
         text-align: left;
+        &__list-item {
+            margin-top: 8px;
+            margin-left: 10px;
+            &__name {
+                font-family: Noto Sans TC, PingFangTC-Semibold, xingothic-tc, sans-serif, Microsoft JhengHei;
+                font-weight: 700;
+                line-height: 18px;
+                margin-bottom: 5px;
+            }
+            &__speech-title {
+                font-style: italic;
+            }
+        }
     }
 
     .tr-toggle {
