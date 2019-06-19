@@ -1,0 +1,56 @@
+.pages_home {
+	.home-main {
+		&__text-in-water {
+			background: url("/img/2019/home/text_in_water.png") left top repeat;
+			background-size: contain;
+			-webkit-mask: url("/img/2019/home/water@2x.png") center top no-repeat;
+			// -webkit-mask: url("/img/2019/home/water_mask.svg") center center no-repeat;
+			-webkit-mask-size: 45%;
+			z-index: 2;
+			-webkit-animation: slide 1000s linear infinite;
+			height: calc(100% - 62px);
+			width: 100%;
+			position: absolute;
+			top: 62px;
+			animation-fill-mode: forwards;
+		}
+		&__water {
+			background: url("/img/2019/home/water@2x.png") center top no-repeat;
+			// -webkit-mask-image: url("/img/2019/home/water@2x.png");
+			background-size: 45%;
+			z-index: 1;
+			// -webkit-animation: slide 1000s linear infinite;
+			height: calc(100% - 62px);
+			width: 100%;
+			position: absolute;
+			top: 62px;
+			animation-fill-mode: forwards;
+		}
+		&:after {
+			content: '';
+			background: url("/img/2019/home/text.png") left top repeat;
+			background-size: contain;
+			z-index: 0;
+			-webkit-animation: slide 1000s linear infinite;
+			height: calc(100% - 62px);
+			width: 100%;
+			position: absolute;
+			top: 62px;
+			animation-fill-mode: forwards;
+		}
+		@media only screen and (max-width: 768px) {
+			&__text-in-water {
+				-webkit-mask: url("/img/2019/home/water@2x.png") 5% top no-repeat;
+				-webkit-mask-size: 120%;
+			}
+			&__water {
+				background: url("/img/2019/home/water@2x.png") 5% top no-repeat;
+				background-size: 120%;
+			}
+		}
+	}
+}
+@-webkit-keyframes slide {
+	from { background-position: 0 0; }
+	to { background-position: -24000px 0; }
+}
