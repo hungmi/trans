@@ -19,7 +19,11 @@
 
 .TRANS_img_content {
 	background-color: #000000;
-	
+	transition: background-size .8s ease;
+	-moz-transition: background-size .8s ease;
+	-ms-transition: background-size .8s ease;
+	-o-transition: background-size .8s ease;
+	-webkit-transition: background-size .8s ease;
 	a {
 		overflow: hidden;
 		
@@ -29,8 +33,7 @@
 
   	} 
 	}
-
-	a:hover {
+	&.hover, a:hover {
 		img {
 			transform: scale3d(1.1, 1.1, 1);
 		}
