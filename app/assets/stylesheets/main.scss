@@ -1,6 +1,9 @@
 @charset "UTF-8";
 // ========= 客製化區 =========
 @import 'custom_style/variables'; // 變數
+h1, h2, h3, h4, h5, h6, span, p, a, th, td {
+  color: $black-2019;
+}
 // ========= base =========
 @import 'base/reset'; // doppler reset
 @import 'base/dophlex'; // dopplex
@@ -68,7 +71,7 @@ img {
     z-index: 0;
     top: -20px;
     left: 0;
-    background-color: black;
+    background-color: $black-2019;
     color: white;
     padding: 20px 20px;
     font-family: $p600;

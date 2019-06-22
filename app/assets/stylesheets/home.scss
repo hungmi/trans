@@ -5,7 +5,7 @@
 			background-size: contain;
 			-webkit-mask: url("/img/2019/home/water@2x.png") center top no-repeat;
 			// -webkit-mask: url("/img/2019/home/water_mask.svg") center center no-repeat;
-			-webkit-mask-size: 45%;
+			-webkit-mask-size: contain;
 			z-index: 2;
 			opacity: 0.15;
 			-webkit-animation: slide 1000s linear infinite;
@@ -18,7 +18,7 @@
 		&__water {
 			background: url("/img/2019/home/water@2x.png") center top no-repeat;
 			// -webkit-mask-image: url("/img/2019/home/water@2x.png");
-			background-size: 45%;
+			background-size: contain;
 			z-index: 1;
 			// -webkit-animation: slide 1000s linear infinite;
 			height: calc(100% - 62px);

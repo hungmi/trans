@@ -1,7 +1,17 @@
+.register_banner {
+  background-image: url('/img/2019/register/banner.jpg');
+  background-position: -34px -7px !important;
+  background-size: 115% !important;
+  @media screen and (max-width: $breakpoint-small) {
+    background-position: -187px center !important;
+    background-size: cover !important;
+  }
+}
+
 .register_bg {
 	background-color:rgba(255, 255, 255, 0.6);
 	width:100%;
-	margin:-2% 10vw 20vh -5%;
+	// margin:-2% 10vw 20vh -5%;
 	padding:5% 0 0 0;
 	box-shadow: 0px 2px 3px 1.5px rgba(0, 0, 70, .1);
   
@@ -12,7 +22,7 @@
 }
 
 .top {
-	margin: 10% 9vw 100px 10%;
+	margin: 10% auto 10px auto;
 	padding-bottom: 10%;
 	width: 100%;	
 
@@ -63,7 +73,7 @@
 }
 
 .register_title {
-	margin:72px 10% 20px 6%;
+	margin: 72px auto 30px auto;
 	font-size: 28px;
 	color: black;
   font-family: $p300;
@@ -75,23 +85,25 @@
 }
 
 .register-table {
-	margin-left: 6%;
-	margin-bottom: 100px;
+	margin: 0px auto 30px auto;
+	// margin-bottom: 100px;
   font-family: $p300;
-	width: 90%;
+	width: 700px;
 
 	.tr {
 		display: flex;
 		align-items: flex-start;
 		justify-content: flex-start;
-		padding: 17px 0;
-		box-shadow: 0 1px 0 0 rgba(0, 0, 0, .3);
+		// padding: 17px 0;
+		// box-shadow: 0 1px 0 0 rgba(0, 0, 0, .3);
+    border-bottom: 1px solid #aaa;
 		font-size: 14px;
     font-family: $p300;
 	}
 	
 	.th{
-		box-shadow: 0 1px 0 0 rgba(0, 0, 0, .6);
+		// box-shadow: 0 1px 0 0 rgba(0, 0, 0, .6);
+    border-bottom: 1px solid #333;
 	}
 
 	.tr-sale {
@@ -103,15 +115,17 @@
 	}
 	
 	.tr-name {
-		flex: 0 0 60%;
+    flex: 0 0 60%;
 		font-size: 14px;
 		text-align: left;
 		
 	}
 
 	.tr-origin {
-		flex: 0 0 12%;
+		flex: 0 0 15%;
 		font-size: 14px;
+    text-align: center;
+    margin-right: 6%;
 		
 		.currency {
 			display:inline-flex;
@@ -123,7 +137,8 @@
 	.tr-pirce {
 		flex: 0 0 15%;
 		font-size: 14px;
-		text-align: right;
+    background-color: $blue-2019;
+    text-align: center;
 		.currency {
 			display:inline-flex;
 			font-size: 12px;
@@ -131,6 +146,35 @@
 		}
 	}
 
+  // 請注意這個跟拼錯的 .tr-pirce 不一樣
+  .tr-price {
+    background-color: $blue-2019;
+    flex: 0 0 15%;
+    text-align: center;
+  }
+
+  .tr-name, .tr-origin, .tr-pirce, .tr-price {
+    padding: 17px 0;
+  }
+
+}
+
+.register-table, .register-table--mobile {
+  .discount-label {
+    visibility: hidden; // 預設為隱藏，因為只有有折扣的票價才需要看到，其他是用來擠空間
+    font-size: 12px;
+    padding: 5px;
+    margin: 0px 20px 6px 20px;
+    background-color: $black-2019;
+    color: white;
+  }
+  .discount-label.visible {
+    visibility: visible;
+  }
+}
+
+.register-table--mobile .discount-label {
+  margin: 10px 3px 6px 3px;
 }
 
 /*Bootstrap Grid system*/
@@ -1004,13 +1048,18 @@ table th[class*="col-"] {
 }
 .headcell{
   border-bottom: 1px solid black;
-  font-size: 12px;
+  font-size: 14px;
+  font-weight: bold;
 }
 .bodycell{
   border-bottom: 0.5px solid #bdbdbd;
   font-size: 14px;
   font-weight: 300;
   width:auto;
+}
+
+.table td.blue-price-td {
+  background-color: $blue-2019 !important;
 }
 // .tagcell {
 //   vertical-align: middle;

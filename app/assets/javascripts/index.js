@@ -2,11 +2,11 @@ window.addEventListener('resize', () => { scaleVideoBg() })
 
 document.addEventListener('turbolinks:load', () => {
     // 首頁影片
-    videoContent = document.getElementById('videoBg');
-    if (videoContent !== null) {
-      checkAutoplaySupport();
-      scaleVideoBg()
-    }
+    // videoContent = document.getElementById('videoBg');
+    // if (videoContent !== null) {
+    //   checkAutoplaySupport();
+    //   scaleVideoBg()
+    // }
 
     /// 讓頁面跳轉接過場柔順一點
     $('body').removeClass('hide')

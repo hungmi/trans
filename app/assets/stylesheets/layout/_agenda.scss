@@ -58,11 +58,12 @@
         font-size: 15px;
         font-family: $p400;
         padding: 7px 15px;
-        box-shadow: 0 0 0 1px #000;
+        box-shadow: 0 0 0 1px $black-2019;
+        color: $black-2019;
     }
 
     .tab-btn.active {
-        background-color: #000;
+        background-color: $black-2019;
         color: #FFF;
     }
 

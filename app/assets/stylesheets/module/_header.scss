@@ -84,7 +84,7 @@
     line-height: 34px;
     padding: 0 20px;
     box-sizing: border-box;
-    color: #000000;
+    color: $black-2019;
     letter-spacing: 0.2px;
     text-align: center;
     font-weight: 600;
@@ -110,12 +110,13 @@
 }
 
 .nav li a {
-    border-bottom: 0px solid #000000;
+    border-bottom: 0px solid $black-2019;
     padding-bottom: 3px;
 
 
     &:hover {
-        border-bottom: 1px solid #000000;
+        // border-bottom: 1px solid $black-2019;
+        color: $blue-2019;
         transition: border .5s ease;
     }
 }
@@ -136,10 +137,11 @@
 
 #register {
     font-size: 16px;
-    background-color: #000000;
-    color: white;
+    background-color: $black-2019;
+    color: $blue-2019;
     margin-left: 10px;
     transition: background-color .9s ease;
+    border-radius: 999px;
     &:hover {
         color: #000000;
         background-color: white;
