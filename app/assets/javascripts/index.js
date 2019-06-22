@@ -1,4 +1,4 @@
-window.addEventListener('resize', () => { scaleVideoBg() })
+// window.addEventListener('resize', () => { scaleVideoBg() })
 
 document.addEventListener('turbolinks:load', () => {
     // 首頁影片

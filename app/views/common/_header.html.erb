@@ -4,12 +4,12 @@
   </a>
   <nav class="nav">
     <ul>
-      <li><a href="<%= aboutTRANS_path %>">About TRANS</a></li>
-      <li><a href="<%= speaker_path %>">Speaker</a></li>
-      <li><a href="<%= agenda_path %>">Agenda</a></li>
-      <li><a href="<%= communityPartner_path %>">Partner</a></li>
-      <li><a href="<%= faq_path %>">FAQ</a></li>
-      <li><a href="<%= review_path %>">Review</a></li>
+      <li><a class="<%= 'current' if current_page?(aboutTRANS_path) %>" href="<%= aboutTRANS_path %>">About TRANS</a></li>
+      <li><a class="<%= 'current' if current_page?(speaker_path) %>" href="<%= speaker_path %>">Speaker</a></li>
+      <li><a class="<%= 'current' if current_page?(agenda_path) %>" href="<%= agenda_path %>">Agenda</a></li>
+      <li><a class="<%= 'current' if current_page?(communityPartner_path) %>" href="<%= communityPartner_path %>">Partner</a></li>
+      <li><a class="<%= 'current' if current_page?(faq_path) %>" href="<%= faq_path %>">FAQ</a></li>
+      <li><a class="<%= 'current' if current_page?(review_path) %>" href="<%= review_path %>">Review</a></li>
       <li id="register"><a href="<%= register_path %>">Register Now</a></li>
       <li class="hidden-on-small"><a href="<%= url_for(locale: 'zh-TW') %>">CH</a></li>
       <li class="hidden-on-small"><a href="<%= url_for(locale: 'en') %>">EN</a></li>

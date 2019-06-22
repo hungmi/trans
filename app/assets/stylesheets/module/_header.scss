@@ -114,7 +114,7 @@
     padding-bottom: 3px;
 
 
-    &:hover {
+    &.current, &:hover {
         // border-bottom: 1px solid $black-2019;
         color: $blue-2019;
         transition: border .5s ease;
