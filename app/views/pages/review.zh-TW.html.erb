@@ -1,27 +1,30 @@
-<div class="TRANSReview review2016">
-  <div class="ReviewTitle">
-    <div class="mainText">2016 TRANS Activity</div>
+<div class="TRANSReview reviewTop review2018">
+  <div class="ReviewTitle secondYear">
+    <div class="mainText">2018 TRANS Activity</div>
     <div class="subText">Throwback Photos</div>
   </div>
   <div class="TRANS_img flex-l3-m2-">
-    <div class="TRANS_img_content">
+    <div class="TRANS_img_content" style="background-image: url('/img/2019/review/2018/1-11.jpg');">
+      <div class="gradient_water"></div>
       <a href="https://www.flickr.com/photos/145757016@N03/albums" target="_blank">
-        <img src="/img/2016TRANS/2017/2016-1.jpg"; >
+        <!-- <img src="/img/2019/review/2018/1-11.jpg"; > -->
       </a>
     </div>
-    <div class="TRANS_img_content">
+    <div class="TRANS_img_content" style="background-image: url('/img/2019/review/2018/1-21.jpg');">
+      <div class="gradient_water"></div>
       <a href="https://www.flickr.com/photos/145757016@N03/albums" target="_blank">
-        <img src="/img/2016TRANS/2017/2016-2.jpg">
+        <!-- <img src="/img/2019/review/2018/1-21.jpg"> -->
       </a>
     </div>
-    <div class="TRANS_img_content">
-      <a href="https://www.youtube.com/watch?v=LF5HgXmRPx8" target="_blank">
+    <div class="TRANS_img_content" style="background-image: url('/img/2019/review/2018/1-31.jpg');">
+      <div class="gradient_water"></div>
+      <a href="https://www.youtube.com/watch?v=KgJbmOoyjbs" target="_blank">
         <div class="ReviewVideo">
           <div class="playBtn">
-            <img src="/img/2016TRANS/2017/播放鍵.svg">
+            <img src="/img/2019/review/play_icon1.png" style="max-width: 120px;">
           </div>
         </div>
-        <img src="/img/2016TRANS/2017/2016-3.jpg">
+        <!-- <img src="/img/2019/review/2018/1-31.jpg"> -->
       </a>
     </div>
   </div>
@@ -32,25 +35,71 @@
     <div class="subText">Throwback Photos</div>
   </div>
   <div class="TRANS_img flex-l3-m2-">
-    <div class="TRANS_img_content">
+    <div class="TRANS_img_content" style="background-image: url('/img/2019/review/2017/2-11.jpg');">
+      <div class="gradient_water"></div>
       <a href="https://www.flickr.com/photos/145757016@N03/albums" target="_blank">
-        <img src="/img/2016TRANS/2017/2017-1.jpg"; >
+        <!-- <img src="/img/2019/review/2017/2-11.jpg"; > -->
       </a>
     </div>
-    <div class="TRANS_img_content">
+    <div class="TRANS_img_content" style="background-image: url('/img/2019/review/2017/2-21.jpg');">
+      <div class="gradient_water"></div>
       <a href="https://www.flickr.com/photos/145757016@N03/albums" target="_blank">
-        <img src="/img/2016TRANS/2017/2017-2.jpg">
+        <!-- <img src="/img/2019/review/2017/2-21.jpg"> -->
       </a>
     </div>
-    <div class="TRANS_img_content">
+    <div class="TRANS_img_content" style="background-image: url('/img/2019/review/2017/2-31.jpg');">
+      <div class="gradient_water"></div>
       <a href="https://www.youtube.com/watch?v=PbJzah0xJnc" target="_blank">
         <div class="ReviewVideo">
           <div class="playBtn">
-            <img src="/img/2016TRANS/2017/播放鍵.svg">
+            <img src="/img/2019/review/play_icon1.png" style="max-width: 120px;">
           </div>
         </div>
-        <img src="/img/2016TRANS/2017/2017-3.jpg">
+        <!-- <img src="/img/2019/review/2017/2-31.jpg"> -->
       </a>
     </div>
   </div>
 </div>
+<div class="TRANSReview review2016">
+  <div class="ReviewTitle">
+    <div class="mainText">2016 TRANS Activity</div>
+    <div class="subText">Throwback Photos</div>
+  </div>
+  <div class="TRANS_img flex-l3-m2-">
+    <div class="TRANS_img_content" style="background-image: url('/img/2019/review/2016/3-11.jpg');">
+      <div class="gradient_water"></div>
+      <a href="https://www.flickr.com/photos/145757016@N03/albums" target="_blank">
+      </a>
+    </div>
+    <div class="TRANS_img_content" style="background-image: url('/img/2019/review/2016/3-21.jpg');">
+      <div class="gradient_water"></div>
+      <a href="https://www.flickr.com/photos/145757016@N03/albums" target="_blank">
+      </a>
+    </div>
+    <div class="TRANS_img_content" style="background-image: url('/img/2019/review/2016/3-31.jpg');">
+      <div class="gradient_water"></div>
+      <a href="https://www.youtube.com/watch?v=LF5HgXmRPx8" target="_blank">
+        <div class="ReviewVideo">
+          <div class="playBtn">
+            <img src="/img/2019/review/play_icon1.png" style="max-width: 120px;">
+          </div>
+        </div>
+        <!-- <img src="/img/2019/review/2016/3-31.jpg"> -->
+      </a>
+    </div>
+  </div>
+</div>
+
+<script>
+  $(".gradient_water, .TRANS_img_content a").hover(function() {
+    // console.log("in")
+    $(this).parents(".TRANS_img_content").addClass("hover")
+  }, function() {
+    // console.log("leave")
+    $(this).parents(".TRANS_img_content").removeClass("hover")
+  })
+  $(".gradient_water").click(function() {
+    // console.log($(this).siblings("a"))
+    $(this).siblings("a")[0].click()
+  })
+</script>
