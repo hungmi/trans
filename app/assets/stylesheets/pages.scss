@@ -539,9 +539,9 @@ body.en, body.zh-TW {
 	}
 	&about {
 		.pic1.img-bg-cover {
-			background: url('/img/2019/about/HM_G.png') center center / cover no-repeat, url('/img/2019/about/about_HM.jpg') center 38% / 120% no-repeat;
+			background: url('/img/2019/about/HM_G.png') center 62px / contain no-repeat, url('/img/2019/about/about_HM.jpg') center 38% / 120% no-repeat;
 			@media screen and (max-width: 768px) {
-				background: url('/img/2019/about/HM_G.png') center center / cover no-repeat, url('/img/2019/about/about_HM.jpg') 36% 30% / 250% no-repeat;
+				background: url('/img/2019/about/HM_G.png') center 62px / contain no-repeat, url('/img/2019/about/about_HM.jpg') 36% 30% / 250% no-repeat;
 			}
 		}
 	}
