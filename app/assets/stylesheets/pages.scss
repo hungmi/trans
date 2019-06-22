@@ -532,12 +532,12 @@ body.en, body.zh-TW {
 	}
 	&agenda {
 		.pic1.img-bg-cover {
-			background: url('/img/2019/agenda/HM_G.png') center 62px / contain no-repeat, url('/img/2019/agenda/agenda_HM1.jpg') center 38% / cover no-repeat;
+			background: url('/img/2019/agenda/HM_G.png') center #{62px} / contain no-repeat, url('/img/2019/agenda/agenda_HM1.jpg') center #{38%} / cover no-repeat;
 			@media screen and (max-width: 768px) {
-				background: url('/img/2019/agenda/HM_G.png') center 62px / 250% no-repeat, url('/img/2019/agenda/agenda_HM1.jpg') center 38% / 130% no-repeat;
+				background: url('/img/2019/agenda/HM_G.png') center #{62px} / 250% no-repeat, url('/img/2019/agenda/agenda_HM1.jpg') center #{38%} / 130% no-repeat;
 			}
 			@media screen and (max-width: 415px) {
-				background: url('/img/2019/agenda/HM_G.png') center 62px / 420% no-repeat, url('/img/2019/agenda/agenda_HM1.jpg') center 38% / 200% no-repeat;
+				background: url('/img/2019/agenda/HM_G.png') center #{62px} / 420% no-repeat, url('/img/2019/agenda/agenda_HM1.jpg') center #{38%} / 200% no-repeat;
 			}
 		}
 	}
@@ -547,23 +547,23 @@ body.en, body.zh-TW {
 	}
 	&about {
 		.pic1.img-bg-cover {
-			background: url('/img/2019/about/HM_G.png') center 62px / contain no-repeat, url('/img/2019/about/about_HM.jpg') center 38% / 120% no-repeat;
+			background: url('/img/2019/about/HM_G.png') center #{62px} / contain no-repeat, url('/img/2019/about/about_HM.jpg') center #{38%} / 120% no-repeat;
 			@media screen and (max-width: 768px) {
-				background: url('/img/2019/about/HM_G.png') center 62px / 250% no-repeat, url('/img/2019/about/about_HM.jpg') 36% 38% / 250% no-repeat;
+				background: url('/img/2019/about/HM_G.png') center #{62px} / 250% no-repeat, url('/img/2019/about/about_HM.jpg') 36% #{38%} / 250% no-repeat;
 			}
 			@media screen and (max-width: 415px) {
-				background: url('/img/2019/about/HM_G.png') center 62px / 420% no-repeat, url('/img/2019/about/about_HM.jpg') 36% 30% / 250% no-repeat;
+				background: url('/img/2019/about/HM_G.png') center #{62px} / 420% no-repeat, url('/img/2019/about/about_HM.jpg') 36% 30% / 250% no-repeat;
 			}
 		}
 	}
 	&partner {
 		.pic1.img-bg-cover {
-			background: url('/img/2019/partner/HM_G.png') center 62px / contain no-repeat, url('/img/2019/partner/partner_HM1.jpg') center 30% / cover no-repeat;
+			background: url('/img/2019/partner/HM_G.png') center #{62px} / contain no-repeat, url('/img/2019/partner/partner_HM1.jpg') center #{30%} / cover no-repeat;
 			@media screen and (max-width: 768px) {
-				background: url('/img/2019/partner/HM_G.png') center 62px / 250% no-repeat, url('/img/2019/partner/partner_HM1.jpg') 36% 38% / 150% no-repeat;
+				background: url('/img/2019/partner/HM_G.png') center #{62px} / 250% no-repeat, url('/img/2019/partner/partner_HM1.jpg') 36% #{38%} / 150% no-repeat;
 			}
 			@media screen and (max-width: 415px) {
-				background: url('/img/2019/partner/HM_G.png') center 62px / 420% no-repeat, url('/img/2019/partner/partner_HM1.jpg') 36% 30% / 250% no-repeat;
+				background: url('/img/2019/partner/HM_G.png') center #{62px} / 420% no-repeat, url('/img/2019/partner/partner_HM1.jpg') 36% #{30%} / 250% no-repeat;
 			}
 		}
 	}
