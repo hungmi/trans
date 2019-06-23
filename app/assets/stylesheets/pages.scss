@@ -405,8 +405,8 @@ body.en, body.zh-TW {
 			}
 		}
 	}
-	#for_wrapper_bg {
-		background: rgba(0,0,0,0.9);
+	#faq_wrapper_bg {
+		background: $black-2019;
     padding-bottom: 1px;
 	}
 	.wrapper.faq {
@@ -531,7 +531,7 @@ body.en, body.zh-TW {
 		}
 	}
 	&agenda {
-		.pic1.img-bg-cover {
+		.pic1 {
 			background: url('/img/2019/agenda/HM_G.png') center #{62px} / contain no-repeat, url('/img/2019/agenda/agenda_HM1.jpg') center #{38%} / cover no-repeat;
 			@media screen and (max-width: 768px) {
 				background: url('/img/2019/agenda/HM_G.png') center #{62px} / 250% no-repeat, url('/img/2019/agenda/agenda_HM1.jpg') center #{38%} / 130% no-repeat;
@@ -542,11 +542,15 @@ body.en, body.zh-TW {
 		}
 	}
 	&faq {
-		background-image: url('/img/FAQ/FAQ_banner.png');
-		background-size: cover;
+		.pic1 {
+			background: url('/img/2019/FAQ_HM.jpg') center #{-60px} / cover no-repeat;
+			@media screen and (max-width: 415px) {
+				background: url('/img/2019/FAQ_HM.jpg') center #{10px} / cover no-repeat;
+			}
+		}
 	}
 	&about {
-		.pic1.img-bg-cover {
+		.pic1 {
 			background: url('/img/2019/about/HM_G.png') center #{62px} / contain no-repeat, url('/img/2019/about/about_HM.jpg') center #{38%} / 120% no-repeat;
 			@media screen and (max-width: 768px) {
 				background: url('/img/2019/about/HM_G.png') center #{62px} / 250% no-repeat, url('/img/2019/about/about_HM.jpg') 36% #{38%} / 250% no-repeat;
