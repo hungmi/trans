@@ -77,6 +77,9 @@
 	font-size: 28px;
 	color: black;
   font-family: $p300;
+  &--mobile {
+    font-family: $p400;
+  }
 
   @media screen and (max-width: $breakpoint-small) {
         width: 80%;
@@ -1053,12 +1056,14 @@ table th[class*="col-"] {
   border-bottom: 1px solid black;
   font-size: 14px;
   font-weight: bold;
+  font-family: $p400;
 }
 .bodycell{
   border-bottom: 0.5px solid #bdbdbd;
   font-size: 14px;
   font-weight: 300;
   width:auto;
+  font-family: $p300;
 }
 
 .table td.blue-price-td {
