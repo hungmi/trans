@@ -18,14 +18,6 @@
         <div class="triangle-down"></div>
       </div>
     </a>
-    <a class="box" href="#pitchStageAgenda" style="margin-bottom: 20px;">
-      <div class="text">
-       Pitch Stage Agenda
-      </div>
-      <div class="arrow">
-        <div class="triangle-down"></div>
-      </div>
-    </a>
   </div>
   <div id="mainStageAgenda" class="agenda-wrap">
     <div class="title">
@@ -52,153 +44,269 @@
       <div class="agenda-tr th">
         <div class="tr-time">時間</div>
         <div class="tr-title">主題</div>
-        <div class="tr-content"></div>
+        <!-- <div class="tr-content"></div> -->
         <div class="tr-speaker">內容</div>
         <div class="tr-toggle"></div>
       </div>
       <div class="agenda-tr">
-        <div class="tr-time">09:30-10:00</div>
+        <div class="tr-time">08:30-09:30</div>
         <div class="tr-title">
-          開幕<br>生醫宇宙大爆炸
+          開幕式
         </div>
-        <div class="tr-content">
-        </div>
+        <!-- <div class="tr-content"></div> -->
         <div class="tr-speaker">
         </div>
         <div class="tr-toggle">
         </div>
       </div>
       <div class="agenda-tr">
-        <div class="tr-time">10:00-10:50</div>
+        <div class="tr-time">10:00-10:30</div>
         <div class="tr-title">
-          專題演講<br><br>來自太空總署的叮嚀
+          生醫產業的併購
         </div>
-        <div class="tr-content">
-          新世代生醫趨勢與走向
-        </div>
+        <!-- <div class="tr-content">
+          The Next Generation of Healthcare
+        </div> -->
         <div class="tr-speaker">
-          默克集團如何組織新創活動並定義生醫趨勢走向<br>講者：Michael Gamber<br><br>
-          富士康翻轉健康產業：互聯網上的醫療<br>講者：Charlie Alvarez 
+          專題演講
+          <div class="tr-speaker__list-item">
+            <div class="tr-speaker__list-item__name">- OrbiMed 資深董事總經理 Nissim Darvish</div>
+            <span class="tr-speaker__list-item__speech-title">生命科學產業併購的新脈動</span>
+          </div>
         </div>
         <div class="tr-toggle">
           <button class="toggle-button" type="button" @click="toggle($event)">+</button>
         </div>
       </div>
       <div class="agenda-tr">
-        <div class="tr-time">10:50-11:30</div>
+        <div class="tr-time">10:30-11:00</div>
         <div class="tr-title">
-          專題演講<br><br>與太空艦長一起離開地球表面
+          生醫產業的革新
         </div>
-        <div class="tr-content">
-          生醫新創的演變：捉住下一隻潛在的獨角獸
-        </div>
+        <!-- <div class="tr-content">
+          The Evolution of Healthcare: New Investment Opportunities
+        </div> -->
         <div class="tr-speaker">
-          FDA眼中的數位醫療發展<br>講者：Kazem Kazempour<br><br>
-          敲響美國醫療巨鐘：富士康與 Advocate Aurora<br>講者：Bijoy Khandheria, MD, FASE, FESC, FACC
+          專題演講
+          <div class="tr-speaker__list-item">
+            <div class="tr-speaker__list-item__name">- IBM 全球健康醫療和生命科學能力中心執行顧問 Lenny Chen</div>
+            <span class="tr-speaker__list-item__speech-title">革新與機會：改變生醫生態系的新面孔</span>
+          </div>
         </div>
         <div class="tr-toggle">
           <button class="toggle-button" type="button" @click="toggle($event)">+</button>
+        </div>
+      </div>
+      <div class="agenda-tr">
+        <div class="tr-time">11:00-11:20</div>
+        <div class="tr-title">
+          科技與生醫領域
+        </div>
+        <!-- <div class="tr-content">
+          The Intriguing Stories of Forbes 30 Under 30
+        </div> -->
+        <div class="tr-speaker">
+          專題演講
+          <div class="tr-speaker__list-item">
+            <div class="tr-speaker__list-item__name">- TransLink Capital 董事總經理 Eric Hsia</div>
+            <span class="tr-speaker__list-item__speech-title">科技革新牽動生醫產業的演進</span>
+          </div>
+        </div>
+        <div class="tr-toggle">
+          <button class="toggle-button" type="button" @click="toggle($event)">+</button>
+        </div>
+      </div>
+      <div class="agenda-tr">
+        <div class="tr-time">11:20-11:40</div>
+        <div class="tr-title">
+          企業的創業加速器可以帶來什麼
+        </div>
+        <!-- <div class="tr-content"></div> -->
+        <div class="tr-speaker">
+          專題演講
+          <div class="tr-speaker__list-item">
+            <div class="tr-speaker__list-item__name">- 默克藥廠新創加速器營運長 Munya Chivasa</div>
+            <span class="tr-speaker__list-item__speech-title">默克藥廠加速計畫：挹注新創必備的專業與資源</span>
+          </div>
+        </div>
+        <div class="tr-toggle">
         </div>
       </div>
       <div class="agenda-tr">
         <div class="tr-time">11:40-12:40</div>
         <div class="tr-title">
-          座談會<br><br>生醫宇宙的超級新星
+          新創募資：創業家該知道的事
         </div>
-        <div class="tr-content">
-          富比世30 under 30的生醫青年創業家
-        </div>
+        <!-- <div class="tr-content">
+          Decode the Mysteries of the Gene Therapy
+        </div> -->
         <div class="tr-speaker">
-          手術房中的AI新平台<br>講者：Siddarth Satish<br><br>
-          我的生醫旅程：從紐約大學到富比世30歲菁英榜<br>講者：Melissa Yu<br><br>
-          一線之隔：如何將醫院體系從買家化為合作夥伴<br>講者： Pelu Tran
+          座談會（主持人：台杉投資生技投資事業資深協理鄭晴之
+          <div class="tr-speaker__list-item">
+            <div class="tr-speaker__list-item__name">- 花旗商業金融負責人余苑菱</div>
+            <span class="tr-speaker__list-item__speech-title">從天使投資到IPO：銀行角色定位及資本市場趨勢</span>
+          </div>
+          <div class="tr-speaker__list-item">
+            <div class="tr-speaker__list-item__name">- HealthXCapital 合夥人 Seemant Jauhari</div>
+            <span class="tr-speaker__list-item__speech-title">亞洲新創的推手：管理生醫創投早期資金的經驗談</span>
+          </div>
+          <div class="tr-speaker__list-item">
+            <div class="tr-speaker__list-item__name">- Inito 共同創辦人兼執行長 Aayush Rai</div>
+            <span class="tr-speaker__list-item__speech-title">新創募資：矽谷 Y Combinator 加速器之新創團隊募資經驗談</span>
+          </div>
         </div>
         <div class="tr-toggle">
           <button class="toggle-button" type="button" @click="toggle($event)">+</button>
         </div>
       </div>
       <div class="agenda-tr">
-        <div class="tr-time">12:40-14:00</div>
+        <div class="tr-time">12:40-13:30</div>
         <div class="tr-title">
           休息時間
         </div>
-        <div class="tr-content">
+        <!-- <div class="tr-content"></div> -->
+        <div class="tr-speaker">
         </div>
-        <div class="tr-speaker"></div>
         <div class="tr-toggle">
         </div>
       </div>
       <div class="agenda-tr">
-        <div class="tr-time">14:00-14:25</div>
+        <div class="tr-time">13:30-14:30</div>
         <div class="tr-title">
-          專題演講<br><br>探索未知的生醫星系：基因治療
+          慢性疾病
         </div>
-        <div class="tr-content">
-          拆解基因治療的奧秘
-        </div>
+        <!-- <div class="tr-content">
+          The Opportunities and Challenges for AI in Healthcare
+        </div> -->
         <div class="tr-speaker">
-          基因治療最前線：CRISPR在基因工程的最新發展<br>講者：Patrick D. Hsu
-        </div>
-        <div class="tr-toggle">
-          <button class="toggle-button" type="button" @click="toggle($event)">+</button>
-        </div>
-      </div>
-      <div class="agenda-tr">
-        <div class="tr-time">14:25-14:50</div>
-        <div class="tr-title">
-          專題演講<br><br>穿梭行星的領航員
-        </div>
-        <div class="tr-content">
-          醫療人工智慧的機會與挑戰
-        </div>
-        <div class="tr-speaker">
-          創投、新創、醫院眼中的醫療人工智慧<br>講者： Pelu Tran
+          專題演講
+          <div class="tr-speaker__list-item">
+            <div class="tr-speaker__list-item__name">- Bioufourmis 創辦人兼執行長 Kuldeep Singh Rajput</div>
+            <span class="tr-speaker__list-item__speech-title">運用數位治療改善慢性疾病患者管理的新契機</span>
+          </div>
+          <div class="tr-speaker__list-item">
+            <div class="tr-speaker__list-item__name">- 鈦隼生物科技創辦人兼執行長陳階曉</div>
+            <span class="tr-speaker__list-item__speech-title">手術機器人帶來慢性腦部疾病的巨大進展</span>
+          </div>
+          <div class="tr-speaker__list-item">
+            <div class="tr-speaker__list-item__name">- Imperative Care 共同創辦人兼技術長楊奕</div>
+            <span class="tr-speaker__list-item__speech-title">運用科技改造神經領域治療：科技如何解決中風患者未被滿足的需求</span>
+          </div>
         </div>
         <div class="tr-toggle">
           <button class="toggle-button" type="button" @click="toggle($event)">+</button>
         </div>
       </div>
       <div class="agenda-tr">
-        <div class="tr-time">15:00-15:50</div>
+        <div class="tr-time">14:30-15:30</div>
         <div class="tr-title">
-          座談會<br><br>超越事件視界
+          改善醫療體系效率
         </div>
-        <div class="tr-content">
-          當區塊鏈碰上生醫宇宙，是黑洞還是新星？
-        </div>
+        <!-- <div class="tr-content">
+          A Black Hole or A Young Star: Blockchain
+        </div> -->
         <div class="tr-speaker">
-          SimplyVital Health如何透過符合HIPAA標準的區塊鏈技術創造開創性解決方案<br>講者：Katherine Kuzmeskas<br><br>
-          醫藥業的科技新曙光<br>講者：Disa Lee Choun
+          座談會（主持人：PregBuddy & Connected Care 共同創辦人 Subhadeep Mondal）
+          <div class="tr-speaker__list-item">
+            <div class="tr-speaker__list-item__name">- Halodoc 共同創辦人 Erwin Tenggono</div>
+            <span class="tr-speaker__list-item__speech-title">擴展醫療服務範圍與理想化醫療資源運用的策略</span>
+          </div>
+          <div class="tr-speaker__list-item">
+            <div class="tr-speaker__list-item__name">- Innoplexus AG 創辦人兼執行長 Gunjan Bhardwaj</div>
+            <span class="tr-speaker__list-item__speech-title">大數據：運用區塊鏈與人工智慧改善醫療體系</span>
+          </div>
+          <div class="tr-speaker__list-item">
+            <div class="tr-speaker__list-item__name">- M Ventures 分析師張正富</div>
+            <span class="tr-speaker__list-item__speech-title">如何以語音技術衡量真實世界醫療品質</span>
+          </div>
         </div>
         <div class="tr-toggle">
           <button class="toggle-button" type="button" @click="toggle($event)">+</button>
         </div>
       </div>
       <div class="agenda-tr">
-        <div class="tr-time">16:00-16:25</div>
+        <div class="tr-time">15:30-16:30</div>
         <div class="tr-title">
-          專題演講<br><br>打造太空中繼站
+          科技重塑醫療體系
         </div>
-        <div class="tr-content">
-          升級太空船，重整再出發
-        </div>
+        <!-- <div class="tr-content">
+          How Fueling Station to Upgrade Your Spaceship
+        </div> -->
         <div class="tr-speaker">
-          如何成為生醫加速器的佼佼者<br>講者：Hong Wa Poon
+          專題演講
+          <div class="tr-speaker__list-item">
+            <div class="tr-speaker__list-item__name">- NVIDIA 解決方案架構師劉冠良</div>
+            <span class="tr-speaker__list-item__speech-title">NVIDIA 如何以超級運算平台 Project Clara 重新定義醫療影像</span>
+          </div>
+          <div class="tr-speaker__list-item">
+            <div class="tr-speaker__list-item__name">- Cobotical 共同創辦人兼商業總監 Jack Pearson</div>
+            <span class="tr-speaker__list-item__speech-title">英格蘭醫療科技投資環境的關鍵趨勢</span>
+          </div>
+          <div class="tr-speaker__list-item">
+            <div class="tr-speaker__list-item__name">- Orfin Ventures 合夥人 Adam Finkel</div>
+            <span class="tr-speaker__list-item__speech-title">如何以 AI 進行理想投資</span>
+          </div>
         </div>
         <div class="tr-toggle">
           <button class="toggle-button" type="button" @click="toggle($event)">+</button>
         </div>
       </div>
       <div class="agenda-tr">
-        <div class="tr-time">16:25-16:55</div>
+        <div class="tr-time">16:30-16:50</div>
         <div class="tr-title">
-          座談會<br><br>太空會晤
+          歐洲的生醫新創生態系
         </div>
-        <div class="tr-content">
-          點燃生醫新創之火
-        </div>
+        <!-- <div class="tr-content">
+          Lighting a Torch to Fuel Innovation
+        </div> -->
         <div class="tr-speaker">
-          生醫宇宙中的風險投資者<br>講者：Christine Guo, Dan Gebremedhin
+          專題演講
+          <div class="tr-speaker__list-item">
+            <div class="tr-speaker__list-item__name">- 默克藥廠新創中心執行長Michael Gamber</div>
+            <span class="tr-speaker__list-item__speech-title">歐洲生醫新創生態系的新視界</span>
+          </div>
+        </div>
+        <div class="tr-toggle">
+          <button class="toggle-button" type="button" @click="toggle($event)">+</button>
+        </div>
+      </div>
+      <div class="agenda-tr">
+        <div class="tr-time">16:50-17:30</div>
+        <div class="tr-title">
+          健康保險
+        </div>
+        <!-- <div class="tr-content">
+          Lighting a Torch to Fuel Innovation
+        </div> -->
+        <div class="tr-speaker">
+          專題演講
+          <div class="tr-speaker__list-item">
+            <div class="tr-speaker__list-item__name">- 衛生福利部中央健康保險署署長李伯璋醫師</div>
+            <span class="tr-speaker__list-item__speech-title">臺灣全民健保如何以資訊科技提升醫療品質與效率</span>
+          </div>
+          <div class="tr-speaker__list-item">
+            <div class="tr-speaker__list-item__name">- 聖路加國際大學公共衛生學院教授、東京慶應義塾大學名譽教授池上直己</div>
+            <span class="tr-speaker__list-item__speech-title">全球健保模式與日本健保的成就</span>
+          </div>
+        </div>
+        <div class="tr-toggle">
+          <button class="toggle-button" type="button" @click="toggle($event)">+</button>
+        </div>
+      </div>
+      <div class="agenda-tr">
+        <div class="tr-time">17:30-18:00</div>
+        <div class="tr-title">
+          醫病關係
+        </div>
+        <!-- <div class="tr-content">
+          Lighting a Torch to Fuel Innovation
+        </div> -->
+        <div class="tr-speaker">
+          專題演講
+          <div class="tr-speaker__list-item">
+            <div class="tr-speaker__list-item__name">- PregBuddy & Connected Care 共同創辦人 Sarika Lakshmi Sivareena、Subhadeep Mondal</div>
+            <span class="tr-speaker__list-item__speech-title">建立醫病溝通的橋梁以改善治療結果</span>
+          </div>
         </div>
         <div class="tr-toggle">
           <button class="toggle-button" type="button" @click="toggle($event)">+</button>
@@ -209,19 +317,36 @@
       <div class="agenda-tr th">
         <div class="tr-time">時間</div>
         <div class="tr-title">主題</div>
-        <div class="tr-content"></div>
-        <div class="tr-speaker">內容</div>
+        <!-- <div class="tr-content"></div> -->
+        <div class="tr-speaker">講者與講題</div>
         <div class="tr-toggle"></div>
       </div>
       <div class="agenda-tr">
-        <div class="tr-time">09:30-10:00</div>
+        <div class="tr-time">08:30-09:30</div>
         <div class="tr-title">
-          座談會<br><br>探索未知的生醫星系：資料互通性
+          新創競技場：Pitch決賽
         </div>
-        <div class="tr-content">
-          如何實現真正資料互通性
+        <!-- <div class="tr-content"></div> -->
+        <div class="tr-speaker">
         </div>
-        <div class="tr-speaker">探索區塊鏈在醫療保健領域的應用：數據安全與互通性<br>講者：陳瑞杰、羅友聲、李亞鑫</div>
+        <div class="tr-toggle">
+        </div>
+      </div>
+      <div class="agenda-tr">
+        <div class="tr-time">09:40-10:00</div>
+        <div class="tr-title">
+          中國的生醫新創生態系
+        </div>
+        <!-- <div class="tr-content">
+          The Next Generation of Healthcare
+        </div> -->
+        <div class="tr-speaker">
+          專題演講
+          <div class="tr-speaker__list-item">
+            <div class="tr-speaker__list-item__name">- 默克中國創新中心負責人及默克中國戰略及轉型副總裁孫正潔</div>
+            <span class="tr-speaker__list-item__speech-title">默克藥廠的抉擇：中國日臻成熟新創生態系的因應之道</span>
+          </div>
+        </div>
         <div class="tr-toggle">
           <button class="toggle-button" type="button" @click="toggle($event)">+</button>
         </div>
@@ -229,109 +354,253 @@
       <div class="agenda-tr">
         <div class="tr-time">10:00-10:30</div>
         <div class="tr-title">
-          座談會<br><br>探索未知的古老星球：銀髮產業
+          真實世界數據
         </div>
-        <div class="tr-content">
-          高齡將不再只是老化
-        </div>
+        <!-- <div class="tr-content">
+          The Evolution of Healthcare: New Investment Opportunities
+        </div> -->
         <div class="tr-speaker">
-          亞洲進入超高齡化社會：長照產業的契機與挑戰<br>講者：王詩婷、蔡昕伶、劉庭軒
+          專題演講
+          <div class="tr-speaker__list-item">
+            <div class="tr-speaker__list-item__name">- 哈佛醫學院群體醫學系助理教授Darren Toh</div>
+            <span class="tr-speaker__list-item__speech-title">揭露真實世界數據的未來趨勢</span>
+          </div>
         </div>
         <div class="tr-toggle">
           <button class="toggle-button" type="button" @click="toggle($event)">+</button>
         </div>
       </div>
       <div class="agenda-tr">
-        <div class="tr-time">10:40-12:40</div>
+        <div class="tr-time">10:30-11:00</div>
         <div class="tr-title">
-          Pitch Competition
+          未來之戰
         </div>
-        <div class="tr-content">
+        <!-- <div class="tr-content">
+          The Intriguing Stories of Forbes 30 Under 30
+        </div> -->
+        <div class="tr-speaker">
+          專題演講
+          <div class="tr-speaker__list-item">
+            <div class="tr-speaker__list-item__name">- 亞馬遜網絡服務大中華區健康醫療和生命科學業務開發負責人黃慶春</div>
+            <span class="tr-speaker__list-item__speech-title">2030年的生醫時代</span>
+          </div>
         </div>
-        <div class="tr-speaker"></div>
+        <div class="tr-toggle">
+          <button class="toggle-button" type="button" @click="toggle($event)">+</button>
+        </div>
       </div>
       <div class="agenda-tr">
-        <div class="tr-time">12:40-14:00</div>
+        <div class="tr-time">11:00-11:20</div>
+        <div class="tr-title">
+          藥廠策略
+        </div>
+        <!-- <div class="tr-content">
+          The Intriguing Stories of Forbes 30 Under 30
+        </div> -->
+        <div class="tr-speaker">
+          專題演講
+          <div class="tr-speaker__list-item">
+            <div class="tr-speaker__list-item__name">- 台杉投資生技投資事業資深協理鄭晴之</div>
+            <span class="tr-speaker__list-item__speech-title">藥廠策略：優化創新藥物可近性</span>
+          </div>
+        </div>
+        <div class="tr-toggle">
+          <button class="toggle-button" type="button" @click="toggle($event)">+</button>
+        </div>
+      </div>
+      <div class="agenda-tr">
+        <div class="tr-time">11:20-11:35</div>
+        <div class="tr-title">
+          精準醫療
+        </div>
+        <!-- <div class="tr-content"></div> -->
+        <div class="tr-speaker">
+          專題演講
+          <div class="tr-speaker__list-item">
+            <div class="tr-speaker__list-item__name">- 羅氏大藥廠臺灣區總經理許藹齡</div>
+            <span class="tr-speaker__list-item__speech-title">個人化醫療：現在即是未來</span>
+          </div>
+        </div>
+        <div class="tr-toggle">
+        </div>
+      </div>
+      <div class="agenda-tr">
+        <div class="tr-time">11:35-12:00</div>
+        <div class="tr-title">
+          精準醫療
+        </div>
+        <!-- <div class="tr-content">
+          Decode the Mysteries of the Gene Therapy
+        </div> -->
+        <div class="tr-speaker">
+          爐邊談話
+          <div class="tr-speaker__list-item">
+            <div class="tr-speaker__list-item__name">- 衛生福利部中央健康保險署署長李伯璋醫師</div>
+          </div>
+          <div class="tr-speaker__list-item">
+            <div class="tr-speaker__list-item__name">- 羅氏大藥廠臺灣區總經理許藹齡</div>
+          </div>
+          <div class="tr-speaker__list-item">
+            <div class="tr-speaker__list-item__name">- 哈佛醫學院群體醫學系助理教授Darren Toh</div>
+          </div>
+        </div>
+        <div class="tr-toggle">
+          <button class="toggle-button" type="button" @click="toggle($event)">+</button>
+        </div>
+      </div>
+      <div class="agenda-tr">
+        <div class="tr-time">12:00-13:00</div>
         <div class="tr-title">
           休息時間
         </div>
-        <div class="tr-content">
-        </div>
-        <div class="tr-speaker"></div>
-      </div>
-      <div class="agenda-tr">
-        <div class="tr-time">14:00-14:40</div>
-        <div class="tr-title">
-          專題演講<br><br>跨越生醫宇宙的跨國新創
-        </div>
-        <div class="tr-content">
-          打造成功新創公司的關鍵因素
-        </div>
+        <!-- <div class="tr-content"></div> -->
         <div class="tr-speaker">
-          如何成為吸引創投的阿姆斯壯<br>講者：Dan Gebremedhin<br><br>
-          生醫新星：崛起中的醫療用機器人<br>講者：Colin Tan
         </div>
         <div class="tr-toggle">
           <button class="toggle-button" type="button" @click="toggle($event)">+</button>
         </div>
       </div>
       <div class="agenda-tr">
-        <div class="tr-time">14:50-15:50</div>
+        <div class="tr-time">13:00-14:00</div>
         <div class="tr-title">
-          座談會<br><br>探索未知的生醫星系：人工智慧
+          健康的社會決定性因素：健康不平等
         </div>
-        <div class="tr-content">
-          為成就更好的醫療而生：人工智慧
-        </div>
+        <!-- <div class="tr-content">
+          The Opportunities and Challenges for AI in Healthcare
+        </div> -->
         <div class="tr-speaker">
-          自然語言處理綻放無限的價值<br>講者： Leon Bergen<br><br>
-          用深度學習解密人類基因<br>講者： Andrew Liu<br><br>
-          以GPU建造醫療健康產業的最佳深度學習模型<br>講者： Kenneth Ko
+          座談會（主持人：麻州綜合醫院創新研究員 Rahul Gandhi）
+          <div class="tr-speaker__list-item">
+            <div class="tr-speaker__list-item__name">- Stats Congo 創辦人 Nohémie Mawaka</div>
+            <span class="tr-speaker__list-item__speech-title">全球的健康社會決定性因素</span>
+          </div>
+          <div class="tr-speaker__list-item">
+            <div class="tr-speaker__list-item__name">- Kiipo 共同創辦人兼產品總監 Christopher Peng</div>
+            <span class="tr-speaker__list-item__speech-title">告別專家獨大的時代：先進醫療科技的普及化</span>
+          </div>
+          <div class="tr-speaker__list-item">
+            <div class="tr-speaker__list-item__name">- 麻州綜合醫院創新研究員 Rahul Gandhi</div>
+            <span class="tr-speaker__list-item__speech-title">公私夥伴關係於解決醫療不平等之重要性：實際案例</span>
+          </div>
         </div>
         <div class="tr-toggle">
           <button class="toggle-button" type="button" @click="toggle($event)">+</button>
         </div>
       </div>
       <div class="agenda-tr">
-        <div class="tr-time">16:00-16:45</div>
+        <div class="tr-time">14:00-14:20</div>
         <div class="tr-title">
-          專題演講<br><br>探索未知的生醫星系：數位療法
+          女性醫療不平等
         </div>
-        <div class="tr-content">
-          數位療法的時代準備起飛，你準備好了嗎？
-        </div>
+        <!-- <div class="tr-content">
+          A Black Hole or A Young Star: Blockchain
+        </div> -->
         <div class="tr-speaker">
-          IDEO在數位療法中設計以人為本的解決方案<br>講者： Pablo Pantaleoni<br><br>
-          發動醫療革命：Doximity的醫生社群網<br>講者： Yi-Min Chun<br><br>
-          從心理學改善藥物順從性<br>講者： 吳沛燊
+          專題演講
+          <div class="tr-speaker__list-item">
+            <div class="tr-speaker__list-item__name">- Inito共同創辦人兼執行長Aayush Rai</div>
+            <span class="tr-speaker__list-item__speech-title">手機上的行動婦科診所</span>
+          </div>
         </div>
         <div class="tr-toggle">
           <button class="toggle-button" type="button" @click="toggle($event)">+</button>
         </div>
       </div>
       <div class="agenda-tr">
-        <div class="tr-time">16:55-17:35</div>
+        <div class="tr-time">14:20-15:20</div>
         <div class="tr-title">
-          專題演講<br><br>飛越地球，看見亞洲生醫綻放星光
+          心理疾病
         </div>
-        <div class="tr-content">
-          點點星光：匯聚亞洲生醫企業家
-        </div>
+        <!-- <div class="tr-content">
+          How Fueling Station to Upgrade Your Spaceship
+        </div> -->
         <div class="tr-speaker">
-          IQGEN的願景：透過提供所有人都可負擔的健保，達到醫療自動分級<br>Speaker: Aman Iqbal<br><br>
-          2020年亞洲最重要的健康產業議題：生醫市場的未來觀察<br>Speaker: Brian Williams
+          專題演講
+          <div class="tr-speaker__list-item">
+            <div class="tr-speaker__list-item__name">- 臺灣憂鬱症防治協會理事長張家銘</div>
+            <span class="tr-speaker__list-item__speech-title">臺灣憂鬱症治療未被滿足的需求</span>
+          </div>
+          <div class="tr-speaker__list-item">
+            <div class="tr-speaker__list-item__name">- Quartet創辦人兼執行長Arun Gupta</div>
+            <span class="tr-speaker__list-item__speech-title">新崛起的醫療科技新創：探討心理疾病的整合性治療</span>
+          </div>
+          <div class="tr-speaker__list-item">
+            <div class="tr-speaker__list-item__name">- Dr. Tang Psychiatric Clinic and Mind Center負責人唐子俊</div>
+            <span class="tr-speaker__list-item__speech-title">壓力與情緒障礙的腦神經科學機制：精準精神科學新趨勢</span>
+          </div>
         </div>
         <div class="tr-toggle">
           <button class="toggle-button" type="button" @click="toggle($event)">+</button>
         </div>
       </div>
       <div class="agenda-tr">
-        <div class="tr-time">17:35-17:50</div>
+        <div class="tr-time">15:20-16:00</div>
         <div class="tr-title">
-          閉幕－綻放出自己最美的樣子
+          高齡照護
         </div>
-        <div class="tr-content"></div>
-        <div class="tr-speaker"></div>
+        <!-- <div class="tr-content">
+          Lighting a Torch to Fuel Innovation
+        </div> -->
+        <div class="tr-speaker">
+          專題演講
+          <div class="tr-speaker__list-item">
+            <div class="tr-speaker__list-item__name">- AgeingAsia聯盟創辦人兼總經理Janice Chia</div>
+            <span class="tr-speaker__list-item__speech-title">亞太地區高齡化 : 銀髮新創的成長趨勢</span>
+          </div>
+          <div class="tr-speaker__list-item">
+            <div class="tr-speaker__list-item__name">- 臺北榮總高齡醫學中心主任陳亮恭</div>
+            <span class="tr-speaker__list-item__speech-title">如何打造零失能超高齡社會</span>
+          </div>
+        </div>
+        <div class="tr-toggle">
+          <button class="toggle-button" type="button" @click="toggle($event)">+</button>
+        </div>
+      </div>
+      <div class="agenda-tr">
+        <div class="tr-time">16:00-17:00</div>
+        <div class="tr-title">
+          框架外的思考：富比世30歲以下名人榜經驗分享
+        </div>
+        <!-- <div class="tr-content">
+          Lighting a Torch to Fuel Innovation
+        </div> -->
+        <div class="tr-speaker">
+          專題演講
+          <div class="tr-speaker__list-item">
+            <div class="tr-speaker__list-item__name">- HealthMatch 創辦人兼執行長 Manuri Gunawardena</div>
+            <span class="tr-speaker__list-item__speech-title">尋找最後一線生機：臨床試驗的精準配對</span>
+          </div>
+          <div class="tr-speaker__list-item">
+            <div class="tr-speaker__list-item__name">- Surgical Innovation Associates 創辦人 Alexei Mlodinow</div>
+            <span class="tr-speaker__list-item__speech-title">從零到一：外科手術的快速創新與臨床合作關係</span>
+          </div>
+          <div class="tr-speaker__list-item">
+            <div class="tr-speaker__list-item__name">- Helium Health 共同創辦人兼技術長 Alex Azuike</div>
+            <span class="tr-speaker__list-item__speech-title">醫療體系的數位轉型</span>
+          </div>
+        </div>
+        <div class="tr-toggle">
+          <button class="toggle-button" type="button" @click="toggle($event)">+</button>
+        </div>
+      </div>
+      <div class="agenda-tr">
+        <div class="tr-time">17:00-17:30</div>
+        <div class="tr-title">
+          閉幕式
+        </div>
+        <!-- <div class="tr-content">
+          Lighting a Torch to Fuel Innovation
+        </div> -->
+        <div class="tr-speaker">
+          專題演講
+          <div class="tr-speaker__list-item">
+            <div class="tr-speaker__list-item__name">- Lily Born</div>
+            <span class="tr-speaker__list-item__speech-title">待決定</span>
+          </div>
+        </div>
+        <div class="tr-toggle">
+          <button class="toggle-button" type="button" @click="toggle($event)">+</button>
+        </div>
       </div>
     </div>
   </div>
@@ -364,70 +633,53 @@
         <div class="tr-toggle"></div>
       </div>
       <div class="agenda-tr">
-        <div class="tr-time">10:30-10:40</div>
+        <div class="tr-time">10:00-11:00</div>
+        <div class="tr-title">H. Spectrum & Merck Innovation Lab Opening</div>
+        <div class="tr-content"></div>
+      </div>
+      <div class="agenda-tr">
+        <div class="tr-time">14:00-14:10</div>
         <div class="tr-title">
           開幕
         </div>
         <div class="tr-content"></div>
       </div>
       <div class="agenda-tr">
-        <div class="tr-time">10:40-12:40</div>
+        <div class="tr-time">14:10-14:40</div>
         <div class="tr-title">
-          超強生醫生死鬥
+          用他的雙腳走向我
         </div>
-        <div class="tr-content">創業團隊競賽</div>
-        <div class="tr-speaker">參展團隊Pitch</div>
+        <div class="tr-content">器官移植的協調與捐贈</div>
+        <div class="tr-speaker">黃俊晟</div>
         <div class="tr-toggle">
           <button class="toggle-button" type="button" @click="toggle($event)">+</button>
         </div>
       </div>
       <div class="agenda-tr">
-        <div class="tr-time">12:40-14:00</div>
-        <div class="tr-title">
-          休息時間
-        </div>
-        <div class="tr-content"></div>
+        <div class="tr-time">14:50-15:20</div>
+        <div class="tr-title">魔鏡，魔鏡，世界上我整得最美麗</div>
+        <div class="tr-content">整形的價值與迷思</div>
+        <div class="tr-speaker">周邦昀</div>
       </div>
       <div class="agenda-tr">
-        <div class="tr-time">14:00-14:40</div>
+        <div class="tr-time">15:30-16:10</div>
         <div class="tr-title">
-          生醫矛盾大對決<br><br>親愛的，你後悔了嗎？
+          鐘響十二聲，你還在上班
         </div>
-        <div class="tr-content">Round 1<br>“我不當醫生可以嗎？”</div>
-        <div class="tr-speaker">黃書田<br>林佩蓁</div>
+        <div class="tr-content">過勞還是懶惰？醫療領域的勞務議題</div>
+        <div class="tr-speaker">廖郁雯<br>廖偉翔</div>
         <div class="tr-toggle">
           <button class="toggle-button" type="button" @click="toggle($event)">+</button>
         </div>
       </div>
       <div class="agenda-tr">
-        <div class="tr-time">14:50-15:10</div>
-        <div class="tr-title">
-          專題演講<br><br>不一樣的軌道：醫學生的可能性
-        </div>
-        <div class="tr-content">“先生，你在忙什麼？”</div>
-        <div class="tr-speaker">褚士銘</div>
-        <div class="tr-toggle">
-          <button class="toggle-button" type="button" @click="toggle($event)">+</button>
-        </div>
-      </div>
-      <div class="agenda-tr">
-        <div class="tr-time">15:20 - 16:00</div>
-        <div class="tr-title">
-          生醫矛盾大對決<br><br>親愛的，你後悔了嗎？
-        </div>
-        <div class="tr-content">Round 2<br>“生科領域的路好走嗎？”</div>
-        <div class="tr-speaker">辛永誠<br>胡翔崴</div>
-        <div class="tr-toggle">
-          <button class="toggle-button" type="button" @click="toggle($event)">+</button>
-        </div>
-      </div>
-      <div class="agenda-tr">
-        <div class="tr-time">16:20 - 17:00</div>
-        <div class="tr-title">
-          星際用藥知識問答
-        </div>
-        <div class="tr-content"></div>
+        <div class="tr-time">16:20-17:00</div>
+        <div class="tr-title">兒童不宜樂園</div>
+        <div class="tr-content">生醫新創快問快答</div>
         <div class="tr-speaker"></div>
+        <div class="tr-toggle">
+          <button class="toggle-button" type="button" @click="toggle($event)">+</button>
+        </div>
       </div>
     </div>
     <div v-if="creativeStageDay === 2" class="agenda-table">
@@ -435,28 +687,32 @@
         <div class="tr-time">時間</div>
         <div class="tr-title">主題</div>
         <div class="tr-content"></div>
-        <div class="tr-speaker"></div>
+        <div class="tr-speaker">講者</div>
         <div class="tr-toggle"></div>
       </div>
       <div class="agenda-tr">
-        <div class="tr-time">09:50-10:00</div>
+        <div class="tr-time">11:30-11:40</div>
         <div class="tr-title">
           開幕
         </div>
         <div class="tr-content"></div>
       </div>
       <div class="agenda-tr">
-        <div class="tr-time">10:00-13:00</div>
-        <div class="tr-title">
-          工作坊<br>來自太空的呼叫
-        </div>
-        <div class="tr-content">
-          “未來，你還好嗎？”
-        </div>
-        <!-- <div class="tr-speaker"></div> -->
+        <div class="tr-time">11:40-12:20</div>
+        <div class="tr-title">黑魔女的傲慢與浪漫</div>
+        <div class="tr-content">醫學生等於當醫生？</div>
+        <div class="tr-speaker">劉昌豪<br>楊育杰</div>
         <div class="tr-toggle">
           <button class="toggle-button" type="button" @click="toggle($event)">+</button>
         </div>
+      </div>
+      <div class="agenda-tr">
+        <div class="tr-time">12:30-13:00</div>
+        <div class="tr-title">
+          乾杯！別急著找離開仙境的路
+        </div>
+        <div class="tr-content">酒精使用與成癮</div>
+        <div class="tr-speaker">陳嫚羚</div>
       </div>
       <div class="agenda-tr">
         <div class="tr-time">13:00-14:00</div>
@@ -467,128 +723,40 @@
         <div class="tr-speaker"></div>
       </div>
       <div class="agenda-tr">
-        <div class="tr-time">14:00-14:40</div>
-        <div class="tr-title">
-          生醫矛盾大對決<br><br>親愛的，你後悔了嗎？
-        </div>
-        <div class="tr-content">Round 3<br>“中醫的智慧你懂嗎？”</div>
-        <div class="tr-speaker">黃明源<br>謝岳峰</div>
-        <div class="tr-toggle">
-          <button class="toggle-button" type="button" @click="toggle($event)">+</button>
-        </div>
-      </div>
-      <div class="agenda-tr">
-        <div class="tr-time">14:50-15:20</div>
-        <div class="tr-title">
-          專題演講<br><br>當阿姆斯壯遇上吳剛
-        </div>
-        <div class="tr-content">“刮痧，科學嗎？”</div>
-        <div class="tr-speaker">黃卉君</div>
-        <div class="tr-toggle">
-          <button class="toggle-button" type="button" @click="toggle($event)">+</button>
-        </div>
-      </div>
-      <div class="agenda-tr">
-        <div class="tr-time">15:40-16:20</div>
-        <div class="tr-title">
-          星際爭霸戰
-        </div>
-        <div class="tr-content">生醫新創快問快答2.0</div>
-        <!-- <div class="tr-speaker"></div> -->
-        <div class="tr-toggle">
-          <button class="toggle-button" type="button" @click="toggle($event)">+</button>
-        </div>
-      </div>
-      <div class="agenda-tr">
-        <div class="tr-time">16:30-17:00</div>
-        <div class="tr-title">
-          專題演講<br><br>美少女戰士的逆襲
-        </div>
-        <div class="tr-content">“病友有話說”</div>
-        <div class="tr-speaker">謝采倪</div>
-        <div class="tr-toggle">
-          <button class="toggle-button" type="button" @click="toggle($event)">+</button>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div id="pitchStageAgenda" class="agenda-wrap">
-    <div class="title">
-      <h2>Pitch Stage Agenda</h2>
-    </div>
-    <div class="agenda-tab">
-      <div class="agenda-tab-circles-dates">
-        <div class="agenda-tab-circles">
-          <div id="circle" @click="changeDay('pitchStageDay', 1)" class="tab-btn-circle" :class="{ active: pitchStageDay === 1 }"></div>
-          <!-- <div id="circle" @click="changeDay('pitchStageDay', 2)" class="tab-btn-circle" :class="{ active: pitchStageDay === 2 }"></div> -->
-        </div>
-        <div class="agenda-tab-dates">
-          <div @click="changeDay('pitchStageDay', 1)" class="tab-btn" :class="{ active: pitchStageDay === 1 }">Day 1</div>
-          <!-- <div @click="changeDay('pitchStageDay', 2)" class="tab-btn" :class="{ active: pitchStageDay === 2 }">Day 2</div> -->
-        </div>
-      </div>
-      <div class="time">
-        <div v-if="pitchStageDay === 1" class="daytitle">Day 1</div>
-        <!-- <div v-if="pitchStageDay === 2" class="daytitle">Day 2</div> -->
-      </div>
-    </div>
-    <div v-if="pitchStageDay === 1" class="agenda-table">
-      <div class="agenda-tr th">
-        <div class="tr-time">時間</div>
-        <div class="tr-title">主題</div>
-        <div class="tr-content"></div>
-        <div class="tr-speaker">講者</div>
-        <div class="tr-toggle"></div>
-      </div>
-      <div class="agenda-tr">
-        <div class="tr-time">10:30-10:40</div>
+        <div class="tr-time">13:00-14:00</div>
         <div class="tr-title">
           開幕
         </div>
-        <div class="tr-content">
-        </div>
-        <div class="tr-speaker">
-        </div>
-        <div class="tr-toggle">
-        </div>
+        <div class="tr-content"></div>
+        <div class="tr-speaker"></div>
       </div>
       <div class="agenda-tr">
-        <div class="tr-time">10:40-12:40</div>
+        <div class="tr-time">14:10-14:50</div>
         <div class="tr-title">
-          超強生醫生死鬥
+          （不）快樂王子的選擇
         </div>
-        <div class="tr-content">
-          創業團隊競賽
-        </div>
-        <div class="tr-speaker">
-          參展團隊Pitch
-        </div>
+        <div class="tr-content">靠北醫護</div>
+        <div class="tr-speaker">劉育志<br>傅志遠</div>
         <div class="tr-toggle">
           <button class="toggle-button" type="button" @click="toggle($event)">+</button>
         </div>
       </div>
       <div class="agenda-tr">
-        <div class="tr-time">12:40-12:55</div>
-        <div class="tr-title">
-          休息時間
-        </div>
-        <div class="tr-content">
-        </div>
-        <div class="tr-speaker"></div>
+        <div class="tr-time">15:00-15:40</div>
+        <div class="tr-title">那粒豆豆不讓我睡</div>
+        <div class="tr-content">伴侶關係中親密行為的衝突與協商</div>
+        <div class="tr-speaker">徐豪謙</div>
         <div class="tr-toggle">
+          <button class="toggle-button" type="button" @click="toggle($event)">+</button>
         </div>
       </div>
       <div class="agenda-tr">
-        <div class="tr-time">12:55-17:00</div>
+        <div class="tr-time">16:00-16:40</div>
         <div class="tr-title">
-          超強生醫生死鬥
+          兒童不宜樂園
         </div>
-        <div class="tr-content">
-          創業團隊競賽
-        </div>
-        <div class="tr-speaker">
-          參展團隊Pitch
-        </div>
+        <div class="tr-content">生醫新創 BINGO</div>
+        <!-- <div class="tr-speaker"></div> -->
         <div class="tr-toggle">
           <button class="toggle-button" type="button" @click="toggle($event)">+</button>
         </div>

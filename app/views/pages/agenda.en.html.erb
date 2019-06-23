@@ -168,7 +168,6 @@
         <div class="tr-speaker">
         </div>
         <div class="tr-toggle">
-          <button class="toggle-button" type="button" @click="toggle($event)">+</button>
         </div>
       </div>
       <div class="agenda-tr">
@@ -317,127 +316,291 @@
     <div v-if="mainStageDay === 2" class="agenda-table">
       <div class="agenda-tr th">
         <div class="tr-time">TIME</div>
-        <div class="tr-title">TITLE</div>
-        <div class="tr-content"></div>
-        <div class="tr-speaker">CONTENT</div>
+        <div class="tr-title">THEME</div>
+        <!-- <div class="tr-content"></div> -->
+        <div class="tr-speaker">TOPIC</div>
         <div class="tr-toggle"></div>
       </div>
       <div class="agenda-tr">
-        <div class="tr-time">09:30-10:00</div>
+        <div class="tr-time">08:30-09:30</div>
         <div class="tr-title">
-          Panel Talk<br><br>Explore the Unknown of the Galaxy: Interoperability
+          Pitch Competition
         </div>
-        <div class="tr-content">
-          How to Get on Track with Interoperability
+        <!-- <div class="tr-content"></div> -->
+        <div class="tr-speaker">
         </div>
-        <div class="tr-speaker">Exploring the Blockchain Application in Healthcare: Data Safety and Interoperability<br>Speaker: Ray-Jade Chen, Yu-Sheng Lo, Jacob Lee</div>
+        <div class="tr-toggle">
+        </div>
+      </div>
+      <div class="agenda-tr">
+        <div class="tr-time">09:40-10:00</div>
+        <div class="tr-title">
+          Innovation Ecosystem in Healthcare in China
+        </div>
+        <!-- <div class="tr-content">
+          The Next Generation of Healthcare
+        </div> -->
+        <div class="tr-speaker">
+          Keynote
+          <div class="tr-speaker__list-item">
+            <div class="tr-speaker__list-item__name">- Sophie Sun, Managing Director at Merck Innovation Hub China and Vice President of Merck Strategy & Transformation China</div>
+            <span class="tr-speaker__list-item__speech-title">China is Building An Innovation Ecosystem Ripe for Healthcare Startups: Here’s How Merck Do's and Don'ts</span>
+          </div>
+        </div>
+        <div class="tr-toggle">
+          <button class="toggle-button" type="button" @click="toggle($event)">+</button>
+        </div>
       </div>
       <div class="agenda-tr">
         <div class="tr-time">10:00-10:30</div>
         <div class="tr-title">
-          Panel Talk<br><br>Explore the Ancient Planets of the Galaxy: Long-Term Care Industry
+          Real World Data
         </div>
-        <div class="tr-content">
-          Look Beyond Aging
-        </div>
+        <!-- <div class="tr-content">
+          The Evolution of Healthcare: New Investment Opportunities
+        </div> -->
         <div class="tr-speaker">
-          Asia’s Hyper-Aged Society: The Challenges and Opportunities in Long Term Care<br><br>Speaker: Chrissy Wang, Hsin-Ling Tsai, Allen Liu
+          Keynote
+          <div class="tr-speaker__list-item">
+            <div class="tr-speaker__list-item__name">- Darren Toh, Associate Professor in the Department of Population Medicine at Harvard Medical School</div>
+            <span class="tr-speaker__list-item__speech-title">Uncovering Trends in the Future of Real World Data</span>
+          </div>
         </div>
         <div class="tr-toggle">
           <button class="toggle-button" type="button" @click="toggle($event)">+</button>
         </div>
       </div>
       <div class="agenda-tr">
-        <div class="tr-time">10:40-12:40</div>
+        <div class="tr-time">10:30-11:00</div>
         <div class="tr-title">
-          Pitch Competition
+          Future Fight
         </div>
-        <div class="tr-content">
-        </div>
-        <div class="tr-speaker"></div>
-      </div>
-      <div class="agenda-tr">
-        <div class="tr-time">12:40-14:00</div>
-        <div class="tr-title">
-          Refuel and Rest
-        </div>
-        <div class="tr-content">
-        </div>
-        <div class="tr-speaker"></div>
-      </div>
-      <div class="agenda-tr">
-        <div class="tr-time">14:00-14:40</div>
-        <div class="tr-title">
-          Keynote Speech<br><br>Conquer the Universe
-        </div>
-        <div class="tr-content">
-          Key to Build a Successful Startup
-        </div>
+        <!-- <div class="tr-content">
+          The Intriguing Stories of Forbes 30 Under 30
+        </div> -->
         <div class="tr-speaker">
-          Creating the Healthcare Future: How to Build a Market Leading Healthcare Company that Can Attract Venture Capital<br>Speaker: Dan Gebremedhin<br><br>
-          Getting a Medical Robotics Startup Moving<br>Speaker: Colin Tan
+          Keynote
+          <div class="tr-speaker__list-item">
+            <div class="tr-speaker__list-item__name">- Hansen Huang, Healthcare & Life Science Development Head at Amazon Web Service Great China Region</div>
+            <span class="tr-speaker__list-item__speech-title">Healthcare in 2030</span>
+          </div>
         </div>
         <div class="tr-toggle">
           <button class="toggle-button" type="button" @click="toggle($event)">+</button>
         </div>
       </div>
       <div class="agenda-tr">
-        <div class="tr-time">14:50-15:50</div>
+        <div class="tr-time">11:00-11:20</div>
         <div class="tr-title">
-          Panel Talk<br><br>Explore the Unknown of the Galaxy: Artificial Intelligence
+          Pharma Strategy
         </div>
-        <div class="tr-content">
-          Achieve Better Healthcare with Artificial Intelligence
-        </div>
+        <!-- <div class="tr-content">
+          The Intriguing Stories of Forbes 30 Under 30
+        </div> -->
         <div class="tr-speaker">
-          Natural Language Processing for Healthcare<br>Speaker: Leon Bergen<br><br>
-          Decode Human Genome with Deep Learning<br>Speaker: Andrew Liu<br><br>
-          Deploying Deep Learning Models with GPUs: Best Practices in Healthcare Industry<br>Speaker: Kenneth Ko
+          Keynote
+          <div class="tr-speaker__list-item">
+            <div class="tr-speaker__list-item__name">- Diana Cheng, M.D., MBA, Senior Investment Director in Buffalo II BioFund at Taiwania Capital</div>
+            <span class="tr-speaker__list-item__speech-title">Pharmaceutical Strategy to Optimize Patient Access for Innovative Medicine</span>
+          </div>
         </div>
         <div class="tr-toggle">
           <button class="toggle-button" type="button" @click="toggle($event)">+</button>
         </div>
       </div>
       <div class="agenda-tr">
-        <div class="tr-time">16:00-16:45</div>
+        <div class="tr-time">11:20-11:35</div>
         <div class="tr-title">
-          Keynote Speech<br><br>Explore the Unknown of the Galaxy: Digital Therapeutics
+          Precision Medicine
         </div>
-        <div class="tr-content">
-          Digital Therapeutics: Ready for Takeoff
-        </div>
+        <!-- <div class="tr-content"></div> -->
         <div class="tr-speaker">
-          Designing Human: Centered Solutions in Digital Health by IDEO<br>Speaker: Pablo Pantaleoni<br><br>
-          Doximity: How a Social Network for Doctors is Revolutionizing Healthcare<br>Speaker: Yi-Min Chun<br><br>
-          Psychographic Approach to Medication Adherence<br>Speaker: Pei-Shen Wu
+          Keynote
+          <div class="tr-speaker__list-item">
+            <div class="tr-speaker__list-item__name">- Irene Hsu, General Manager at Roche Pharma Taiwan</div>
+            <span class="tr-speaker__list-item__speech-title">Personalizing Healthcare: The Future is Now</span>
+          </div>
+        </div>
+        <div class="tr-toggle">
+        </div>
+      </div>
+      <div class="agenda-tr">
+        <div class="tr-time">11:35-12:00</div>
+        <div class="tr-title">
+          Precision Medicine
+        </div>
+        <!-- <div class="tr-content">
+          Decode the Mysteries of the Gene Therapy
+        </div> -->
+        <div class="tr-speaker">
+          Fireside Chat
+          <div class="tr-speaker__list-item">
+            <div class="tr-speaker__list-item__name">- Professor Po-chang Lee, M.D., M.T.L., Director General, National Health Insurance Administration, Ministry of Health and Welfare</div>
+          </div>
+          <div class="tr-speaker__list-item">
+            <div class="tr-speaker__list-item__name">- Irene Hsu, General Manager at Roche Pharma Taiwan</div>
+          </div>
+          <div class="tr-speaker__list-item">
+            <div class="tr-speaker__list-item__name">- Darren Toh, Associate Professor in the Department of Population Medicine at Harvard Medical School</div>
+          </div>
         </div>
         <div class="tr-toggle">
           <button class="toggle-button" type="button" @click="toggle($event)">+</button>
         </div>
       </div>
       <div class="agenda-tr">
-        <div class="tr-time">16:55-17:35</div>
+        <div class="tr-time">12:00-13:00</div>
         <div class="tr-title">
-          Keynote Speech<br><br>Upon Earth: View of the Glowing Asian Stars
+          Break Time
         </div>
-        <div class="tr-content">
-          Digital Therapeutics: Ready for Takeoff
-        </div>
+        <!-- <div class="tr-content"></div> -->
         <div class="tr-speaker">
-          IQGEN’s Vision towards Automating Primary and Secondary Healthcare by Providing Affordable Healthcare to All<br>Speaker: Aman Iqbal<br><br>
-          Top Health Industry Issues of 2020 in Asia: Observations about the Healthcare Market in the Future<br>Speaker: Brian Williams
         </div>
         <div class="tr-toggle">
           <button class="toggle-button" type="button" @click="toggle($event)">+</button>
         </div>
       </div>
       <div class="agenda-tr">
-        <div class="tr-time">17:35-17:50</div>
+        <div class="tr-time">13:00-14:00</div>
         <div class="tr-title">
-          Closing Remarks<br><br>Let the Ultra-Light Make Everything Ultra-Bright
+          Social Determinants of Health: Health Inequities
         </div>
-        <div class="tr-content"></div>
-        <div class="tr-speaker"></div>
+        <!-- <div class="tr-content">
+          The Opportunities and Challenges for AI in Healthcare
+        </div> -->
+        <div class="tr-speaker">
+          Panel Talk (Moderator: Rahul Gandhi, Innovation Fellow at Massachusetts General Hospital)
+          <div class="tr-speaker__list-item">
+            <div class="tr-speaker__list-item__name">- Nohémie Mawaka, Founder of Stats Congo</div>
+            <span class="tr-speaker__list-item__speech-title">The Social Determinants of Global Health</span>
+          </div>
+          <div class="tr-speaker__list-item">
+            <div class="tr-speaker__list-item__name">- Christopher Peng, Co-founder and Head of Product at Kiipo</div>
+            <span class="tr-speaker__list-item__speech-title">How to Make the Most Advanced Health Technology Accessible to Everyone</span>
+          </div>
+          <div class="tr-speaker__list-item">
+            <div class="tr-speaker__list-item__name">- Rahul Gandhi, Innovation Fellow at Massachusetts General Hospital</div>
+            <span class="tr-speaker__list-item__speech-title">The Importance of Public-Private Partnerships in Solving Health Inequity: Real-Life Lessons</span>
+          </div>
+        </div>
+        <div class="tr-toggle">
+          <button class="toggle-button" type="button" @click="toggle($event)">+</button>
+        </div>
+      </div>
+      <div class="agenda-tr">
+        <div class="tr-time">14:00-14:20</div>
+        <div class="tr-title">
+          Health Inequity in Women
+        </div>
+        <!-- <div class="tr-content">
+          A Black Hole or A Young Star: Blockchain
+        </div> -->
+        <div class="tr-speaker">
+          Keynote
+          <div class="tr-speaker__list-item">
+            <div class="tr-speaker__list-item__name">- Aayush Rai, Co-founder & CEO at Inito</div>
+            <span class="tr-speaker__list-item__speech-title">Building a Fertility Clinic on Your Phone</span>
+          </div>
+        </div>
+        <div class="tr-toggle">
+          <button class="toggle-button" type="button" @click="toggle($event)">+</button>
+        </div>
+      </div>
+      <div class="agenda-tr">
+        <div class="tr-time">14:20-15:20</div>
+        <div class="tr-title">
+          Mental Illness
+        </div>
+        <!-- <div class="tr-content">
+          How Fueling Station to Upgrade Your Spaceship
+        </div> -->
+        <div class="tr-speaker">
+          Keynote
+          <div class="tr-speaker__list-item">
+            <div class="tr-speaker__list-item__name">- Chia-Ming Chang, M.D, Ph.D., President of Taiwan Association Against Depression</div>
+            <span class="tr-speaker__list-item__speech-title">Unmet Need in the Treatment of Major Depressive Disorder in Taiwan</span>
+          </div>
+          <div class="tr-speaker__list-item">
+            <div class="tr-speaker__list-item__name">- Arun Gupta, Founder and Executive Chairman of Quartet</div>
+            <span class="tr-speaker__list-item__speech-title">The Coming of Technology Native Healthcare enterprises: A Case Study on Scaling Mental Health Integration</span>
+          </div>
+          <div class="tr-speaker__list-item">
+            <div class="tr-speaker__list-item__name">- Michael Tang, Head of Dr. Tang Psychiatric Clinic and Mind Center</div>
+            <span class="tr-speaker__list-item__speech-title">The Neuroscience Mechanism of Stress and Mood Disorders: New Trends in Precision Psychiatry and Clinical Applications</span>
+          </div>
+        </div>
+        <div class="tr-toggle">
+          <button class="toggle-button" type="button" @click="toggle($event)">+</button>
+        </div>
+      </div>
+      <div class="agenda-tr">
+        <div class="tr-time">15:20-16:00</div>
+        <div class="tr-title">
+          Aging Population Care
+        </div>
+        <!-- <div class="tr-content">
+          Lighting a Torch to Fuel Innovation
+        </div> -->
+        <div class="tr-speaker">
+          Keynote
+          <div class="tr-speaker__list-item">
+            <div class="tr-speaker__list-item__name">- Janice Chia, Founder & Managing Director at Ageing Asia Aliance</div>
+            <span class="tr-speaker__list-item__speech-title">The Aging Population: Innovative Business Trends on the Rise in Asia Pacific</span>
+          </div>
+          <div class="tr-speaker__list-item">
+            <div class="tr-speaker__list-item__name">- Liang-Kung Chen, Director of Center for Geriatrics and Gerontology, Taipei Veterans General Hospital</div>
+            <span class="tr-speaker__list-item__speech-title">How to Build Up an Aging-friendly Society</span>
+          </div>
+        </div>
+        <div class="tr-toggle">
+          <button class="toggle-button" type="button" @click="toggle($event)">+</button>
+        </div>
+      </div>
+      <div class="agenda-tr">
+        <div class="tr-time">16:00-17:00</div>
+        <div class="tr-title">
+          Great Minds Don’t Always Think Alike
+        </div>
+        <!-- <div class="tr-content">
+          Lighting a Torch to Fuel Innovation
+        </div> -->
+        <div class="tr-speaker">
+          Keynote
+          <div class="tr-speaker__list-item">
+            <div class="tr-speaker__list-item__name">- Manuri Gunawardena, Founder and CEO at HealthMatch</div>
+            <span class="tr-speaker__list-item__speech-title">How to Help Patients Access Potentially Life-saving Clinical Trials</span>
+          </div>
+          <div class="tr-speaker__list-item">
+            <div class="tr-speaker__list-item__name">- Alexei Mlodinow, Founding CEO of Surgical Innovation Associates</div>
+            <span class="tr-speaker__list-item__speech-title">Idea to Operating Room - Clinical Partnership for Rapid Surgical Innovation</span>
+          </div>
+          <div class="tr-speaker__list-item">
+            <div class="tr-speaker__list-item__name">- Alex Azuike, Co-founder and Chief Technology Officer at Helium Health</div>
+            <span class="tr-speaker__list-item__speech-title">The Digital Transformation of the Healthcare System</span>
+          </div>
+        </div>
+        <div class="tr-toggle">
+          <button class="toggle-button" type="button" @click="toggle($event)">+</button>
+        </div>
+      </div>
+      <div class="agenda-tr">
+        <div class="tr-time">17:00-17:30</div>
+        <div class="tr-title">
+          Closing
+        </div>
+        <!-- <div class="tr-content">
+          Lighting a Torch to Fuel Innovation
+        </div> -->
+        <div class="tr-speaker">
+          Keynote
+          <div class="tr-speaker__list-item">
+            <div class="tr-speaker__list-item__name">- Lily Born</div>
+            <span class="tr-speaker__list-item__speech-title">To be determined</span>
+          </div>
+        </div>
+        <div class="tr-toggle">
+          <button class="toggle-button" type="button" @click="toggle($event)">+</button>
+        </div>
       </div>
     </div>
   </div>
@@ -470,71 +633,53 @@
         <div class="tr-toggle"></div>
       </div>
       <div class="agenda-tr">
-        <div class="tr-time">10:30-10:40</div>
+        <div class="tr-time">10:00-11:00</div>
+        <div class="tr-title">H. Spectrum & Merck Innovation Lab Opening</div>
+        <div class="tr-content"></div>
+      </div>
+      <div class="agenda-tr">
+        <div class="tr-time">14:00-14:10</div>
         <div class="tr-title">
           Welcome Address
         </div>
         <div class="tr-content"></div>
       </div>
       <div class="agenda-tr">
-        <div class="tr-time">10:40-12:40</div>
+        <div class="tr-time">14:10-14:40</div>
         <div class="tr-title">
-          Asia’s next top startups
+          Walk to Me by His Foot
         </div>
-        <div class="tr-content">Startup Team Competitipn</div>
-        <div class="tr-speaker">50+ Worldwide Startup Pitch Decks</div>
+        <div class="tr-content">Coordination and Donation of Organ Transplantation</div>
+        <div class="tr-speaker">Chun-Cheng Huang</div>
         <div class="tr-toggle">
           <button class="toggle-button" type="button" @click="toggle($event)">+</button>
         </div>
       </div>
       <div class="agenda-tr">
-        <div class="tr-time">12:40-14:00</div>
-        <div class="tr-title">
-          Refuel and Rest
-        </div>
-        <div class="tr-content"></div>
+        <div class="tr-time">14:50-15:20</div>
+        <div class="tr-title">You are the Spoiled Apple of My Eye</div>
+        <div class="tr-content">The Value and Myth of Cosmetic Surgery</div>
+        <div class="tr-speaker">Pang-Yun Chou</div>
       </div>
       <div class="agenda-tr">
-        <div class="tr-time">14:00-14:40</div>
+        <div class="tr-time">15:30-16:10</div>
         <div class="tr-title">
-          Let’s Debate<br><br>Do you regret, darling?
+          You Have to Go Back Home After Midnight
         </div>
-        <div class="tr-content">Round 1<br>“Do I really have to be a doctor?”</div>
-        <div class="tr-speaker">Stanley Huang<br>Pei-Chen Lin</div>
+        <div class="tr-content">Overworked or Lazy? Labor Issues in the Medical Field</div>
+        <div class="tr-speaker">Yu-Wen Liao<br>Wei-Hsiang Liao</div>
         <div class="tr-toggle">
           <button class="toggle-button" type="button" @click="toggle($event)">+</button>
         </div>
       </div>
       <div class="agenda-tr">
-        <div class="tr-time">14:50-15:10</div>
-        <div class="tr-title">
-          Keynote speech<br><br>
-          A Different Orbit Trajectory: <br>The Different Possibilities for Medical School Students
-        </div>
-        <div class="tr-content">“Hey bro, what are you up to?”</div>
-        <div class="tr-speaker">Shih-Ming Chu</div>
-        <div class="tr-toggle">
-          <button class="toggle-button" type="button" @click="toggle($event)">+</button>
-        </div>
-      </div>
-      <div class="agenda-tr">
-        <div class="tr-time">15:20 - 16:00</div>
-        <div class="tr-title">
-          Let’s Debate<br><br>Do you regret, darling?
-        </div>
-        <div class="tr-content">Round 2<br>“So, how's life as a Life Science graduate?”</div>
-        <div class="tr-speaker">Yung-Cheng Shin<br>William Hu</div>
-        <div class="tr-toggle">
-          <button class="toggle-button" type="button" @click="toggle($event)">+</button>
-        </div>
-      </div>
-      <div class="agenda-tr">
-        <div class="tr-time">16:20 - 17:00</div>
-        <div class="tr-title">
-          Interstellar Medical Knowledge Quiz
-        </div>
-        <div class="tr-content"></div>
+        <div class="tr-time">16:20-17:00</div>
+        <div class="tr-title">Dismaland</div>
+        <div class="tr-content">Healthcare Startup Lightning Round</div>
         <div class="tr-speaker"></div>
+        <div class="tr-toggle">
+          <button class="toggle-button" type="button" @click="toggle($event)">+</button>
+        </div>
       </div>
     </div>
     <div v-if="creativeStageDay === 2" class="agenda-table">
@@ -542,28 +687,32 @@
         <div class="tr-time">TIME</div>
         <div class="tr-title">TITLE</div>
         <div class="tr-content"></div>
-        <div class="tr-speaker"></div>
+        <div class="tr-speaker">SPEAKER</div>
         <div class="tr-toggle"></div>
       </div>
       <div class="agenda-tr">
-        <div class="tr-time">09:50-10:00</div>
+        <div class="tr-time">11:30-11:40</div>
         <div class="tr-title">
           Welcome Address
         </div>
         <div class="tr-content"></div>
       </div>
       <div class="agenda-tr">
-        <div class="tr-time">10:00-13:00</div>
-        <div class="tr-title">
-          Workshop<br>Call from Outer Space
-        </div>
-        <div class="tr-content">
-          “Dear future me…”
-        </div>
-        <!-- <div class="tr-speaker"></div> -->
+        <div class="tr-time">11:40-12:20</div>
+        <div class="tr-title">Maleficent’s True-Love-Incantation</div>
+        <div class="tr-content">Medical Students Equal to Doctors?</div>
+        <div class="tr-speaker">ChanHaw Liu <br>Jack Yang</div>
         <div class="tr-toggle">
           <button class="toggle-button" type="button" @click="toggle($event)">+</button>
         </div>
+      </div>
+      <div class="agenda-tr">
+        <div class="tr-time">12:30-13:00</div>
+        <div class="tr-title">
+          Dried this Cup and Indulged in Wonderland
+        </div>
+        <div class="tr-content">Alcohol and Addiction</div>
+        <div class="tr-speaker">Miranda Chen</div>
       </div>
       <div class="agenda-tr">
         <div class="tr-time">13:00-14:00</div>
@@ -574,45 +723,40 @@
         <div class="tr-speaker"></div>
       </div>
       <div class="agenda-tr">
-        <div class="tr-time">14:00-14:40</div>
+        <div class="tr-time">13:00-14:00</div>
         <div class="tr-title">
-          Let’s Debate<br><br>Do you regret, darling?
+          Welcome Address
         </div>
-        <div class="tr-content">Round 3<br>“What do you know about Chinese medicine?”</div>
-        <div class="tr-speaker">Ming-Yuan Huang<br>Yueh-Feng Hsieh</div>
+        <div class="tr-content"></div>
+        <div class="tr-speaker"></div>
+      </div>
+      <div class="agenda-tr">
+        <div class="tr-time">14:10-14:50</div>
+        <div class="tr-title">
+          The (Un)Happy Prince
+        </div>
+        <div class="tr-content">Kaobei Medical Staff</div>
+        <div class="tr-speaker">Yu-Chih Liu<br>Peter Fu</div>
         <div class="tr-toggle">
           <button class="toggle-button" type="button" @click="toggle($event)">+</button>
         </div>
       </div>
       <div class="agenda-tr">
-        <div class="tr-time">14:50-15:20</div>
-        <div class="tr-title">
-          Keynote Speech<br><br>A Dialogue Between the Present and the Past of Medicine
-        </div>
-        <div class="tr-content">“Is gua sha legit?”</div>
-        <div class="tr-speaker">Cara Huang</div>
+        <div class="tr-time">15:00-15:40</div>
+        <div class="tr-title">Toss and Turn Because of You</div>
+        <div class="tr-content">Conflicts and Negotiations of Intimate Behaviors in Partnerships</div>
+        <div class="tr-speaker">Hsu, Hao-Chien</div>
         <div class="tr-toggle">
           <button class="toggle-button" type="button" @click="toggle($event)">+</button>
         </div>
       </div>
       <div class="agenda-tr">
-        <div class="tr-time">15:40-16:20</div>
+        <div class="tr-time">16:00-16:40</div>
         <div class="tr-title">
-          Star Wars
+          Dismaland
         </div>
-        <div class="tr-content">Healthcare Startup Lightning Round</div>
+        <div class="tr-content">Healthcare Startup Bingo</div>
         <!-- <div class="tr-speaker"></div> -->
-        <div class="tr-toggle">
-          <button class="toggle-button" type="button" @click="toggle($event)">+</button>
-        </div>
-      </div>
-      <div class="agenda-tr">
-        <div class="tr-time">16:30-17:00</div>
-        <div class="tr-title">
-          Keynote Speech<br><br>Patient Counterstrike
-        </div>
-        <div class="tr-content">“Hey Doc! I got something to say!”</div>
-        <div class="tr-speaker">Ani Hsieh</div>
         <div class="tr-toggle">
           <button class="toggle-button" type="button" @click="toggle($event)">+</button>
         </div>
