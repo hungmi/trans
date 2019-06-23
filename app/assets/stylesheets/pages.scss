@@ -283,6 +283,10 @@ body.en, body.zh-TW {
 		opacity: 1;
 		a {
 			width: 100%;
+			color: $black-2019;
+		}
+		&:hover > a {
+			color: white;
 		}
 	}
 	#register_link {

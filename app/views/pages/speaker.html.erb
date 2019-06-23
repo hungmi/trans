@@ -78,8 +78,8 @@
             <div class="text-img img-bg-cover" style="background-image: url('<%= url_for speaker.cover %>');"></div>
           <% end %>
           <div class="text-title">
-            <h2 class="<%= render_chinese_class(speaker.i18n_name) %>"><%= speaker.i18n_name %></h2>
-            <h3><%= speaker.i18n_title %></h3>
+            <h2 style="color: white;" class="<%= render_chinese_class(speaker.i18n_name) %>"><%= speaker.i18n_name %></h2>
+            <h3 style="color: white;"><%= speaker.i18n_title %></h3>
           </div>
         </div>
         <%= simple_format speaker.i18n_description %>

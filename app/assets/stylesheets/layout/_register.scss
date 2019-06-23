@@ -160,6 +160,9 @@
 }
 
 .register-table, .register-table--mobile {
+  .tr-name, .tr-origin, .tr-pirce, .tr-price {
+    color: $black-2019;
+  }
   .discount-label {
     visibility: hidden; // 預設為隱藏，因為只有有折扣的票價才需要看到，其他是用來擠空間
     font-size: 12px;

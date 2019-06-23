@@ -4,6 +4,9 @@
 h1, h2, h3, h4, h5, h6, span, p, a, th, td {
   color: $black-2019;
 }
+.black-2019 {
+  color: $black-2019 !important; 
+}
 // ========= base =========
 @import 'base/reset'; // doppler reset
 @import 'base/dophlex'; // dopplex
