@@ -1,12 +1,24 @@
 <div class="wrap">
   <section class="home-main">
+  	<div class="home-main__initial"></div>
     <div class="home-main__text-in-water"></div>
     <div class="home-main__water"></div>
   </section>
 </div>
 <script>
   document.addEventListener('turbolinks:load', () => {
-  	
+  	var src = $('.home-main__water').css('background-image');
+		var url = src.match(/\((.*?)\)/)[1].replace(/('|")/g,'');
+
+		var img = new Image();
+		img.onload = function() {
+		    console.log('image loaded');
+		    setTimeout(function() {
+			    document.querySelector(".home-main__initial").classList.add("invisible")
+		    }, 500)
+		    // document.querySelector(".home-main__initial").style.visibility = "hidden";
+		}
+		img.src = url;
+		if (img.complete) img.onload();
   })
-  
 </script>

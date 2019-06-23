@@ -1,5 +1,21 @@
 .pages_home {
 	.home-main {
+		&__initial {
+			background: url("/img/2019/home/initial.png") center center no-repeat, #fff;
+			background-size: 20%;
+			@media only screen and (max-width: 767px) {
+				background-size: 50%;
+			}
+			z-index: 5;
+			height: calc(100% - 62px);
+			width: 100%;
+			position: absolute;
+			top: 62px;
+			transition: 1s ease;
+			&.invisible {
+				opacity: 0;
+			}
+		}
 		&__text-in-water {
 			background: url("/img/2019/home/text_in_water.png") left top repeat;
 			background-size: contain;
