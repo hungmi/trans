@@ -62,7 +62,7 @@ gem 'pundit'
 gem 'sidekiq'
 gem 'browser'
 gem 'ransack', github: 'activerecord-hackery/ransack'
-gem 'mini_magick', '~> 4.8'
+gem 'mini_magick', '~> 4.9'
 gem 'aws-sdk-s3', require: false
 gem 'bcrypt', '~> 3.1.7'
 gem 'redis', '~> 4.0'
